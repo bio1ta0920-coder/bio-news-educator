@@ -3,6 +3,7 @@ Claude API를 사용한 기사 필터링 및 교육 콘텐츠 생성 모듈
 """
 import json
 import anthropic
+from json_repair import repair_json
 from config import ANTHROPIC_API_KEY, MODEL_FILTER, MODEL_CONTENT, RELEVANCE_THRESHOLD
 from curriculum_standards import CURRICULUM_CONTEXT
 
@@ -196,20 +197,25 @@ def generate_educational_content(article: dict, full_text: str) -> dict:
         text = response.content[0].text.strip()
         start = text.find("{")
         end = text.rfind("}") + 1
-        data = json.loads(text[start:end])
+        raw = text[start:end]
+        try:
+            data = json.loads(raw)
+        except json.JSONDecodeError:
+            repaired = repair_json(raw)
+            data = json.loads(repaired)
         data["article_title"] = article["title"]
         data["article_url"] = article["url"]
         data["source"] = article["source"]
         data["lang"] = article["lang"]
         return data
     except json.JSONDecodeError as e:
-        print(f"    [JSON 파싱 오류] {e}")
+        print("    [JSON 파싱 오류] " + str(e))
         return {
             "article_title": article["title"],
             "article_url": article["url"],
             "source": article["source"],
             "lang": article["lang"],
-            "article_summary": text[:2000] if 'text' in dir() else "",
+            "article_summary": text[:2000] if 'text' in locals() else "",
             "parse_error": True,
         }
     except Exception as e:

@@ -7,3 +7,4 @@ google-auth>=2.37.0
 google-auth-oauthlib>=1.2.0
 google-api-python-client>=2.160.0
 python-dotenv>=1.0.1
+json-repair>=0.30.0

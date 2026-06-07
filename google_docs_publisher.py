@@ -386,6 +386,7 @@ def publish_to_google_drive(contents, today_str):
         body=file_metadata,
         media_body=media,
         fields="id,webViewLink",
+        supportsAllDrives=True,
     ).execute()
 
     file_id = file.get("id", "")
@@ -398,6 +399,7 @@ def publish_to_google_drive(contents, today_str):
             folder_info = service.files().get(
                 fileId=GOOGLE_DRIVE_FOLDER_ID,
                 fields="owners",
+                supportsAllDrives=True,
             ).execute()
             owners = folder_info.get("owners", [])
             if owners:
