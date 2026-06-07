@@ -198,6 +198,7 @@ def build_article_html(content: dict, index: int) -> str:
         ideas = tip.get("deepening_ideas", [])
         sample = tip.get("sample_reflection", "")
         ideas_html = "".join(f"<li>{i}</li>" for i in ideas)
+        sample_html = "<p style='font-size:13px; color:#555; background:#fffde7; padding:10px; border-radius:4px;'><strong>세특 문장 예시:</strong><br>" + sample.replace('\n', '<br>') + "</p>" if sample else ""
         tip_html = f"""
         <div style="background:#fff8e1; border:2px solid #ffb300;
                     border-radius:8px; padding:18px; margin:18px 0;">
@@ -205,7 +206,7 @@ def build_article_html(content: dict, index: int) -> str:
           <p style="font-size:14px;"><strong>활용 각도:</strong> {angle}</p>
           <p style="font-size:14px; margin:8px 0 4px 0;"><strong>심화 탐구 아이디어:</strong></p>
           <ul style="font-size:14px; padding-left:18px; margin:0 0 10px 0;">{ideas_html}</ul>
-          {"<p style='font-size:13px; color:#555; background:#fffde7; padding:10px; border-radius:4px;'><strong>세특 문장 예시:</strong><br>" + sample.replace('\n','<br>') + "</p>" if sample else ""}
+          {sample_html}
         </div>"""
 
     # ── 개념도 ────────────────────────────────────────────────────
