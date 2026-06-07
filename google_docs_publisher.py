@@ -388,6 +388,28 @@ def publish_to_google_drive(contents, today_str):
         fields="id,webViewLink",
     ).execute()
 
+    file_id = file.get("id", "")
     doc_url = file.get("webViewLink", "")
     print("  문서 생성 완료: " + doc_url)
+
+    # 소유권을 폴더 소유자(사용자 계정)에게 이전 → 서비스 계정 용량 문제 해결
+    if GOOGLE_DRIVE_FOLDER_ID and file_id:
+        try:
+            folder_info = service.files().get(
+                fileId=GOOGLE_DRIVE_FOLDER_ID,
+                fields="owners",
+            ).execute()
+            owners = folder_info.get("owners", [])
+            if owners:
+                owner_email = owners[0].get("emailAddress", "")
+                if owner_email:
+                    service.permissions().create(
+                        fileId=file_id,
+                        body={"role": "owner", "type": "user", "emailAddress": owner_email},
+                        transferOwnership=True,
+                    ).execute()
+                    print("  소유권 이전 완료 → " + owner_email)
+        except Exception as e:
+            print("  [경고] 소유권 이전 실패 (문서는 생성됨): " + str(e))
+
     return doc_url
