@@ -359,59 +359,44 @@ def build_full_html(contents, today_str):
     )
 
 
-def publish_to_google_drive(contents, today_str):
+def save_html_to_docs(contents, today_str, date_str):
+    """HTML 파일을 docs/ 폴더에 저장하고 index.html 업데이트"""
+    import os
+
     if not contents:
-        print("  [건너뜀] 업로드할 콘텐츠가 없습니다.")
+        print("  [건너뜀] 저장할 콘텐츠가 없습니다.")
         return ""
 
-    print("=== Google Drive 업로드 ===")
-    service = get_drive_service()
+    print("=== HTML 파일 저장 ===")
+    os.makedirs("docs", exist_ok=True)
 
     html_content = build_full_html(contents, today_str)
-    doc_name = "생명과학 뉴스 교육자료 - " + today_str
+    filename = "docs/" + date_str + ".html"
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(html_content)
+    print("  저장 완료: " + filename)
 
-    media = MediaInMemoryUpload(
-        html_content.encode("utf-8"),
-        mimetype="text/html",
-        resumable=False,
+    # index.html 업데이트 (날짜별 링크 목록)
+    existing_files = sorted(
+        [f for f in os.listdir("docs") if f.endswith(".html") and f != "index.html"],
+        reverse=True,
     )
-    file_metadata = {
-        "name": doc_name,
-        "mimeType": "application/vnd.google-apps.document",
-    }
-    if GOOGLE_DRIVE_FOLDER_ID:
-        file_metadata["parents"] = [GOOGLE_DRIVE_FOLDER_ID]
+    list_items = "".join(
+        '<li><a href="' + f + '">' + f.replace(".html", "") + ' 교육자료</a></li>'
+        for f in existing_files
+    )
+    index_html = (
+        '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8">'
+        '<title>생명과학 뉴스 교육자료</title>'
+        '<style>body{font-family:"Malgun Gothic",sans-serif;max-width:700px;margin:60px auto;}'
+        'h1{color:#1b5e20;}li{margin:10px 0;}a{color:#1565c0;text-decoration:none;font-size:16px;}'
+        'a:hover{text-decoration:underline;}</style></head><body>'
+        '<h1>&#x1F331; 생명과학 뉴스 교육자료</h1>'
+        '<p>매일 자동 생성되는 2022 개정 교육과정 연계 교육자료입니다.</p>'
+        '<ul>' + list_items + '</ul>'
+        '</body></html>'
+    )
+    with open("docs/index.html", "w", encoding="utf-8") as f:
+        f.write(index_html)
 
-    file = service.files().create(
-        body=file_metadata,
-        media_body=media,
-        fields="id,webViewLink",
-        supportsAllDrives=True,
-    ).execute()
-
-    file_id = file.get("id", "")
-    doc_url = file.get("webViewLink", "")
-    print("  문서 생성 완료: " + doc_url)
-
-    # 소유권을 폴더 소유자(사용자 계정)에게 이전 → 서비스 계정 용량 문제 해결
-    if GOOGLE_DRIVE_FOLDER_ID and file_id:
-        try:
-            folder_info = service.files().get(
-                fileId=GOOGLE_DRIVE_FOLDER_ID,
-                fields="owners",
-                supportsAllDrives=True,
-            ).execute()
-            owners = folder_info.get("owners", [])
-            if owners:
-                owner_email = owners[0].get("emailAddress", "")
-                if owner_email:
-                    service.permissions().create(
-                        fileId=file_id,
-                        body={"role": "owner", "type": "user", "emailAddress": owner_email},
-                        transferOwnership=True,
-                    ).execute()
-                    print("  소유권 이전 완료 → " + owner_email)
-        except Exception as e:
-            print("  [경고] 소유권 이전 실패 (문서는 생성됨): " + str(e))
-
-    return doc_url
+    return filename
