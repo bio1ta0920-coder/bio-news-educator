@@ -32,6 +32,14 @@ jobs:
           restore-keys: |
             seen-articles-
 
+      - name: 문법 확인
+        run: |
+          git log --oneline -3
+          python -m py_compile google_docs_publisher.py && echo "google_docs_publisher.py OK"
+          python -m py_compile processor.py && echo "processor.py OK"
+          python -m py_compile scraper.py && echo "scraper.py OK"
+          python -m py_compile main.py && echo "main.py OK"
+
       - name: 교육자료 생성 실행
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
