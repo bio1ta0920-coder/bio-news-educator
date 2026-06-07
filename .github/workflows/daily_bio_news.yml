@@ -34,11 +34,14 @@ jobs:
 
       - name: 문법 확인
         run: |
+          echo "=== 현재 커밋 ==="
           git log --oneline -3
-          python -m py_compile google_docs_publisher.py && echo "google_docs_publisher.py OK"
-          python -m py_compile processor.py && echo "processor.py OK"
-          python -m py_compile scraper.py && echo "scraper.py OK"
-          python -m py_compile main.py && echo "main.py OK"
+          echo "=== google_docs_publisher.py 205~215줄 ==="
+          sed -n '205,215p' google_docs_publisher.py
+          echo "=== triple-quote 있는 줄 ==="
+          grep -n '"""' google_docs_publisher.py || echo "없음"
+          echo "=== 문법 체크 ==="
+          python -m py_compile google_docs_publisher.py && echo "OK"
 
       - name: 교육자료 생성 실행
         env:
