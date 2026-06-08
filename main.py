@@ -15,6 +15,7 @@ from config import MAX_ARTICLES_TO_PROCESS
 from scraper import collect_articles, scrape_article_content, save_seen_articles
 from processor import is_curriculum_relevant, generate_educational_content
 from google_docs_publisher import save_html_to_docs
+from notion_publisher import publish_to_notion
 
 
 def parse_args():
@@ -91,13 +92,14 @@ def main():
 
         time.sleep(1.0)  # API 레이트리밋 방지
 
-    # ── 4단계: HTML 파일 저장 ──────────────────────────────────────
+    # ── 4단계: HTML 파일 저장 + 노션 발행 ────────────────────────
     if generated_contents and not args.dry_run:
         saved_path = save_html_to_docs(generated_contents, today_str, date_str)
         if saved_path:
             print(f"\n{'='*60}")
             print(f"  완료! HTML 파일 저장: {saved_path}")
             print(f"{'='*60}\n")
+        publish_to_notion(generated_contents, today_str, date_str)
     elif args.dry_run:
         print(f"\n[드라이런] {len(generated_contents)}건 처리 완료 (저장 생략)")
         for c in generated_contents:
