@@ -9,7 +9,7 @@
 import sys
 import time
 import argparse
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 from config import MAX_ARTICLES_TO_PROCESS
 from scraper import collect_articles, scrape_article_content, save_seen_articles
@@ -27,8 +27,10 @@ def parse_args():
 
 def main():
     args = parse_args()
-    today_str = datetime.now().strftime("%Y년 %m월 %d일")
-    date_str = datetime.now().strftime("%Y-%m-%d")
+    KST = timezone(timedelta(hours=9))
+    now_kst = datetime.now(KST)
+    today_str = now_kst.strftime("%Y년 %m월 %d일")
+    date_str = now_kst.strftime("%Y-%m-%d")
     print(f"\n{'='*60}")
     print(f"  생명과학 뉴스 교육자료 생성 시작 - {today_str}")
     print(f"{'='*60}\n")
