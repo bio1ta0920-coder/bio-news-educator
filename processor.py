@@ -165,6 +165,12 @@ def generate_educational_content(article: dict, full_text: str) -> dict:
     "real_researcher_story": "이 분야 실제 연구자의 업무를 사실에 기반하여 묘사 (공상 없이)"
   }},
 
+  "related_study_topics": "함께 공부하면 좋은 교과서 단원, 관련 실험, 추천 개념 (2~3문단)",
+
+  "future_prospects": "현재 진행 중인 실제 연구 방향과 전문가들이 언급한 가능성만 서술. 근거 없는 예측 금지. '~를 목표로 연구 중이다', '~가능성이 제기된다' 형태로 작성 (2~3문단)",
+
+  "historical_story": "검증된 과학사적 사실·발견 일화 (확인되지 않은 일화나 와전된 이야기 제외). 흥미롭고 사실에 기반한 내용 (2~3문단)",
+
   "student_record_tip": {{
     "angle": "학생부 세특 활용 각도 (기사를 읽은 수준을 넘어 직접 탐구한 형태로)",
     "deepening_ideas": [
@@ -174,12 +180,6 @@ def generate_educational_content(article: dict, full_text: str) -> dict:
     ],
     "sample_reflection": "세특 예시 문장 2~3개 ('~를 탐구했다' 형태, 단 실제 하지 않은 것을 한 것처럼 쓰지 않도록 주의)"
   }},
-
-  "related_study_topics": "함께 공부하면 좋은 교과서 단원, 관련 실험, 추천 개념 (2~3문단)",
-
-  "future_prospects": "현재 진행 중인 실제 연구 방향과 전문가들이 언급한 가능성만 서술. 근거 없는 예측 금지. '~를 목표로 연구 중이다', '~가능성이 제기된다' 형태로 작성 (2~3문단)",
-
-  "historical_story": "검증된 과학사적 사실·발견 일화 (확인되지 않은 일화나 와전된 이야기 제외). 흥미롭고 사실에 기반한 내용 (2~3문단)",
 
   "concept_map": "핵심 개념 4~6개를 → ← ↔ ↑ ↓ 기호로 연결한 텍스트 다이어그램",
 
@@ -191,7 +191,7 @@ def generate_educational_content(article: dict, full_text: str) -> dict:
     try:
         response = client.messages.create(
             model=MODEL_CONTENT,
-            max_tokens=8000,
+            max_tokens=16000,
             messages=[{"role": "user", "content": prompt}],
         )
         text = response.content[0].text.strip()
