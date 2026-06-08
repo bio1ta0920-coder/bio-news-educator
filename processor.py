@@ -183,7 +183,18 @@ def generate_educational_content(article: dict, full_text: str) -> dict:
 
   "concept_map": "핵심 개념 4~6개를 → ← ↔ ↑ ↓ 기호로 연결한 텍스트 다이어그램",
 
-  "teacher_note": "교사용: 수업 활용법 + 주의할 오개념 + 팩트체크 시 특별히 강조할 점 (2~3문장)"
+  "student_checklist": {{
+    "key_points": [
+      "이 기사를 읽고 반드시 알아야 할 핵심 포인트 1",
+      "이 기사를 읽고 반드시 알아야 할 핵심 포인트 2",
+      "이 기사를 읽고 반드시 알아야 할 핵심 포인트 3"
+    ],
+    "common_misconceptions": [
+      "학생들이 흔히 헷갈리는 오개념 1 → 올바른 이해",
+      "학생들이 흔히 헷갈리는 오개념 2 → 올바른 이해"
+    ],
+    "self_check": "이 기사를 제대로 이해했는지 스스로 확인할 수 있는 질문 1개"
+  }}
 }}
 
 반드시 유효한 JSON 형식으로만 답하세요."""

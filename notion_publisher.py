@@ -227,10 +227,18 @@ def build_article_blocks(content: dict, index: int) -> list:
         blocks.append(_heading3("🕸 지식 연결 개념도"))
         blocks.append(_code(concept_map.strip()))
 
-    # 교사 메모
-    teacher_note = content.get("teacher_note", "")
-    if teacher_note:
-        blocks.append(_callout(f"💡 교사 메모: {teacher_note}", "💡", "yellow_background"))
+    # 핵심 포인트 & 오개념 주의
+    checklist = content.get("student_checklist", {})
+    if checklist:
+        cl_children = []
+        for p in checklist.get("key_points", []):
+            cl_children.append(_bullet(f"⭐ {p}"))
+        for m in checklist.get("common_misconceptions", []):
+            cl_children.append(_bullet(f"⚠️ {m}"))
+        self_check = checklist.get("self_check", "")
+        if self_check:
+            cl_children.append(_callout(f"💬 스스로 확인하기: {self_check}", "💬"))
+        blocks.append(_toggle("📋 핵심 포인트 & 오개념 주의", cl_children))
 
     blocks.append(_divider())
     return blocks

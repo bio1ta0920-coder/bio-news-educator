@@ -252,13 +252,34 @@ def build_article_html(content, index):
             'border-radius:6px; font-size:13px; line-height:2.0;">' + map_br + '</p>'
         )
 
-    teacher_note = content.get("teacher_note", "")
+    checklist = content.get("student_checklist", {})
     teacher_block = ""
-    if teacher_note:
+    if checklist:
+        kp_items = "".join(
+            '<li style="margin:6px 0; padding:6px 10px; background:#e3f2fd; border-radius:4px;">&#x2B50; ' + p + '</li>'
+            for p in checklist.get("key_points", [])
+        )
+        mc_items = "".join(
+            '<li style="margin:6px 0; padding:6px 10px; background:#fff3e0; border-radius:4px;">&#x26A0;&#xFE0F; ' + m + '</li>'
+            for m in checklist.get("common_misconceptions", [])
+        )
+        self_check = checklist.get("self_check", "")
+        sc_block = ""
+        if self_check:
+            sc_block = (
+                '<p style="margin:12px 0 0; padding:10px 14px; background:#e8f5e9;'
+                'border-radius:6px; font-size:14px;">'
+                '<strong>&#x1F4AC; 스스로 확인하기:</strong> ' + self_check + '</p>'
+            )
         teacher_block = (
-            '<p style="margin:16px 0 0 0; padding:10px 14px; background:#f5f5f5;'
-            'border-radius:6px; font-size:13px; color:#546e7a;">'
-            '<strong>&#x1F4A1; 교사 메모:</strong> ' + teacher_note + '</p>'
+            '<div style="background:#fff; border:2px solid #1565c0; border-radius:8px; padding:18px; margin:18px 0;">'
+            '<h4 style="margin:0 0 12px 0; color:#1565c0;">&#x1F4CB; 핵심 포인트 & 오개념 주의</h4>'
+            '<p style="font-size:13px; font-weight:bold; margin:0 0 6px;">&#x2B50; 꼭 알고 가자</p>'
+            '<ul style="margin:0 0 12px; padding-left:0; list-style:none; font-size:13px;">' + kp_items + '</ul>'
+            '<p style="font-size:13px; font-weight:bold; margin:0 0 6px;">&#x26A0;&#xFE0F; 헷갈리기 쉬운 오개념</p>'
+            '<ul style="margin:0; padding-left:0; list-style:none; font-size:13px;">' + mc_items + '</ul>'
+            + sc_block +
+            '</div>'
         )
 
     cross_section = ""
