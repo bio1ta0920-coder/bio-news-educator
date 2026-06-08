@@ -183,6 +183,8 @@ def generate_educational_content(article: dict, full_text: str) -> dict:
 
   "concept_map": "핵심 개념 4~6개를 → ← ↔ ↑ ↓ 기호로 연결한 텍스트 다이어그램",
 
+  "teacher_note": "교사용: 수업 활용법 + 주의할 오개념 + 팩트체크 시 특별히 강조할 점 (2~3문장)",
+
   "student_checklist": {{
     "key_points": [
       "이 기사를 읽고 반드시 알아야 할 핵심 포인트 1",

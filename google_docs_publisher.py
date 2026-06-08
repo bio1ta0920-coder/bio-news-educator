@@ -252,6 +252,15 @@ def build_article_html(content, index):
             'border-radius:6px; font-size:13px; line-height:2.0;">' + map_br + '</p>'
         )
 
+    teacher_note = content.get("teacher_note", "")
+    teacher_note_block = ""
+    if teacher_note:
+        teacher_note_block = (
+            '<p style="margin:16px 0 0 0; padding:10px 14px; background:#f5f5f5;'
+            'border-radius:6px; font-size:13px; color:#546e7a;">'
+            '<strong>&#x1F4A1; 교사 메모:</strong> ' + teacher_note + '</p>'
+        )
+
     checklist = content.get("student_checklist", {})
     teacher_block = ""
     if checklist:
@@ -337,6 +346,7 @@ def build_article_html(content, index):
         + history_box
         + concept_map_html
         + teacher_block
+        + teacher_note_block
         + citation
         + '</div>'
     )
