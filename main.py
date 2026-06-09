@@ -23,21 +23,35 @@ def parse_args():
     parser.add_argument("--dry-run", action="store_true", help="Drive 업로드 없이 테스트")
     parser.add_argument("--limit", type=int, default=MAX_ARTICLES_TO_PROCESS,
                         help="처리할 최대 기사 수")
+    parser.add_argument("--date", type=str, default=None,
+                        help="백필용 날짜 지정 (YYYY-MM-DD). 해당 날짜 발행 기사만 수집")
     return parser.parse_args()
 
 
 def main():
     args = parse_args()
     KST = timezone(timedelta(hours=9))
-    now_kst = datetime.now(KST)
-    today_str = now_kst.strftime("%Y년 %m월 %d일")
-    date_str = now_kst.strftime("%Y-%m-%d")
+
+    if args.date:
+        # 백필 모드: 지정 날짜로 고정
+        date_str = args.date
+        dt = datetime.strptime(args.date, "%Y-%m-%d")
+        today_str = dt.strftime("%Y년 %m월 %d일")
+        is_backfill = True
+    else:
+        now_kst = datetime.now(KST)
+        today_str = now_kst.strftime("%Y년 %m월 %d일")
+        date_str = now_kst.strftime("%Y-%m-%d")
+        is_backfill = False
     print(f"\n{'='*60}")
     print(f"  생명과학 뉴스 교육자료 생성 시작 - {today_str}")
     print(f"{'='*60}\n")
 
     # ── 1단계: RSS 수집 ────────────────────────────────────────────
-    articles, seen = collect_articles()
+    articles, seen = collect_articles(
+        target_date=date_str if is_backfill else None,
+        bypass_seen=is_backfill,
+    )
     if not articles:
         print("\n새로운 기사가 없습니다. 종료합니다.")
         return
@@ -105,10 +119,13 @@ def main():
         for c in generated_contents:
             print(f"  - {c.get('article_title','')}")
 
-    # ── 5단계: 처리된 기사 URL 저장 (중복 방지) ───────────────────
-    processed_urls = {a["url"] for a in articles}
-    save_seen_articles(seen | processed_urls)
-    print(f"\n중복 방지 목록 업데이트 완료 (총 {len(seen) + len(processed_urls)}건)")
+    # ── 5단계: 처리된 기사 URL 저장 (중복 방지, 백필 모드 제외) ──
+    if not is_backfill:
+        processed_urls = {a["url"] for a in articles}
+        save_seen_articles(seen | processed_urls)
+        print(f"\n중복 방지 목록 업데이트 완료 (총 {len(seen) + len(processed_urls)}건)")
+    else:
+        print(f"\n[백필 모드] seen_articles 업데이트 생략")
 
 
 if __name__ == "__main__":

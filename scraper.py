@@ -4,6 +4,8 @@ RSS 피드 수집 및 기사 본문 스크래핑 모듈
 import json
 import os
 import time
+import calendar
+from datetime import datetime, timezone, timedelta
 import feedparser
 import requests
 from bs4 import BeautifulSoup
@@ -26,16 +28,28 @@ def save_seen_articles(seen: set) -> None:
         json.dump(seen_list, f, ensure_ascii=False, indent=2)
 
 
+def _parse_published_date(entry) -> str | None:
+    """RSS 엔트리에서 발행일을 YYYY-MM-DD (KST) 문자열로 반환. 없으면 None."""
+    KST = timezone(timedelta(hours=9))
+    parsed = entry.get("published_parsed") or entry.get("updated_parsed")
+    if parsed:
+        try:
+            dt_utc = datetime.fromtimestamp(calendar.timegm(parsed), tz=timezone.utc)
+            return dt_utc.astimezone(KST).strftime("%Y-%m-%d")
+        except Exception:
+            pass
+    return None
+
+
 def fetch_rss_entries(feed_config: dict) -> list[dict]:
     """RSS 피드에서 기사 목록 수집"""
     try:
         feed = feedparser.parse(feed_config["url"])
         entries = []
-        for entry in feed.entries[:25]:
+        for entry in feed.entries[:50]:
             url = entry.get("link", "").strip()
             title = entry.get("title", "").strip()
             summary = entry.get("summary", "") or entry.get("description", "")
-            # HTML 태그 제거
             summary = BeautifulSoup(summary, "lxml").get_text(separator=" ").strip()
             if url and title:
                 entries.append({
@@ -44,6 +58,7 @@ def fetch_rss_entries(feed_config: dict) -> list[dict]:
                     "summary": summary[:500],
                     "source": feed_config["name"],
                     "lang": feed_config["lang"],
+                    "published_date": _parse_published_date(entry),
                 })
         return entries
     except Exception as e:
@@ -170,14 +185,19 @@ def fetch_url_scraper_entries(scraper_config: dict) -> list[dict]:
     return entries
 
 
-def collect_articles() -> tuple[list[dict], set]:
+def collect_articles(target_date: str | None = None, bypass_seen: bool = False) -> tuple[list[dict], set]:
     """
-    RSS 피드 + URL 직접 스크래핑으로 새 기사 수집.
-    Returns: (새 기사 목록, 기존 seen 집합)
+    RSS 피드 + URL 직접 스크래핑으로 기사 수집.
+    target_date: 'YYYY-MM-DD' 지정 시 해당 날짜 발행 기사만 수집 (백필용)
+    bypass_seen: True 시 seen_articles 필터 무시
+    Returns: (기사 목록, 기존 seen 집합)
     """
     print("=== 기사 수집 시작 ===")
     seen = load_seen_articles()
-    print(f"  기존 처리 기사 수: {len(seen)}개")
+    if bypass_seen:
+        print(f"  [백필 모드] seen_articles 필터 무시 (대상 날짜: {target_date})")
+    else:
+        print(f"  기존 처리 기사 수: {len(seen)}개")
 
     all_entries: list[dict] = []
     seen_urls_this_run: set[str] = set()
@@ -188,21 +208,30 @@ def collect_articles() -> tuple[list[dict], set]:
         entries = fetch_rss_entries(feed_config)
         for entry in entries:
             url = entry["url"]
-            if url not in seen and url not in seen_urls_this_run:
-                all_entries.append(entry)
-                seen_urls_this_run.add(url)
+            if url in seen_urls_this_run:
+                continue
+            if not bypass_seen and url in seen:
+                continue
+            # 날짜 필터: target_date 지정 시 발행일이 일치하는 기사만
+            if target_date:
+                pub = entry.get("published_date")
+                if pub != target_date:
+                    continue
+            all_entries.append(entry)
+            seen_urls_this_run.add(url)
         time.sleep(0.3)
 
-    # URL 직접 스크래핑 사이트 수집
-    for scraper_config in URL_SCRAPERS:
-        print(f"  [URL] [{scraper_config['name']}] 수집 중...")
-        entries = fetch_url_scraper_entries(scraper_config)
-        for entry in entries:
-            url = entry["url"]
-            if url not in seen and url not in seen_urls_this_run:
-                all_entries.append(entry)
-                seen_urls_this_run.add(url)
-        time.sleep(0.5)
+    # URL 직접 스크래핑 사이트 — 날짜 정보 없으므로 target_date 백필 시 건너뜀
+    if not target_date:
+        for scraper_config in URL_SCRAPERS:
+            print(f"  [URL] [{scraper_config['name']}] 수집 중...")
+            entries = fetch_url_scraper_entries(scraper_config)
+            for entry in entries:
+                url = entry["url"]
+                if url not in seen and url not in seen_urls_this_run:
+                    all_entries.append(entry)
+                    seen_urls_this_run.add(url)
+            time.sleep(0.5)
 
     all_entries = all_entries[:MAX_ARTICLES_TO_FETCH]
     print(f"\n  새 기사 {len(all_entries)}개 수집 완료")

@@ -1,0 +1,48 @@
+name: 날짜별 백필 (과거 날짜 교육자료 생성)
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: '생성할 날짜 (YYYY-MM-DD 형식, 예: 2026-06-01)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: 코드 체크아웃
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Python 3.12 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: 의존성 설치
+        run: pip install -r requirements.txt
+
+      - name: 교육자료 생성 (지정 날짜)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: python main.py --date ${{ github.event.inputs.date }} --limit 5
+
+      - name: 생성된 파일 커밋 및 푸시
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add docs/
+          git diff --staged --quiet || git commit -m "백필 교육자료: ${{ github.event.inputs.date }}"
+          git pull --rebase
+          git push
