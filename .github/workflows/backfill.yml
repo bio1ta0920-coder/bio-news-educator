@@ -41,16 +41,21 @@ jobs:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
         run: |
-          start="${{ github.event.inputs.start_date }}"
-          end="${{ github.event.inputs.end_date }}"
-          current="$start"
-          while [[ "$current" <= "$end" ]]; do
-            echo "========================================"
-            echo " 백필 실행: $current"
-            echo "========================================"
-            python main.py --date "$current" --limit 5 || echo "[$current] 기사 없음 또는 오류 — 다음 날짜로 계속"
-            current=$(date -d "$current + 1 day" +%Y-%m-%d)
-          done
+          python - <<'EOF'
+          import subprocess
+          from datetime import date, timedelta
+
+          start = date.fromisoformat("${{ github.event.inputs.start_date }}")
+          end   = date.fromisoformat("${{ github.event.inputs.end_date }}")
+          current = start
+          while current <= end:
+              d = current.isoformat()
+              print(f"\n{'='*48}\n 백필 실행: {d}\n{'='*48}")
+              result = subprocess.run(["python", "main.py", "--date", d, "--limit", "5"])
+              if result.returncode != 0:
+                  print(f"[{d}] 기사 없음 또는 오류 — 다음 날짜로 계속")
+              current += timedelta(days=1)
+          EOF
 
       - name: 생성된 파일 커밋 및 푸시
         run: |
