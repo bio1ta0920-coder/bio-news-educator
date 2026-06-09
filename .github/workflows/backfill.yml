@@ -3,8 +3,12 @@ name: 날짜별 백필 (과거 날짜 교육자료 생성)
 on:
   workflow_dispatch:
     inputs:
-      date:
-        description: '생성할 날짜 (YYYY-MM-DD 형식, 예: 2026-06-01)'
+      start_date:
+        description: '시작 날짜 (YYYY-MM-DD, 예: 2026-06-01)'
+        required: true
+        type: string
+      end_date:
+        description: '종료 날짜 (YYYY-MM-DD, 예: 2026-06-06)'
         required: true
         type: string
 
@@ -14,7 +18,7 @@ permissions:
 jobs:
   backfill:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 120
 
     steps:
       - name: 코드 체크아웃
@@ -31,18 +35,28 @@ jobs:
       - name: 의존성 설치
         run: pip install -r requirements.txt
 
-      - name: 교육자료 생성 (지정 날짜)
+      - name: 날짜 범위 백필 실행
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
-        run: python main.py --date ${{ github.event.inputs.date }} --limit 5
+        run: |
+          start="${{ github.event.inputs.start_date }}"
+          end="${{ github.event.inputs.end_date }}"
+          current="$start"
+          while [[ "$current" <= "$end" ]]; do
+            echo "========================================"
+            echo " 백필 실행: $current"
+            echo "========================================"
+            python main.py --date "$current" --limit 5 || echo "[$current] 기사 없음 또는 오류 — 다음 날짜로 계속"
+            current=$(date -d "$current + 1 day" +%Y-%m-%d)
+          done
 
       - name: 생성된 파일 커밋 및 푸시
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add docs/
-          git diff --staged --quiet || git commit -m "백필 교육자료: ${{ github.event.inputs.date }}"
+          git diff --staged --quiet || git commit -m "백필 교육자료: ${{ github.event.inputs.start_date }} ~ ${{ github.event.inputs.end_date }}"
           git pull --rebase
           git push
