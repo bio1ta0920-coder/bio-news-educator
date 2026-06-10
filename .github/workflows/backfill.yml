@@ -31,6 +31,9 @@ jobs:
       - name: 의존성 설치
         run: pip install -r requirements.txt
 
+      - name: RSS 날짜 분포 확인
+        run: python debug_dates.py
+
       - name: 교육자료 생성 (지정 날짜)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
