@@ -223,6 +223,8 @@ def build_article_html(content, index):
         angle = tip.get("angle", "")
         ideas = tip.get("deepening_ideas", [])
         sample = tip.get("sample_reflection", "")
+        if isinstance(sample, list):
+            sample = "\n".join(sample)
         ideas_items = "".join('<li>' + i + '</li>' for i in ideas)
         sample_br = sample.replace("\n", "<br>")
         sample_block = ""
@@ -295,9 +297,14 @@ def build_article_html(content, index):
     if cross_html:
         cross_section = '<h4 style="margin:14px 0 8px 0; color:#5c6bc0;">&#x1F517; 타교과 연계</h4>' + cross_html
 
-    related = content.get("related_study_topics", "")
-    future = content.get("future_prospects", "")
-    historical = content.get("historical_story", "")
+    def _to_str(val):
+        if isinstance(val, list):
+            return "\n".join(str(v) for v in val)
+        return val or ""
+
+    related = _to_str(content.get("related_study_topics", ""))
+    future = _to_str(content.get("future_prospects", ""))
+    historical = _to_str(content.get("historical_story", ""))
 
     related_box = section_box("#fff3e0", "#ff9800", "#e65100", "&#x1F4D6;", "함께 공부하면 좋은 내용", "<p>" + related + "</p>")
     future_box = section_box("#e8eaf6", "#5c6bc0", "#1565c0", "&#x1F52D;", "미래 전망 (근거 기반)", "<p>" + future + "</p>")
