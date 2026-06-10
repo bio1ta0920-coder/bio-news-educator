@@ -205,6 +205,7 @@ def generate_educational_content(article: dict, full_text: str) -> dict:
         response = client.messages.create(
             model=MODEL_CONTENT,
             max_tokens=16000,
+            timeout=120,
             messages=[{"role": "user", "content": prompt}],
         )
         text = response.content[0].text.strip()
