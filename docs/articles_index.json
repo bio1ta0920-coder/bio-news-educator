@@ -2,28 +2,298 @@
   "2026-06-19": [
     {
       "title": "Stem cells banish severe autoimmune disease for 15 years",
-      "anchor": "a-Stem-cells-banish-severe-autoimmune-disease-for-15-years",
-      "subject": "재생의학·줄기세포"
+      "page_file": "2026-06-19-1.html",
+      "subject": "면역학·항상성 — '면역' 단원 및 '세포 분열·줄기세포' 관련 내용"
     },
     {
       "title": "Cell transplant across the tree of life hints at how animals emerged",
-      "anchor": "a-Cell-transplant-across-the-tree-of-life-hints-at-how-animals-e",
-      "subject": "진화·고생물학"
+      "page_file": "2026-06-19-2.html",
+      "subject": "생명과학 - 진화와 다양성 / 세포생물학 (세포의 특성)"
     },
     {
       "title": "Daily briefing: The proteins that protect us from deadly mutations",
-      "anchor": "a-Daily-briefing-The-proteins-that-protect-us-from-deadly-mutati",
-      "subject": "세포생물학·이미징"
+      "page_file": "2026-06-19-3.html",
+      "subject": "생명과학 - 세포와 물질대사: 세포의 특성 / 생식과 유전: 유전자와 DNA"
     },
     {
       "title": "재즈 파마슈티컬(Jazz Pharmaceuticals)은 지난 17일(현지시간) 앱셀레라(AbCellera)와 고형암을 적응증으로 다중타깃 T세포인게이저(TCE) 3종을 발굴하는 24억6000만달러 규모의 옵션딜을 체결했다고 밝혔다. 프로그램당 8억2000만달러 규모의 딜이다. 이번 딜을 통해 재즈는 TCE 모달리티 개발에 처음으로 진입하게 됐으며, 위장관암 및 고형암을 적응증으로 하는 TCE 3개 프로그램에 대한 발굴 및 개발을 진행하게 된다. 계약에 따라 앱셀레라는 먼저 두 가지 프로그램의 발굴 및 초기단계 연구를 수행하고,",
-      "anchor": "a-재즈-파마슈티컬Jazz-Pharmaceuticals은-지난-17일현지시간-앱셀레라AbCellera와-고형암을-적",
-      "subject": "면역학·면역치료"
+      "page_file": "2026-06-19-4.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 > 면역 단원"
     },
     {
       "title": "부스트이뮨, 'MDSC 저해' TCTP 항체기술 \"日특허등록\"",
-      "anchor": "a-부스트이뮨-MDSC-저해-TCTP-항체기술-日특허등록",
-      "subject": "면역학·면역치료"
+      "page_file": "2026-06-19-5.html",
+      "subject": "면역학·면역치료 / 항상성과 몸의 조절 - 면역 단원"
+    }
+  ],
+  "2026-06-09": [
+    {
+      "title": "환경호르몬이 만든 '불량 면역세포', 항암 방어 무너뜨린다",
+      "page_file": "2026-06-09-1.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 (면역 단원)"
+    },
+    {
+      "title": "GPR15-guided CD8+T regulatory cells control intestinal inflammation",
+      "page_file": "2026-06-09-2.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 (면역 단원)"
+    },
+    {
+      "title": "Targeting Cancer-Specific Mutations with RNA-Triggered Chromatin Shredding",
+      "page_file": "2026-06-09-3.html",
+      "subject": "생명과학 - 유전자와 DNA / 생식과 유전 / 항상성과 몸의 조절(면역)"
+    },
+    {
+      "title": "AI is taking on antibiotic resistance — here’s how",
+      "page_file": "2026-06-09-4.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 > 면역 / 생명과학 - 세포와 물질대사 > 물질대사(효소)"
+    },
+    {
+      "title": "바이젠셀, 'GD2 CAR-NK' GBM 전임상 \"EACR 발표\"",
+      "page_file": "2026-06-09-5.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 (면역 단원) / 생명과학 - 생식과 유전 (유전자와 DNA 단원)"
+    }
+  ],
+  "2026-06-10": [
+    {
+      "title": "AI 기반 단백질 신약 개발",
+      "page_file": "2026-06-10-1.html",
+      "subject": "생명과학 - 세포와 물질대사 / 유전자와 DNA 단원"
+    },
+    {
+      "title": "글로벌 백신 산업의 현재: WORLD VACCINE CONGRESS 워싱턴 2026 현장 보고",
+      "page_file": "2026-06-10-2.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 > 면역"
+    },
+    {
+      "title": "홀로토모그래피(Holotomography): 비표지 정량 3D 이미징의 세포·오가노이드 연구 응용",
+      "page_file": "2026-06-10-3.html",
+      "subject": "생명과학 — 세포의 특성 (세포 소기관의 구조와 기능, 세포막의 구조와 물질 이동)"
+    },
+    {
+      "title": "“세포를 컴퓨터처럼”…포스텍, 리보솜 스위치로 '살아있는 스마트 유전자 회로' 개발",
+      "page_file": "2026-06-10-4.html",
+      "subject": "생명과학 - 생식과 유전 > 유전자와 DNA (전사·번역), 생명과학 - 세포와 물질대사 > 세포의 특성 (리보솜 기능)"
+    },
+    {
+      "title": "1분 만에 맞는 항암제… 환자 대기 시간 확 줄인다",
+      "page_file": "2026-06-10-5.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 (면역 단원) / 생명과학 - 세포와 물질대사 (물질대사 단원) / 통합과학2 - 과학과 미래 (생명공학과 의약품 개발)"
+    }
+  ],
+  "2026-06-11": [
+    {
+      "title": "더 정교해진 인간 배아 ‘유전자 교정’…더 격해지는 논란",
+      "page_file": "2026-06-11-1.html",
+      "subject": "생명과학 - 생식과 유전 / 통합과학2 - 과학과 미래"
+    },
+    {
+      "title": "\"3년 예상했는데 9년 걸렸다\"…줄기세포 치료제 상용화의 벽",
+      "page_file": "2026-06-11-2.html",
+      "subject": "생명과학 - 생식과 유전 / 세포와 물질대사 (고2·3)"
+    },
+    {
+      "title": "RNA 치료제 설계 실마리 풀었다…‘유전자 사냥꾼’ 아고넛 형성 과정 규명",
+      "page_file": "2026-06-11-3.html",
+      "subject": "생명과학 - 생식과 유전 > 유전자와 DNA 단원 / 생명과학 - 세포와 물질대사 > 세포의 특성 단원"
+    },
+    {
+      "title": "“재발률 대폭 낮춰”… 맞춤형 암 백신 시대 온다",
+      "page_file": "2026-06-11-4.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 [면역 단원] 및 생명과학 - 생식과 유전 [유전자와 DNA 단원]"
+    },
+    {
+      "title": "돼지 간·신장, 첫 동시 이식… 기증 장기 부족 문제 풀릴까",
+      "page_file": "2026-06-11-5.html",
+      "subject": "생명과학 - 면역 / 유전자와 DNA / 세포의 특성"
+    },
+    {
+      "title": "아스트라제네카(AstraZeneca)가 경구용 GLP-1 수용체 작용제(agonist) ‘엘레코글리프론’의 비만 임상2상에서 26주차에 체중의 10.5%를 감량한 결과를 내놓았다. 회사는 지난 2월 해당 임상에서 1차종결점 달성 소식을 알린 바 있고, 이번에 이에 대한 구체적인 내용을 공개했다. 이같은 체중감량 효능은 엘레코글리프론(elecoglipron, AZD5004)의 최고용량군인 75mg(1주간격 증량, QWT)에서 나왔다. 같은 용량군에서 36주차 체중감소율이 11.8%까지 증가했고, 부작용으로 인한 임상중단율이 6%로",
+      "page_file": "2026-06-11-6.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 (호르몬과 혈당 조절)"
+    }
+  ],
+  "2026-06-12": [
+    {
+      "title": "글로벌 CAR-T 세포치료제 시장 현황 및 전망",
+      "page_file": "2026-06-12-1.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 (면역 단원) / 생명과학 - 생식과 유전 (유전자와 DNA 단원)"
+    },
+    {
+      "title": "WHO, 분디부교 에볼라바이러스병 PHEIC 선언",
+      "page_file": "2026-06-12-2.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 > 면역 단원"
+    },
+    {
+      "title": "생명의 언어를 읽는 인공지능",
+      "page_file": "2026-06-12-3.html",
+      "subject": "생명과학 - 유전자와 DNA / 세포의 특성 / 통합과학2 과학과 미래"
+    },
+    {
+      "title": "수조원 R&D 정책자금 공염불...임상장벽에 막혀 상용화 하세월",
+      "page_file": "2026-06-12-4.html",
+      "subject": "생명과학 - 생식과 유전 (유전자와 DNA 단원) / 통합과학2 (과학과 미래 단원)"
+    },
+    {
+      "title": "2조달러 시대 연 글로벌 제약시장...신약 경쟁 넘어 '플랫폼 경쟁'으로",
+      "page_file": "2026-06-12-5.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 (면역 단원) / 통합과학2 - 과학과 미래 (생명공학의 발전)"
+    }
+  ],
+  "2026-06-13": [
+    {
+      "title": "자폐아 뇌 가상 복제 성공…'디지털 뇌 쌍둥이'로 원인 찾는다",
+      "page_file": "2026-06-13-1.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 / 자극과 반응(신경계)"
+    },
+    {
+      "title": "한 동물종에서 다른 종 신장 생산…장기 부족 해결책 될까",
+      "page_file": "2026-06-13-2.html",
+      "subject": "생명과학 - 생식과 유전 / 세포와 물질대사"
+    },
+    {
+      "title": "RNA 치료제 핵심 단백질 조립 원리 규명…김빛내리 서울대 교수 네이처에 발표",
+      "page_file": "2026-06-13-3.html",
+      "subject": "생명과학 - 유전자와 DNA / 생식과 유전 단원"
+    },
+    {
+      "title": "질병청 줄기세포은행, 세포치료제 원료용 줄기세포주 공급 추진",
+      "page_file": "2026-06-13-4.html",
+      "subject": "생명과학 - 세포와 물질대사 / 생식과 유전 / 통합과학2 과학과 미래"
+    },
+    {
+      "title": "[26.06.12.금] 항체 결합 나노와이어가 종양 유래 microRNA를 온전하게 분리하다",
+      "page_file": "2026-06-13-5.html",
+      "subject": "생명과학 - 유전자와 DNA (고2·3) / 생식과 유전 단원"
+    }
+  ],
+  "2026-06-14": [
+    {
+      "title": "A hidden gene finally explains this rare neurological disorder",
+      "page_file": "2026-06-14-1.html",
+      "subject": "생명과학 - 생식과 유전 / 항상성과 몸의 조절(신경계)"
+    },
+    {
+      "title": "New fentanyl vaccine blocks deadly overdoses before they start",
+      "page_file": "2026-06-14-2.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 > 면역"
+    },
+    {
+      "title": "Lucy’s hunter revealed: Giant crocodile terrorized early human ancestors",
+      "page_file": "2026-06-14-3.html",
+      "subject": "생명과학 - 진화와 다양성 / 통합과학1 - 변화와 다양성"
+    },
+    {
+      "title": "Your brain can keep improving into your 90s, study finds",
+      "page_file": "2026-06-14-4.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 / 자극과 반응(신경계)"
+    }
+  ],
+  "2026-06-15": [
+    {
+      "title": "땅 속 곰팡이 길이 쟀더니 11경㎞…지구~태양 거리의 7억3천만배",
+      "page_file": "2026-06-15-1.html",
+      "subject": "생명과학 - 진화와 다양성 / 통합과학2 - 생물과 환경"
+    },
+    {
+      "title": "올 가을 ‘슈퍼 엘니뇨’ 올 수 있다…전세계 폭염·폭우 비상",
+      "page_file": "2026-06-15-2.html",
+      "subject": "통합과학2 - 생물과 환경 / 과학과 미래"
+    },
+    {
+      "title": "Yellowstone wolves may not have reshaped the national park after all",
+      "page_file": "2026-06-15-3.html",
+      "subject": "생명과학 - 진화와 다양성 / 통합과학2 - 생물과 환경"
+    },
+    {
+      "title": "Millipedes beat vertebrates to land by 80 million years",
+      "page_file": "2026-06-15-4.html",
+      "subject": "생명과학 - 진화와 다양성"
+    },
+    {
+      "title": "Scientists found a surprising problem with sugar-free diets",
+      "page_file": "2026-06-15-5.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 (항상성 유지, 면역) / 생명과학 - 세포와 물질대사 (물질대사)"
+    }
+  ],
+  "2026-06-16": [
+    {
+      "title": "실명 직전 녹내장 시신경세포 ‘어린 상태’로 되돌린다…암 막는 안전장치까지",
+      "page_file": "2026-06-16-1.html",
+      "subject": "생명과학 - 생식과 유전 / 유전자와 DNA 단원, 통합과학2 - 과학과 미래 단원"
+    },
+    {
+      "title": "단백질 품질 관리 및 표적 단백질 분해(TPD) 시스템을 통한 치료제 개발 연구 동향",
+      "page_file": "2026-06-16-2.html",
+      "subject": "생명과학 - 세포와 물질대사 / 세포의 특성 및 물질대사 단원"
+    },
+    {
+      "title": "\"B형간염도 바이러스 감염 질환\"…중등도혈증환자에 치료 권고",
+      "page_file": "2026-06-16-3.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 / 면역 단원"
+    },
+    {
+      "title": "항암제, 주사 대신 코로 흡입…서울성모병원 의료진 연구 도전",
+      "page_file": "2026-06-16-4.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 / 통합과학2 - 과학과 미래"
+    },
+    {
+      "title": "순천향대 \"당뇨병 치료 새 길 열어\"…인슐린 주사 치료 대체",
+      "page_file": "2026-06-16-5.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 (항상성 유지: 호르몬) / 생명과학 - 생식과 유전 (유전자와 DNA) / 통합과학2 (과학과 미래: 생명공학의 발전)"
+    }
+  ],
+  "2026-06-17": [
+    {
+      "title": "실명 직전 녹내장 시신경세포 ‘어린 상태’로 되돌린다…암 막는 안전장치까지",
+      "page_file": "2026-06-17-1.html",
+      "subject": "생명과학 - 생식과 유전 / 세포와 물질대사"
+    },
+    {
+      "title": "유효개체군 크기와 생태계 단절",
+      "page_file": "2026-06-17-2.html",
+      "subject": "통합과학2 - 생물과 환경 / 생명과학(진화와 다양성) - 생물 다양성"
+    },
+    {
+      "title": "단백질 품질 관리 및 표적 단백질 분해(TPD) 시스템을 통한 치료제 개발 연구 동향",
+      "page_file": "2026-06-17-3.html",
+      "subject": "생명과학 - 세포와 물질대사 / 생명과학 - 생식과 유전(유전자와 DNA)"
+    },
+    {
+      "title": "기다리다 숨지는 일 없게, 신약 '240일 허가' 시대 여는 식약처",
+      "page_file": "2026-06-17-4.html",
+      "subject": "통합과학2 - 과학과 미래 (생명공학의 발전과 과학기술의 윤리적 문제)"
+    },
+    {
+      "title": "'흡연 폐질환·폐암 연구' 3차원 인간 폐 오가노이드 모델 구축",
+      "page_file": "2026-06-17-5.html",
+      "subject": "생명과학 - 세포와 물질대사 / 세포의 특성 단원"
+    }
+  ],
+  "2026-06-18": [
+    {
+      "title": "생각 읽는 ‘뇌 임플란트’, 루게릭병 환자도 집에서 의사 소통 척척",
+      "page_file": "2026-06-18-1.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 / 자극과 반응(신경계) 단원"
+    },
+    {
+      "title": "포스트 에피데믹 대응 백신 플랫폼 기술",
+      "page_file": "2026-06-18-2.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 > 면역 단원 / 통합과학2 > 과학과 미래 단원"
+    },
+    {
+      "title": "면역 거부로 신장 이식 어려운 환자, 새 치료법 나오나",
+      "page_file": "2026-06-18-3.html",
+      "subject": "생명과학 - 항상성과 몸의 조절 [면역 단원]"
+    },
+    {
+      "title": "질병청, 희귀질환 가족력 가정 위한 임신·산전관리 가이드 발간",
+      "page_file": "2026-06-18-4.html",
+      "subject": "생명과학 - 생식과 유전: 사람의 유전 / 유전자와 DNA"
+    },
+    {
+      "title": "재료연, 혈액·소변으로 초기 대장암 암유전자 검출 플랫폼 개발",
+      "page_file": "2026-06-18-5.html",
+      "subject": "생명과학 - 유전자와 DNA / 생식과 유전 단원"
     }
   ]
 }

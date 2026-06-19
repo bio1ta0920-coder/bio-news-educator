@@ -370,102 +370,78 @@ def build_article_html(content, index):
     )
 
 
-def build_full_html(contents, today_str):
-    count = len(contents)
+BASE_CSS = (
+    'body{font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;'
+    'max-width:900px;margin:40px auto;padding:20px;color:#212121;line-height:1.75;}'
+    'a{color:#1565c0;} h2,h3{color:#1b5e20;}'
+)
+BACK_BTN = (
+    '<div style="margin-bottom:24px;">'
+    '<a href="javascript:history.back()" '
+    'style="display:inline-flex;align-items:center;gap:6px;color:#2e7d32;'
+    'text-decoration:none;font-size:14px;padding:8px 16px;border:1px solid #a5d6a7;'
+    'border-radius:20px;background:#f1f8e9;">'
+    '&#x2190; 목록으로 돌아가기</a>'
+    '</div>'
+)
 
-    def _field_badge(field, bg="#388e3c"):
-        if not field:
-            return ""
-        return (' <span style="font-size:11px;color:#fff;background:' + bg + ';'
-                'border-radius:10px;padding:2px 8px;margin-left:6px;vertical-align:middle;">'
-                + field + '</span>')
 
-    # ── 헤드라인 목록 (기본 화면) ──────────────────────────────────────────
-    headline_items = ""
-    for c in contents:
-        title = c.get("article_title", "")
-        anchor = make_anchor(title)
-        field = c.get("bio_field") or c.get("achievement_standards", {}).get("primary_subject", "")
-        source = c.get("source", "")
-        headline_items += (
-            '<li style="border-bottom:1px solid #e8f5e9;padding:14px 0;">'
-            '<a href="#' + anchor + '" '
-            'style="color:#1b5e20;text-decoration:none;font-size:1rem;font-weight:bold;'
-            'display:block;margin-bottom:4px;">'
-            + title + '</a>'
-            + _field_badge(field)
-            + '<span style="color:#888;font-size:12px;margin-left:4px;">' + source + '</span>'
-            '</li>'
-        )
-
-    headline_section = (
-        '<div id="headline-list">'
-        '<h1 style="color:#1b5e20;border-bottom:3px solid #4caf50;padding-bottom:12px;">'
-        '&#x1F331; 생명과학 뉴스 교육자료</h1>'
-        '<p style="color:#666;font-size:13px;margin-bottom:6px;">&#x1F4C5; ' + today_str + '</p>'
-        '<p style="color:#888;font-size:12px;margin-bottom:24px;">'
-        '제목을 클릭하면 해당 레포트를 볼 수 있습니다.</p>'
-        '<ul style="list-style:none;margin:0;padding:0;">' + headline_items + '</ul>'
-        '</div>'
-    )
-
-    # ── 기사 섹션 (해시 클릭 시 표시) ──────────────────────────────────────
-    back_btn = (
-        '<div style="margin-bottom:24px;">'
-        '<a href="#" onclick="history.back();return false;" '
-        'style="display:inline-flex;align-items:center;gap:6px;color:#2e7d32;'
-        'text-decoration:none;font-size:14px;padding:8px 16px;border:1px solid #a5d6a7;'
-        'border-radius:20px;background:#f1f8e9;">'
-        '&#x2190; 목록으로 돌아가기</a>'
-        '</div>'
-    )
-    articles_html = "\n".join(
-        '<div id="' + make_anchor(c.get("article_title","")) + '" class="art-sec" style="display:none">'
-        + back_btn
-        + build_article_html(c, i + 1)
-        + back_btn
-        + '</div>'
-        for i, c in enumerate(contents)
-    )
-
-    # ── 해시 라우터 JS ──────────────────────────────────────────────────────
-    router_js = (
-        '<script>'
-        'function route(){'
-        'var hash=location.hash.slice(1);'
-        'var list=document.getElementById("headline-list");'
-        'var secs=document.querySelectorAll(".art-sec");'
-        'if(hash){'
-        'var el=document.getElementById(hash);'
-        'if(el&&el.classList.contains("art-sec")){'
-        'list.style.display="none";'
-        'secs.forEach(function(s){s.style.display="none";});'
-        'el.style.display="block";'
-        'window.scrollTo(0,0);'
-        'return;}}'
-        'list.style.display="block";'
-        'secs.forEach(function(s){s.style.display="none";});'
-        'window.scrollTo(0,0);}'
-        'window.addEventListener("hashchange",route);'
-        'route();'
-        '</script>'
-    )
-
+def build_article_page_html(content, index):
+    """개별 기사 단독 페이지 HTML"""
+    article_body = build_article_html(content, index)
     return (
         '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
-        '<style>'
-        'body{font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;'
-        'max-width:900px;margin:40px auto;padding:20px;color:#212121;line-height:1.75;}'
-        '.badge{display:inline-block;background:#4caf50;color:white;font-size:11px;'
-        'border-radius:12px;padding:2px 10px;margin:2px;}'
-        '#headline-list li a:hover{text-decoration:underline;}'
-        '</style></head><body>'
-        + router_js
-        + headline_section
-        + articles_html
-        + '</body></html>'
+        '<title>' + content.get("article_title", "")[:60] + '</title>'
+        '<style>' + BASE_CSS + '</style></head><body>'
+        + BACK_BTN
+        + article_body
+        + BACK_BTN
+        + '<p style="text-align:center;color:#9e9e9e;font-size:12px;margin-top:40px;">'
+        '자동 생성 by Claude AI | 출처 기사는 반드시 원문 확인 후 활용하세요</p>'
+        '</body></html>'
     )
+
+
+def build_headline_page_html(date_str, today_str, articles_meta):
+    """헤드라인 목록 페이지 HTML"""
+    items = ""
+    for a in articles_meta:
+        field = a.get("subject", "")
+        field_badge = ""
+        if field:
+            field_badge = (
+                ' <span style="font-size:11px;color:#fff;background:#388e3c;'
+                'border-radius:10px;padding:2px 8px;margin-left:6px;vertical-align:middle;">'
+                + field + '</span>'
+            )
+        items += (
+            '<li style="border-bottom:1px solid #e8f5e9;padding:14px 0;">'
+            '<a href="' + a["page_file"] + '" '
+            'style="color:#1b5e20;text-decoration:none;font-size:1rem;font-weight:bold;">'
+            + a["title"] + '</a>'
+            + field_badge
+            + '</li>'
+        )
+    return (
+        '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8">'
+        '<meta name="viewport" content="width=device-width,initial-scale=1">'
+        '<title>' + date_str + ' 생명과학 교육자료</title>'
+        '<style>' + BASE_CSS + ' li a:hover{text-decoration:underline;}</style></head><body>'
+        '<h1 style="border-bottom:3px solid #4caf50;padding-bottom:12px;">'
+        '&#x1F331; ' + today_str + ' 생명과학 뉴스 교육자료</h1>'
+        '<p style="color:#888;font-size:13px;margin-bottom:24px;">'
+        '제목을 클릭하면 해당 기사 레포트를 볼 수 있습니다.</p>'
+        '<ul style="list-style:none;padding:0;margin:0;">' + items + '</ul>'
+        '<p style="margin-top:32px;font-size:13px;">'
+        '<a href="index.html" style="color:#888;">&#x2190; 전체 날짜 목록</a></p>'
+        '</body></html>'
+    )
+
+
+def build_full_html(contents, today_str):
+    """하위 호환 — save_html_to_docs에서 직접 호출하지 않음"""
+    return build_headline_page_html("", today_str, [])
 
 
 def save_html_to_docs(contents, today_str, date_str):
@@ -479,13 +455,30 @@ def save_html_to_docs(contents, today_str, date_str):
     print("=== HTML 파일 저장 ===")
     os.makedirs("docs", exist_ok=True)
 
-    html_content = build_full_html(contents, today_str)
+    # 개별 기사 페이지 생성
+    articles_meta = []
+    for i, c in enumerate(contents, 1):
+        page_file = date_str + "-" + str(i) + ".html"
+        page_path = "docs/" + page_file
+        page_html = build_article_page_html(c, i)
+        with open(page_path, "w", encoding="utf-8") as f:
+            f.write(page_html)
+        subject = c.get("bio_field") or c.get("achievement_standards", {}).get("primary_subject", "")
+        articles_meta.append({
+            "title": c.get("article_title", ""),
+            "page_file": page_file,
+            "subject": subject,
+        })
+        print("  기사 " + str(i) + " 저장: " + page_path)
+
+    # 헤드라인 목록 페이지 생성
+    headline_html = build_headline_page_html(date_str, today_str, articles_meta)
     filename = "docs/" + date_str + ".html"
     with open(filename, "w", encoding="utf-8") as f:
-        f.write(html_content)
-    print("  저장 완료: " + filename)
+        f.write(headline_html)
+    print("  헤드라인 페이지 저장: " + filename)
 
-    # articles_index.json 업데이트 (날짜별 기사 목록)
+    # articles_index.json 업데이트
     index_json_path = "docs/articles_index.json"
     articles_index = {}
     if os.path.exists(index_json_path):
@@ -493,13 +486,8 @@ def save_html_to_docs(contents, today_str, date_str):
             articles_index = json.load(f)
 
     articles_index[date_str] = [
-        {
-            "title": c.get("article_title", ""),
-            "anchor": make_anchor(c.get("article_title", "")),
-            "subject": (c.get("bio_field")
-                        or c.get("achievement_standards", {}).get("primary_subject", "")),
-        }
-        for c in contents
+        {"title": a["title"], "page_file": a["page_file"], "subject": a["subject"]}
+        for a in articles_meta
     ]
     with open(index_json_path, "w", encoding="utf-8") as f:
         json.dump(articles_index, f, ensure_ascii=False, indent=2)
@@ -517,7 +505,7 @@ def save_html_to_docs(contents, today_str, date_str):
         count_str = (' <span style="font-size:12px;color:#888;">(' + str(len(articles)) + '건)</span>'
                      if articles else '')
         date_rows += (
-            '<li style="border-bottom:1px solid #e8f5e9;padding:12px 0;">'
+            '<li style="border-bottom:1px solid #e8f5e9;padding:14px 0;">'
             '<a href="' + html_file + '" '
             'style="color:#1b5e20;text-decoration:none;font-size:1rem;font-weight:bold;">'
             '&#x1F4C5; ' + d + ' 교육자료</a>'
