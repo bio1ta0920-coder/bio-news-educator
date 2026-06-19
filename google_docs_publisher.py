@@ -374,12 +374,20 @@ def build_full_html(contents, today_str):
     articles_html = "\n".join(build_article_html(c, i + 1) for i, c in enumerate(contents))
     count = len(contents)
 
+    def _field_badge(c):
+        field = c.get("bio_field") or c.get("achievement_standards", {}).get("primary_subject", "")
+        if not field:
+            return ""
+        return (' <span style="font-size:11px;color:#fff;background:#388e3c;'
+                'border-radius:10px;padding:1px 7px;margin-left:6px;">' + field + '</span>')
+
     toc_items = "".join(
         '<li style="margin:6px 0;">'
         '<a href="#' + make_anchor(c.get("article_title", "")) + '" '
         'style="color:#1565c0;text-decoration:none;font-size:14px;">'
         + c.get("article_title", "") +
         '</a>'
+        + _field_badge(c) +
         '<span style="color:#888;font-size:12px;margin-left:8px;">(' + c.get("source", "") + ')</span>'
         '</li>'
         for c in contents
@@ -457,7 +465,8 @@ def save_html_to_docs(contents, today_str, date_str):
         {
             "title": c.get("article_title", ""),
             "anchor": make_anchor(c.get("article_title", "")),
-            "subject": c.get("achievement_standards", {}).get("primary_subject", ""),
+            "subject": (c.get("bio_field")
+                        or c.get("achievement_standards", {}).get("primary_subject", "")),
         }
         for c in contents
     ]
