@@ -371,69 +371,100 @@ def build_article_html(content, index):
 
 
 def build_full_html(contents, today_str):
-    articles_html = "\n".join(build_article_html(c, i + 1) for i, c in enumerate(contents))
     count = len(contents)
 
-    def _field_badge(c):
-        field = c.get("bio_field") or c.get("achievement_standards", {}).get("primary_subject", "")
+    def _field_badge(field, bg="#388e3c"):
         if not field:
             return ""
-        return (' <span style="font-size:11px;color:#fff;background:#388e3c;'
-                'border-radius:10px;padding:1px 7px;margin-left:6px;">' + field + '</span>')
+        return (' <span style="font-size:11px;color:#fff;background:' + bg + ';'
+                'border-radius:10px;padding:2px 8px;margin-left:6px;vertical-align:middle;">'
+                + field + '</span>')
 
-    toc_items = "".join(
-        '<li style="margin:6px 0;">'
-        '<a href="#' + make_anchor(c.get("article_title", "")) + '" '
-        'style="color:#1565c0;text-decoration:none;font-size:14px;">'
-        + c.get("article_title", "") +
-        '</a>'
-        + _field_badge(c) +
-        '<span style="color:#888;font-size:12px;margin-left:8px;">(' + c.get("source", "") + ')</span>'
-        '</li>'
-        for c in contents
+    # ── 헤드라인 목록 (기본 화면) ──────────────────────────────────────────
+    headline_items = ""
+    for c in contents:
+        title = c.get("article_title", "")
+        anchor = make_anchor(title)
+        field = c.get("bio_field") or c.get("achievement_standards", {}).get("primary_subject", "")
+        source = c.get("source", "")
+        headline_items += (
+            '<li style="border-bottom:1px solid #e8f5e9;padding:14px 0;">'
+            '<a href="#' + anchor + '" '
+            'style="color:#1b5e20;text-decoration:none;font-size:1rem;font-weight:bold;'
+            'display:block;margin-bottom:4px;">'
+            + title + '</a>'
+            + _field_badge(field)
+            + '<span style="color:#888;font-size:12px;margin-left:4px;">' + source + '</span>'
+            '</li>'
+        )
+
+    headline_section = (
+        '<div id="headline-list">'
+        '<h1 style="color:#1b5e20;border-bottom:3px solid #4caf50;padding-bottom:12px;">'
+        '&#x1F331; 생명과학 뉴스 교육자료</h1>'
+        '<p style="color:#666;font-size:13px;margin-bottom:6px;">&#x1F4C5; ' + today_str + '</p>'
+        '<p style="color:#888;font-size:12px;margin-bottom:24px;">'
+        '제목을 클릭하면 해당 레포트를 볼 수 있습니다.</p>'
+        '<ul style="list-style:none;margin:0;padding:0;">' + headline_items + '</ul>'
+        '</div>'
     )
 
-    scroll_js = (
+    # ── 기사 섹션 (해시 클릭 시 표시) ──────────────────────────────────────
+    back_btn = (
+        '<div style="margin-bottom:24px;">'
+        '<a href="#" onclick="history.back();return false;" '
+        'style="display:inline-flex;align-items:center;gap:6px;color:#2e7d32;'
+        'text-decoration:none;font-size:14px;padding:8px 16px;border:1px solid #a5d6a7;'
+        'border-radius:20px;background:#f1f8e9;">'
+        '&#x2190; 목록으로 돌아가기</a>'
+        '</div>'
+    )
+    articles_html = "\n".join(
+        '<div id="' + make_anchor(c.get("article_title","")) + '" class="art-sec" style="display:none">'
+        + back_btn
+        + build_article_html(c, i + 1)
+        + back_btn
+        + '</div>'
+        for i, c in enumerate(contents)
+    )
+
+    # ── 해시 라우터 JS ──────────────────────────────────────────────────────
+    router_js = (
         '<script>'
-        'window.addEventListener("load",function(){'
-        'var h=window.location.hash;'
-        'if(h){var el=document.querySelector(h);'
-        'if(el){setTimeout(function(){el.scrollIntoView({behavior:"smooth",block:"start"});'
-        'el.style.outline="3px solid #4caf50";'
-        'setTimeout(function(){el.style.outline="";},2500);},200);}}'
-        '});'
+        'function route(){'
+        'var hash=location.hash.slice(1);'
+        'var list=document.getElementById("headline-list");'
+        'var secs=document.querySelectorAll(".art-sec");'
+        'if(hash){'
+        'var el=document.getElementById(hash);'
+        'if(el&&el.classList.contains("art-sec")){'
+        'list.style.display="none";'
+        'secs.forEach(function(s){s.style.display="none";});'
+        'el.style.display="block";'
+        'window.scrollTo(0,0);'
+        'return;}}'
+        'list.style.display="block";'
+        'secs.forEach(function(s){s.style.display="none";});'
+        'window.scrollTo(0,0);}'
+        'window.addEventListener("hashchange",route);'
+        'route();'
         '</script>'
     )
 
     return (
         '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8">'
+        '<meta name="viewport" content="width=device-width,initial-scale=1">'
         '<style>'
         'body{font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;'
         'max-width:900px;margin:40px auto;padding:20px;color:#212121;line-height:1.75;}'
-        'h1{text-align:center;color:#1b5e20;border-bottom:3px solid #4caf50;padding-bottom:16px;}'
-        '.meta{text-align:center;color:#666;font-size:14px;margin-bottom:40px;}'
-        '.toc{background:#e8f5e9;border-radius:10px;padding:20px;margin-bottom:50px;}'
         '.badge{display:inline-block;background:#4caf50;color:white;font-size:11px;'
         'border-radius:12px;padding:2px 10px;margin:2px;}'
+        '#headline-list li a:hover{text-decoration:underline;}'
         '</style></head><body>'
-        + scroll_js +
-        '<h1>&#x1F331; 생명과학 뉴스 교육자료</h1>'
-        '<p class="meta">'
-        '&#x1F4C5; ' + today_str +
-        '<span class="badge">총 ' + str(count) + '건 선별</span>'
-        '<span class="badge" style="background:#1565c0;">2022 개정 교육과정 연계</span>'
-        '<span class="badge" style="background:#6a1b9a;">학생부 종합전형 연계</span>'
-        '<br><br><em style="font-size:13px;color:#888;">검토 후 학생 공유 | AI 요약은 원문과 교차 확인 권장</em>'
-        '</p>'
-        '<div class="toc">'
-        '<h3 style="margin:0 0 12px 0;color:#2e7d32;">&#x1F4CB; 오늘의 기사 목록 — 제목을 클릭하면 해당 레포트로 이동</h3>'
-        '<ul style="margin:0;padding-left:20px;line-height:2.0;">' + toc_items + '</ul>'
-        '</div>'
-        + articles_html +
-        '<hr style="border:1px solid #e0e0e0;margin:40px 0;">'
-        '<p style="text-align:center;color:#9e9e9e;font-size:12px;">'
-        '자동 생성 by Claude AI | 출처 기사는 반드시 원문 확인 후 활용하세요</p>'
-        '</body></html>'
+        + router_js
+        + headline_section
+        + articles_html
+        + '</body></html>'
     )
 
 
@@ -479,58 +510,33 @@ def save_html_to_docs(contents, today_str, date_str):
         reverse=True,
     )
 
-    date_blocks = []
+    date_rows = ""
     for html_file in existing_files:
         d = html_file.replace(".html", "")
         articles = articles_index.get(d, [])
-        if articles:
-            art_links = "".join(
-                '<li style="margin:5px 0;">'
-                '<a href="' + html_file + '#' + a["anchor"] + '" '
-                'style="color:#1565c0;text-decoration:none;font-size:14px;">'
-                + a["title"] + '</a>'
-                + (' <span style="font-size:11px;color:#fff;background:#388e3c;'
-                   'border-radius:10px;padding:1px 7px;margin-left:6px;">'
-                   + a["subject"] + '</span>' if a.get("subject") else '') +
-                '</li>'
-                for a in articles
-            )
-            block = (
-                '<details style="margin:12px 0;border:1px solid #c8e6c9;border-radius:8px;">'
-                '<summary style="padding:12px 16px;cursor:pointer;font-size:16px;'
-                'font-weight:bold;color:#1b5e20;list-style:none;display:flex;'
-                'align-items:center;gap:8px;">'
-                '&#x1F4C5; ' + d + ' 교육자료 '
-                '<span style="font-size:12px;color:#777;font-weight:normal;">'
-                '(' + str(len(articles)) + '건)</span></summary>'
-                '<ul style="margin:0;padding:12px 16px 14px 32px;line-height:1.8;">'
-                + art_links +
-                '</ul></details>'
-            )
-        else:
-            block = (
-                '<details style="margin:12px 0;border:1px solid #c8e6c9;border-radius:8px;">'
-                '<summary style="padding:12px 16px;cursor:pointer;font-size:16px;'
-                'font-weight:bold;color:#1b5e20;">'
-                '&#x1F4C5; <a href="' + html_file + '" style="color:#1b5e20;">'
-                + d + ' 교육자료</a></summary></details>'
-            )
-        date_blocks.append(block)
+        count_str = (' <span style="font-size:12px;color:#888;">(' + str(len(articles)) + '건)</span>'
+                     if articles else '')
+        date_rows += (
+            '<li style="border-bottom:1px solid #e8f5e9;padding:12px 0;">'
+            '<a href="' + html_file + '" '
+            'style="color:#1b5e20;text-decoration:none;font-size:1rem;font-weight:bold;">'
+            '&#x1F4C5; ' + d + ' 교육자료</a>'
+            + count_str +
+            '</li>'
+        )
 
     index_html = (
         '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8">'
+        '<meta name="viewport" content="width=device-width,initial-scale=1">'
         '<title>생명과학 뉴스 교육자료</title>'
         '<style>'
-        'body{font-family:"Malgun Gothic",sans-serif;max-width:780px;margin:60px auto;padding:0 16px;}'
+        'body{font-family:"Malgun Gothic",sans-serif;max-width:700px;margin:60px auto;padding:0 20px;}'
         'h1{color:#1b5e20;border-bottom:3px solid #4caf50;padding-bottom:12px;}'
-        'details>summary::-webkit-details-marker{display:none;}'
-        'details[open] summary{background:#e8f5e9;border-radius:8px 8px 0 0;}'
-        'a:hover{text-decoration:underline;}'
+        'li a:hover{text-decoration:underline;}'
         '</style></head><body>'
         '<h1>&#x1F331; 생명과학 뉴스 교육자료</h1>'
-        '<p style="color:#555;margin-bottom:28px;">날짜를 클릭하면 기사 목록이 펼쳐집니다. '
-        '기사 제목을 클릭하면 해당 레포트로 바로 이동합니다.</p>'
-        + "".join(date_blocks) +
+        '<p style="color:#666;margin-bottom:24px;">날짜를 클릭하면 해당 날짜의 기사 목록을 볼 수 있습니다.</p>'
+        '<ul style="list-style:none;padding:0;margin:0;">' + date_rows + '</ul>'
         '</body></html>'
     )
     with open("docs/index.html", "w", encoding="utf-8") as f:
