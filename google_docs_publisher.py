@@ -3,11 +3,20 @@ Google Drive에 교육 자료 문서 생성 모듈
 HTML -> Google Docs 형식 변환 업로드
 """
 import json
+import re
 import base64
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaInMemoryUpload
 from config import GOOGLE_SERVICE_ACCOUNT_JSON, GOOGLE_DRIVE_FOLDER_ID
+
+
+def make_anchor(title):
+    """기사 제목으로 HTML id 속성용 슬러그 생성"""
+    s = re.sub(r'\s+', '-', title.strip())
+    s = re.sub(r'[^\w-]', '', s)
+    s = re.sub(r'-+', '-', s).strip('-')
+    return ('a-' + s)[:64]
 
 SCOPES = [
     "https://www.googleapis.com/auth/drive",
@@ -148,8 +157,9 @@ def build_article_html(content, index):
         title = content.get("article_title", "제목 없음")
         url = content.get("article_url", "#")
         summary = content.get("article_summary", "처리 중 오류가 발생했습니다.")
+        anchor = make_anchor(title)
         return (
-            '<div style="margin-bottom:60px; border-left:5px solid #2e7d32; padding-left:20px;">'
+            '<div id="' + anchor + '" style="margin-bottom:60px; border-left:5px solid #2e7d32; padding-left:20px;">'
             '<h2 style="color:#1b5e20;">&#x1F4F0; 기사 ' + str(index) + ': ' + title + '</h2>'
             '<p><a href="' + url + '">' + url + '</a></p>'
             '<p>' + summary + '</p>'
@@ -157,6 +167,7 @@ def build_article_html(content, index):
         )
 
     title = content.get("article_title", "")
+    anchor = make_anchor(title)
     url = content.get("article_url", "#")
     source = content.get("source", "")
     summary = content.get("article_summary", "")
@@ -320,7 +331,7 @@ def build_article_html(content, index):
     )
 
     return (
-        '<div style="margin-bottom:70px; border:1px solid #e0e0e0; border-radius:10px;'
+        '<div id="' + anchor + '" style="margin-bottom:70px; border:1px solid #e0e0e0; border-radius:10px;'
         'padding:28px; box-shadow:0 2px 8px rgba(0,0,0,0.07);">'
 
         '<h2 style="color:#1b5e20; border-bottom:2px solid #4caf50;'
@@ -362,10 +373,30 @@ def build_article_html(content, index):
 def build_full_html(contents, today_str):
     articles_html = "\n".join(build_article_html(c, i + 1) for i, c in enumerate(contents))
     count = len(contents)
+
     toc_items = "".join(
-        '<li><strong>' + c.get("article_title", "") + '</strong> (' + c.get("source", "") + ')</li>'
+        '<li style="margin:6px 0;">'
+        '<a href="#' + make_anchor(c.get("article_title", "")) + '" '
+        'style="color:#1565c0;text-decoration:none;font-size:14px;">'
+        + c.get("article_title", "") +
+        '</a>'
+        '<span style="color:#888;font-size:12px;margin-left:8px;">(' + c.get("source", "") + ')</span>'
+        '</li>'
         for c in contents
     )
+
+    scroll_js = (
+        '<script>'
+        'window.addEventListener("load",function(){'
+        'var h=window.location.hash;'
+        'if(h){var el=document.querySelector(h);'
+        'if(el){setTimeout(function(){el.scrollIntoView({behavior:"smooth",block:"start"});'
+        'el.style.outline="3px solid #4caf50";'
+        'setTimeout(function(){el.style.outline="";},2500);},200);}}'
+        '});'
+        '</script>'
+    )
+
     return (
         '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8">'
         '<style>'
@@ -377,6 +408,7 @@ def build_full_html(contents, today_str):
         '.badge{display:inline-block;background:#4caf50;color:white;font-size:11px;'
         'border-radius:12px;padding:2px 10px;margin:2px;}'
         '</style></head><body>'
+        + scroll_js +
         '<h1>&#x1F331; 생명과학 뉴스 교육자료</h1>'
         '<p class="meta">'
         '&#x1F4C5; ' + today_str +
@@ -386,7 +418,7 @@ def build_full_html(contents, today_str):
         '<br><br><em style="font-size:13px;color:#888;">검토 후 학생 공유 | AI 요약은 원문과 교차 확인 권장</em>'
         '</p>'
         '<div class="toc">'
-        '<h3 style="margin:0 0 12px 0;color:#2e7d32;">&#x1F4CB; 오늘의 기사 목록</h3>'
+        '<h3 style="margin:0 0 12px 0;color:#2e7d32;">&#x1F4CB; 오늘의 기사 목록 — 제목을 클릭하면 해당 레포트로 이동</h3>'
         '<ul style="margin:0;padding-left:20px;line-height:2.0;">' + toc_items + '</ul>'
         '</div>'
         + articles_html +
@@ -414,24 +446,82 @@ def save_html_to_docs(contents, today_str, date_str):
         f.write(html_content)
     print("  저장 완료: " + filename)
 
-    # index.html 업데이트 (날짜별 링크 목록)
+    # articles_index.json 업데이트 (날짜별 기사 목록)
+    index_json_path = "docs/articles_index.json"
+    articles_index = {}
+    if os.path.exists(index_json_path):
+        with open(index_json_path, encoding="utf-8") as f:
+            articles_index = json.load(f)
+
+    articles_index[date_str] = [
+        {
+            "title": c.get("article_title", ""),
+            "anchor": make_anchor(c.get("article_title", "")),
+            "subject": c.get("achievement_standards", {}).get("primary_subject", ""),
+        }
+        for c in contents
+    ]
+    with open(index_json_path, "w", encoding="utf-8") as f:
+        json.dump(articles_index, f, ensure_ascii=False, indent=2)
+
+    # index.html 업데이트 (날짜별 확장 목록)
     existing_files = sorted(
         [f for f in os.listdir("docs") if f.endswith(".html") and f != "index.html"],
         reverse=True,
     )
-    list_items = "".join(
-        '<li><a href="' + f + '">' + f.replace(".html", "") + ' 교육자료</a></li>'
-        for f in existing_files
-    )
+
+    date_blocks = []
+    for html_file in existing_files:
+        d = html_file.replace(".html", "")
+        articles = articles_index.get(d, [])
+        if articles:
+            art_links = "".join(
+                '<li style="margin:5px 0;">'
+                '<a href="' + html_file + '#' + a["anchor"] + '" '
+                'style="color:#1565c0;text-decoration:none;font-size:14px;">'
+                + a["title"] + '</a>'
+                + (' <span style="font-size:11px;color:#fff;background:#388e3c;'
+                   'border-radius:10px;padding:1px 7px;margin-left:6px;">'
+                   + a["subject"] + '</span>' if a.get("subject") else '') +
+                '</li>'
+                for a in articles
+            )
+            block = (
+                '<details style="margin:12px 0;border:1px solid #c8e6c9;border-radius:8px;">'
+                '<summary style="padding:12px 16px;cursor:pointer;font-size:16px;'
+                'font-weight:bold;color:#1b5e20;list-style:none;display:flex;'
+                'align-items:center;gap:8px;">'
+                '&#x1F4C5; ' + d + ' 교육자료 '
+                '<span style="font-size:12px;color:#777;font-weight:normal;">'
+                '(' + str(len(articles)) + '건)</span></summary>'
+                '<ul style="margin:0;padding:12px 16px 14px 32px;line-height:1.8;">'
+                + art_links +
+                '</ul></details>'
+            )
+        else:
+            block = (
+                '<details style="margin:12px 0;border:1px solid #c8e6c9;border-radius:8px;">'
+                '<summary style="padding:12px 16px;cursor:pointer;font-size:16px;'
+                'font-weight:bold;color:#1b5e20;">'
+                '&#x1F4C5; <a href="' + html_file + '" style="color:#1b5e20;">'
+                + d + ' 교육자료</a></summary></details>'
+            )
+        date_blocks.append(block)
+
     index_html = (
         '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8">'
         '<title>생명과학 뉴스 교육자료</title>'
-        '<style>body{font-family:"Malgun Gothic",sans-serif;max-width:700px;margin:60px auto;}'
-        'h1{color:#1b5e20;}li{margin:10px 0;}a{color:#1565c0;text-decoration:none;font-size:16px;}'
-        'a:hover{text-decoration:underline;}</style></head><body>'
+        '<style>'
+        'body{font-family:"Malgun Gothic",sans-serif;max-width:780px;margin:60px auto;padding:0 16px;}'
+        'h1{color:#1b5e20;border-bottom:3px solid #4caf50;padding-bottom:12px;}'
+        'details>summary::-webkit-details-marker{display:none;}'
+        'details[open] summary{background:#e8f5e9;border-radius:8px 8px 0 0;}'
+        'a:hover{text-decoration:underline;}'
+        '</style></head><body>'
         '<h1>&#x1F331; 생명과학 뉴스 교육자료</h1>'
-        '<p>매일 자동 생성되는 2022 개정 교육과정 연계 교육자료입니다.</p>'
-        '<ul>' + list_items + '</ul>'
+        '<p style="color:#555;margin-bottom:28px;">날짜를 클릭하면 기사 목록이 펼쳐집니다. '
+        '기사 제목을 클릭하면 해당 레포트로 바로 이동합니다.</p>'
+        + "".join(date_blocks) +
         '</body></html>'
     )
     with open("docs/index.html", "w", encoding="utf-8") as f:
