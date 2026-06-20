@@ -55,6 +55,12 @@ jobs:
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
         run: python main.py
 
+      - name: 진로·전문교과 연계 추가
+        run: python add_curriculum_ci.py
+
+      - name: 날짜별 목록 섹션명 동기화
+        run: python fix_new_headline_ci.py
+
       - name: 생성된 파일 커밋 및 푸시
         run: |
           git config user.name "GitHub Actions"
