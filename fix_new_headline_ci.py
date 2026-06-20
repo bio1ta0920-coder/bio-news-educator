@@ -13,6 +13,24 @@ DOCS = os.path.join(os.path.dirname(__file__), 'docs')
 BASE = 'https://bio1ta0920-coder.github.io/bio-news-educator/'
 BIO_KW_URL = 'https://raw.githubusercontent.com/bio1ta0920-coder/bio-keywords/main/index.html'
 
+SECTION_COLORS = {
+    '암·종양학':            '#c62828',
+    '신약개발·제약':        '#1565c0',
+    '유전자편집·유전자치료': '#6a1b9a',
+    '재생의학·줄기세포':    '#e65100',
+    '면역학·면역치료':      '#2e7d32',
+    '신경과학':             '#37474f',
+    '감염병·백신':          '#00695c',
+    '생태학·환경과학':      '#33691e',
+    '합성생물학·AI생물정보': '#5c6bc0',
+    'RNA치료제':            '#880e4f',
+    '내분비·대사질환':      '#f57f17',
+    '영양학·대사':          '#558b2f',
+    '진화·고생물학':        '#4e342e',
+    '의료정책·규제':        '#455a64',
+    '세포생물학·이미징':    '#00838f',
+}
+
 # ── 오늘 KST 날짜 ─────────────────────────────────────────────────────
 KST = timezone(timedelta(hours=9))
 today = datetime.now(KST).strftime('%Y-%m-%d')
@@ -79,7 +97,7 @@ def replace_span(m):
 
     if href in url_to_sec:
         sec   = url_to_sec[href]
-        color = color_map.get(sec, '#388e3c')
+        color = color_map.get(sec) or SECTION_COLORS.get(sec, '#388e3c')
         new_span = (
             f'<span style="font-size:11px;color:#fff;background:{color};'
             f'border-radius:10px;padding:2px 8px;margin-left:6px;'
