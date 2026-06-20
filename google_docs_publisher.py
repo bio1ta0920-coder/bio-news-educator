@@ -492,9 +492,9 @@ def save_html_to_docs(contents, today_str, date_str):
     with open(index_json_path, "w", encoding="utf-8") as f:
         json.dump(articles_index, f, ensure_ascii=False, indent=2)
 
-    # index.html 업데이트 (날짜별 확장 목록)
+    # index.html 업데이트 (날짜별 목록 — 개별 기사 페이지 제외)
     existing_files = sorted(
-        [f for f in os.listdir("docs") if f.endswith(".html") and f != "index.html"],
+        [f for f in os.listdir("docs") if re.match(r'^\d{4}-\d{2}-\d{2}\.html$', f)],
         reverse=True,
     )
 
