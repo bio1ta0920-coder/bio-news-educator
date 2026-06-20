@@ -105,8 +105,10 @@ def replace_span(m):
         )
     else:
         short = shorten(label)
+        known_color = SECTION_COLORS.get(short)
+        bg = known_color if known_color else '#607d8b'
         new_span = (
-            f'<span style="font-size:11px;color:#fff;background:#607d8b;'
+            f'<span style="font-size:11px;color:#fff;background:{bg};'
             f'border-radius:10px;padding:2px 8px;margin-left:6px;'
             f'vertical-align:middle;">{short}</span>'
         )
