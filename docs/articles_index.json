@@ -410,5 +410,27 @@
       "page_file": "2026-06-24-5.html",
       "subject": "신경과학"
     }
+  ],
+  "2026-06-25": [
+    {
+      "title": "AI tool spots antibiotics that fight drug-resistant gonorrhoea",
+      "page_file": "2026-06-25-1.html",
+      "subject": "합성생물학·AI생물정보학"
+    },
+    {
+      "title": "Immunological mechanisms of mRNA vaccines for infectious diseases",
+      "page_file": "2026-06-25-2.html",
+      "subject": "감염병·백신"
+    },
+    {
+      "title": "Epiblast diversification and blood formation in a human pregastrula",
+      "page_file": "2026-06-25-3.html",
+      "subject": "재생의학·줄기세포"
+    },
+    {
+      "title": "Zero-shot design of drug-binding proteins via neural iterative selection−expansion",
+      "page_file": "2026-06-25-4.html",
+      "subject": "합성생물학·AI생물정보학"
+    }
   ]
 }
