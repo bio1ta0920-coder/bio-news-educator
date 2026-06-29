@@ -540,5 +540,32 @@
       "page_file": "2026-06-29-5.html",
       "subject": "신경과학"
     }
+  ],
+  "2026-06-30": [
+    {
+      "title": "USC scientists just unlocked an endless supply of cancer-fighting immune cells",
+      "page_file": "2026-06-30-1.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "셀리아즈, 新기전 ’PROX1' 유전자치료제 “시력회복 기대”",
+      "page_file": "2026-06-30-2.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "올릭스(OliX Pharmaceuticals)는 황반변성(AMD)을 적응증으로 개발하는 MyD88(myeloid differentiation primary response 88) RNAi 후보물질 ‘OLX301A(물질명: OLX10212)’의 전임상 연구논문이 국제학술지 ‘몰리큘러 테라피(Molecular Therapy, IF=11.4)’에 온라인 게재됐다고 29일 밝혔다. OLX301A는 TLR(toll-like receptor) 및 IL-1 수용체의 하위 신호전달경로에 있는 MyD88 유전자 발현을 억제해, 황반변성의 질환 진",
+      "page_file": "2026-06-30-3.html",
+      "subject": "RNA치료제"
+    },
+    {
+      "title": "레볼루션 메디슨(Revolution Medicines)이 자사의 pan-RAS 저해제 ‘다락손라십(daracsonlasib, RMC-6236)’과 KRAS G12D 저해제 ‘졸돈라십(zoldonlasib, RMC-9805)’ 병용요법에 대해 췌장암 적응증에서 각각의 약물을 단독투여한 것보다 더 효과적인 결과를 보였다. 췌장암 2차치료제 이상 세팅에서 다락손라십과 졸돈라십을 병용투여했을 때 전체반응률(ORR)이 최대 50%로 나온 결과였다. 직접비교는 어렵지만, 이는 유사한 조건의 임상에서 다락손라십 또는 졸돈라십 단독투여 시의 O",
+      "page_file": "2026-06-30-4.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "These tiny soil microbes could rescue crops from salty farmland",
+      "page_file": "2026-06-30-5.html",
+      "subject": "생태학·환경과학"
+    }
   ]
 }
