@@ -675,5 +675,32 @@
       "page_file": "2026-07-04-5.html",
       "subject": "면역학·면역치료"
     }
+  ],
+  "2026-07-06": [
+    {
+      "title": "Scientists discover why some brains resist Alzheimer's",
+      "page_file": "2026-07-06-1.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "Scientists discover the deep sleep circuit that builds muscle, burns fat, and boosts the brain",
+      "page_file": "2026-07-06-2.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "A hidden weakness in deadly cancers could lead to powerful new treatments",
+      "page_file": "2026-07-06-3.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "플레어 테라퓨틱스(Flare Therapeutics)가 경쟁이 치열한 안드로겐수용체(AR) 약물개발 경쟁에서, 완전히 새로운 활성화된 AR를 타깃하는 ‘AR(ON) 분해약물(degrader)’로 접근하는 방식으로 승부를 건다. 마치 KRAS 저해제 개발 영역에서, 레볼루션 메디슨(Revolution Medicines)이 삼중복합체(tri-complex) 저해 방식으로 활성화 RAS(ON)을 선택적으로 타깃하는 것과 유사한 컨셉으로 보인다. 그 이전까지 KRAS G12C 저해제 개발은 비활성 상태인 KRAS(OFF) 타입을 타깃하는",
+      "page_file": "2026-07-06-4.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "Drinking to cope with stress may permanently rewire your brain",
+      "page_file": "2026-07-06-5.html",
+      "subject": "신경과학"
+    }
   ]
 }
