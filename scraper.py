@@ -3,6 +3,7 @@ RSS 피드 수집 및 기사 본문 스크래핑 모듈
 """
 import json
 import os
+import re
 import time
 import calendar
 from datetime import datetime, timezone, timedelta
@@ -120,6 +121,21 @@ def scrape_article_content(url: str, lang: str) -> str:
         return ""
 
 
+MAX_TITLE_LEN = 100
+
+
+def _clean_scraped_title(title: str) -> str:
+    """일부 사이트는 목록 링크가 제목 대신 기사 본문 문단 전체를 감싸고 있어,
+    지나치게 긴 텍스트는 첫 문장(또는 적당한 길이) 선에서 잘라낸다."""
+    title = title.strip()
+    if len(title) <= MAX_TITLE_LEN:
+        return title
+    first_sentence = re.split(r"(?<=[.!?다])\s", title)[0]
+    if len(first_sentence) <= MAX_TITLE_LEN:
+        return first_sentence
+    return title[:MAX_TITLE_LEN].rsplit(" ", 1)[0] + "…"
+
+
 def fetch_url_scraper_entries(scraper_config: dict) -> list[dict]:
     """RSS 없는 사이트에서 기사 목록 직접 스크래핑"""
     entries = []
@@ -152,7 +168,7 @@ def fetch_url_scraper_entries(scraper_config: dict) -> list[dict]:
             else:
                 url = base_url + href if href.startswith("/") else base_url + "/" + href
 
-            title = a_tag.get_text(strip=True)
+            title = _clean_scraped_title(a_tag.get_text(strip=True))
 
             # 유료 기사 건너뜀 (바이오스펙테이터)
             if paid_marker and paid_marker in title:
