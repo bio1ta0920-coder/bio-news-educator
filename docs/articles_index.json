@@ -837,5 +837,32 @@
       "page_file": "2026-07-11-5.html",
       "subject": "감염병·백신"
     }
+  ],
+  "2026-07-12": [
+    {
+      "title": "Experimental drug reverses severe fatty liver disease by repairing the gut",
+      "page_file": "2026-07-12-1.html",
+      "subject": "내분비·대사질환"
+    },
+    {
+      "title": "Why the human body has so many design flaws",
+      "page_file": "2026-07-12-2.html",
+      "subject": "진화·고생물학"
+    },
+    {
+      "title": "Scientists warn invasive Asian mantises are threatening Europe's wildlife",
+      "page_file": "2026-07-12-3.html",
+      "subject": "생태학·환경과학"
+    },
+    {
+      "title": "Rare fossil goose rewrites the story of New Zealand's giant birds",
+      "page_file": "2026-07-12-4.html",
+      "subject": "진화·고생물학"
+    },
+    {
+      "title": "Scientists discover the one nutrient beneficial parasites can't live without",
+      "page_file": "2026-07-12-5.html",
+      "subject": "영양학·대사"
+    }
   ]
 }
