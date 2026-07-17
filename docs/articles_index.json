@@ -999,5 +999,32 @@
       "page_file": "2026-07-17-5.html",
       "subject": "암·종양학"
     }
+  ],
+  "2026-07-18": [
+    {
+      "title": "바다 건넌 병뚜껑엔 300여종의 생태계…플라스틱 ‘외래종 방주’ 되나",
+      "page_file": "2026-07-18-1.html",
+      "subject": "생태학·환경과학"
+    },
+    {
+      "title": "This sugar-coated therapy boosted survival against deadly brain cancer by 50% in mice",
+      "page_file": "2026-07-18-2.html",
+      "subject": "RNA치료제"
+    },
+    {
+      "title": "Man’s ability to make sperm restored after testicular tissue transplant: what scientists think",
+      "page_file": "2026-07-18-3.html",
+      "subject": "재생의학·줄기세포"
+    },
+    {
+      "title": "CRISPR gets a power boost from AI-designed ‘molecular scissors’",
+      "page_file": "2026-07-18-4.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "This drug could help millions keep their kidneys working longer",
+      "page_file": "2026-07-18-5.html",
+      "subject": "내분비·대사질환"
+    }
   ]
 }
