@@ -1080,5 +1080,32 @@
       "page_file": "2026-07-20-5.html",
       "subject": "감염병·백신"
     }
+  ],
+  "2026-07-21": [
+    {
+      "title": "10년간 문제없이 작동한 BCI…마비환자 뇌신호도 실시간 변환",
+      "page_file": "2026-07-21-1.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "[26.07.20.월] 새로운 위상 기반 바이오마커로 유방암 예측을 개선하다",
+      "page_file": "2026-07-21-2.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "뇌종양 면역치료 ‘숨은 열쇠’는 B세포…항암 원리 규명",
+      "page_file": "2026-07-21-3.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "Daily briefing: CRISPR gets an AI-designed upgrade",
+      "page_file": "2026-07-21-4.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "브리즈바이오, 리가켐과 HNP '항암백신' 공동연구 계약",
+      "page_file": "2026-07-21-5.html",
+      "subject": "면역학·면역치료"
+    }
   ]
 }
