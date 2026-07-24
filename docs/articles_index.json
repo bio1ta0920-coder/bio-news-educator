@@ -1188,5 +1188,32 @@
       "page_file": "2026-07-24-5.html",
       "subject": "세포생물학·이미징"
     }
+  ],
+  "2026-07-25": [
+    {
+      "title": "New antibody drug stops aggressive prostate cancer from spreading",
+      "page_file": "2026-07-25-1.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "Personalized gene therapy relieves severe epilepsy in two boys",
+      "page_file": "2026-07-25-2.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "Bizarre CRISPR enzyme kills cancer cells by shredding their DNA",
+      "page_file": "2026-07-25-3.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "Precise DNA base editing using AlphaFold3-based contact modelling",
+      "page_file": "2026-07-25-4.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "J&J(Johnson & Johnson)은 BCMAxCD3 T세포 인게이저(TCE) ‘텍베일리(Tecvayli, teclistamab)’와 GPRC5DxCD3 TCE…",
+      "page_file": "2026-07-25-5.html",
+      "subject": "암·종양학"
+    }
   ]
 }
