@@ -1215,5 +1215,32 @@
       "page_file": "2026-07-25-5.html",
       "subject": "암·종양학"
     }
+  ],
+  "2026-07-26": [
+    {
+      "title": "Spatially resolved single-cell atlas reveals the macroevolutionary trajectory of animal hearts",
+      "page_file": "2026-07-26-1.html",
+      "subject": "진화·고생물학"
+    },
+    {
+      "title": "A single dose reversed autism-like symptoms in adult mice within hours",
+      "page_file": "2026-07-26-2.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "해저 2000m 심해 달팽이·홍합 몸에도 미세플라스틱 쌓였다",
+      "page_file": "2026-07-26-3.html",
+      "subject": "생태학·환경과학"
+    },
+    {
+      "title": "Rare fossil goose rewrites the story of New Zealand's giant birds",
+      "page_file": "2026-07-26-4.html",
+      "subject": "진화·고생물학"
+    },
+    {
+      "title": "Oral GLP-1 drugs may quiet the brain’s food craving circuit",
+      "page_file": "2026-07-26-5.html",
+      "subject": "신경과학"
+    }
   ]
 }
