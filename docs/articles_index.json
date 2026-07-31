@@ -1377,5 +1377,32 @@
       "page_file": "2026-07-31-5.html",
       "subject": "면역학·면역치료"
     }
+  ],
+  "2026-08-01": [
+    {
+      "title": "Somatic mutations reveal the ontogeny of microglia in human aging",
+      "page_file": "2026-08-01-1.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "How smallpox reached the Americas: first genomic evidence points to Europeans",
+      "page_file": "2026-08-01-2.html",
+      "subject": "진화·고생물학"
+    },
+    {
+      "title": "Daily briefing: ‘Raygun’ AI can shrink or supersize proteins",
+      "page_file": "2026-08-01-3.html",
+      "subject": "합성생물학·AI생물정보학"
+    },
+    {
+      "title": "화이자(Pfizer)가 JAK3/TEC 저해제 ‘리트풀로(Litfulo, ritlecitinib)’의 비분절성 백반증(nonsegmental vitiligo, NSV) 임상3상…",
+      "page_file": "2026-08-01-4.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "리가켐바이오사이언스(LigaChem Biosciences)는 파트너사 익수다",
+      "page_file": "2026-08-01-5.html",
+      "subject": "암·종양학"
+    }
   ]
 }
