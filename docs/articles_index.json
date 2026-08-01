@@ -1404,5 +1404,32 @@
       "page_file": "2026-08-01-5.html",
       "subject": "암·종양학"
     }
+  ],
+  "2026-08-02": [
+    {
+      "title": "Scientists found two mysterious ‘ghost’ ancestors hiding in our DNA",
+      "page_file": "2026-08-02-1.html",
+      "subject": "진화·고생물학"
+    },
+    {
+      "title": "Scientists may have found a way to prevent statin muscle pain",
+      "page_file": "2026-08-02-2.html",
+      "subject": "내분비·대사질환"
+    },
+    {
+      "title": "Scientists discover why poor sleep may harm some brains more",
+      "page_file": "2026-08-02-3.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "Blood cancer’s genetic warning signs may appear years early",
+      "page_file": "2026-08-02-4.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "Ant brains reveal how evolution turned hunger into parenting",
+      "page_file": "2026-08-02-5.html",
+      "subject": "신경과학"
+    }
   ]
 }
