@@ -1458,5 +1458,32 @@
       "page_file": "2026-08-03-5.html",
       "subject": "의료정책·규제"
     }
+  ],
+  "2026-08-04": [
+    {
+      "title": "Author Correction: Maturation and circuit integration of transplanted human cortical organoids",
+      "page_file": "2026-08-04-1.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "Sickle-cell disease linked to prematurely aged stem cells in mice",
+      "page_file": "2026-08-04-2.html",
+      "subject": "재생의학·줄기세포"
+    },
+    {
+      "title": "Cancer-fighting antibodies with a one-two punch take aim at tumours",
+      "page_file": "2026-08-04-3.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "카프리코 테라퓨틱스(Capricor Therapeutics)가 한차례 승인거절을 받았다가 다시 제출한 뒤센근이영양증(DMD) 세포치료제 ‘데라미오셀(deramiocel)’의…",
+      "page_file": "2026-08-04-4.html",
+      "subject": "의료정책·규제"
+    },
+    {
+      "title": "인간이 만든 ‘토끼섬’… 멧돼지는 왜 토끼를 사냥할까?",
+      "page_file": "2026-08-04-5.html",
+      "subject": "생태학·환경과학"
+    }
   ]
 }
