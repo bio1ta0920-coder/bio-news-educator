@@ -1566,5 +1566,32 @@
       "page_file": "2026-08-07-5.html",
       "subject": "내분비·대사질환"
     }
+  ],
+  "2026-08-08": [
+    {
+      "title": "AI가 만든 ‘자연에 없는 바이러스’…“생명공학의 확장이자 인류에 위협”",
+      "page_file": "2026-08-08-1.html",
+      "subject": "합성생물학·AI생물정보학"
+    },
+    {
+      "title": "Universal vaccine for pneumococcal disease moves closer to reality",
+      "page_file": "2026-08-08-2.html",
+      "subject": "감염병·백신"
+    },
+    {
+      "title": "Virome-wide ubiquitin ligase discovery reveals diverse mechanisms of immune evasion",
+      "page_file": "2026-08-08-3.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "레플리뮨(Replimmune)이 3번의 시도 끝에 마침내 미국 식품의약국(FDA)으로부터 항암바이러스(OV) ‘RP1(vusolimogene oderparepvec-wtpg)’의…",
+      "page_file": "2026-08-08-4.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "모더나(Moderna)의 mRNA 계절성 독감백신 ‘mRNA-1010’이 허가전략 변경 끝에 미국 식품의약국(FDA)으로부터 시판허가를 받았다.",
+      "page_file": "2026-08-08-5.html",
+      "subject": "감염병·백신"
+    }
   ]
 }
