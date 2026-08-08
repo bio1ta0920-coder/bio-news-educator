@@ -1593,5 +1593,32 @@
       "page_file": "2026-08-08-5.html",
       "subject": "감염병·백신"
     }
+  ],
+  "2026-08-09": [
+    {
+      "title": "국내 바이오의약품 임상 현황 (2026년 7월 4주)",
+      "page_file": "2026-08-09-1.html",
+      "subject": "의료정책·규제"
+    },
+    {
+      "title": "A protein older than blood circulation could transform cancer immunotherapy",
+      "page_file": "2026-08-09-2.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "세닉스, '나노자임' 지주막하출혈 \"美패스트트랙 지정\"",
+      "page_file": "2026-08-09-3.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "An expanded codebook of human transcription factor DNA-binding specificity",
+      "page_file": "2026-08-09-4.html",
+      "subject": "합성생물학·AI생물정보학"
+    },
+    {
+      "title": "Cutting sweet foods doesn’t curb cravings or improve health",
+      "page_file": "2026-08-09-5.html",
+      "subject": "영양학·대사"
+    }
   ]
 }
