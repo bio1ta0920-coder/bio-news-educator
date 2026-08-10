@@ -1647,5 +1647,32 @@
       "page_file": "2026-08-10-5.html",
       "subject": "영양학·대사"
     }
+  ],
+  "2026-08-11": [
+    {
+      "title": "부모에게 물려받은 유전자 첫 해독… ‘내 유전체 지도’ 시대 개막",
+      "page_file": "2026-08-11-1.html",
+      "subject": "합성생물학·AI생물정보학"
+    },
+    {
+      "title": "암세포 돌연변이만 ‘싹둑’…부작용 줄이는 ‘4세대 항암’ 뜬다",
+      "page_file": "2026-08-11-2.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "포스텍·건국대 연구팀, 빛으로 상처 치료·조직 재생 패치 개발",
+      "page_file": "2026-08-11-3.html",
+      "subject": "재생의학·줄기세포"
+    },
+    {
+      "title": "\"한국인 유전정보 넘어갈 판\"…中 기업 '초저가 공세'에 발칵",
+      "page_file": "2026-08-11-4.html",
+      "subject": "의료정책·규제"
+    },
+    {
+      "title": "Universal vaccine for pneumococcal disease moves closer to reality",
+      "page_file": "2026-08-11-5.html",
+      "subject": "감염병·백신"
+    }
   ]
 }
