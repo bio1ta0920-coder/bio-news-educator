@@ -1836,5 +1836,32 @@
       "page_file": "2026-08-17-5.html",
       "subject": "생태학·환경과학"
     }
+  ],
+  "2026-08-18": [
+    {
+      "title": "Glucose-responsive probiotics for glycaemic modulation in mice and monkeys",
+      "page_file": "2026-08-18-1.html",
+      "subject": "내분비·대사질환"
+    },
+    {
+      "title": "아스트라제네카가 그동안 베팅해 온 PD-1xCTLA-4 이중항체 ‘볼루스토미그(volrustomig)’의 핵심 폐암 임상3상에서 실패했다.",
+      "page_file": "2026-08-18-2.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "중국의 ‘알츠하이머 치매 수술’ 논란…기적의 치료법인가, 일시적 착시인가",
+      "page_file": "2026-08-18-3.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "A little-known protein may be fueling Alzheimer’s — and scientists found a way to block it",
+      "page_file": "2026-08-18-4.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "Scientists uncover the hidden nerve network fueling breast cancer",
+      "page_file": "2026-08-18-5.html",
+      "subject": "암·종양학"
+    }
   ]
 }
