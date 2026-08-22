@@ -1971,5 +1971,32 @@
       "page_file": "2026-08-22-5.html",
       "subject": "재생의학·줄기세포"
     }
+  ],
+  "2026-08-23": [
+    {
+      "title": "Scientists turn sheep’s wool into a material that helps regrow bone",
+      "page_file": "2026-08-23-1.html",
+      "subject": "재생의학·줄기세포"
+    },
+    {
+      "title": "80-million-year-old snake brain reveals a surprising evolutionary secret",
+      "page_file": "2026-08-23-2.html",
+      "subject": "진화·고생물학"
+    },
+    {
+      "title": "This yeast supplement may boost cancer-fighting immunity",
+      "page_file": "2026-08-23-3.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "Tooth count may predict survival after pancreatic cancer surgery",
+      "page_file": "2026-08-23-4.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "This gut microbe may help keep you strong as you age",
+      "page_file": "2026-08-23-5.html",
+      "subject": "영양학·대사"
+    }
   ]
 }
