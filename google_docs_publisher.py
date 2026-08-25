@@ -189,11 +189,41 @@ def build_article_html(content, index):
         )
     concepts_html = "".join(concepts_parts)
 
-    # 탐구 질문
-    iq_items = "".join(
-        '<li style="margin:8px 0; padding:8px; background:#fff9c4; border-radius:4px;">' + q + '</li>'
-        for q in content.get("inquiry_questions", [])
-    )
+    # 탐구 질문 (+ 모범답안 토글)
+    # 답안은 q_index로 질문과 짝지어, 학생이 원할 때만 펼쳐 보도록 <details>로 감싼다.
+    answers_by_index = {}
+    for a in content.get("inquiry_answers", []) or []:
+        try:
+            answers_by_index[int(a.get("q_index", -1))] = a
+        except (TypeError, ValueError):
+            continue
+
+    iq_parts = []
+    for qi, q in enumerate(content.get("inquiry_questions", [])):
+        ans = answers_by_index.get(qi)
+        answer_html = ""
+        if ans:
+            answer_html = (
+                '<details style="margin-top:8px;">'
+                '<summary style="cursor:pointer; font-size:12px; color:#2e7d32; font-weight:bold;">'
+                '&#x1F4A1; 모범답안 살펴보기</summary>'
+                '<div style="margin-top:8px; padding:12px; background:#f1f8e9;'
+                'border-radius:6px; font-size:13px; line-height:1.8;">'
+                '<p style="margin:0 0 8px;"><strong>어떻게 접근할까</strong><br>'
+                + str(ans.get("approach", "")) + '</p>'
+                '<p style="margin:0 0 8px;"><strong>무엇이 필요할까</strong><br>'
+                + str(ans.get("needs", "")) + '</p>'
+                '<p style="margin:0;"><strong>한 걸음 더</strong><br>'
+                + str(ans.get("extend", "")) + '</p>'
+                '<p style="margin:10px 0 0; font-size:11px; color:#777;">'
+                '정답이 아니라 접근 방법입니다. 그대로 옮겨 적지 말고 자기 방식으로 다시 설계해 보세요.'
+                '</p></div></details>'
+            )
+        iq_parts.append(
+            '<li style="margin:8px 0; padding:8px; background:#fff9c4; border-radius:4px;">'
+            + q + answer_html + '</li>'
+        )
+    iq_items = "".join(iq_parts)
 
     # 팩트체크
     fact_check_html = build_fact_check_html(content.get("fact_check", {}))

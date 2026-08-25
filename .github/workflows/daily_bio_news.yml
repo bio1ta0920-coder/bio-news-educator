@@ -61,6 +61,16 @@ jobs:
       - name: 날짜별 목록 섹션명 동기화
         run: python fix_new_headline_ci.py
 
+      - name: Node.js 22 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: 앱용 구조화 JSON 추출 및 2022 개정 정규화
+        run: |
+          node tools/extract_json.mjs
+          node tools/normalize.mjs
+
       - name: 생성된 파일 커밋 및 푸시
         run: |
           git config user.name "GitHub Actions"
