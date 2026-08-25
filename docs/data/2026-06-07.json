@@ -211,6 +211,113 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "암·종양학",
+    "curriculum_2022": [
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "IDH돌연변이",
+      "단일핵RNA시퀀싱",
+      "세포상태",
+      "종양이질성",
+      "염색질접근성",
+      "종단분석"
+    ],
+    "jobs_norm": [
+      "신경종양학 전문의",
+      "암 유전체 연구원",
+      "생물정보학자"
+    ],
+    "job_families": [
+      "의사·임상 전문의",
+      "연구·개발(R&D)",
+      "데이터·AI 바이오"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "암·종양학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "IDH돌연변이",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "단일핵RNA시퀀싱",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "세포상태",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "종양이질성",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "염색질접근성",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "종단분석",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -419,6 +526,91 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "면역학·면역치료",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "광범위중화항체",
+      "체액성면역",
+      "항원항체반응",
+      "HIV",
+      "백신",
+      "면역원성"
+    ],
+    "jobs_norm": [
+      "면역학 연구원",
+      "백신 개발 연구원",
+      "임상시험 코디네이터"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "임상시험·임상연구"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "면역학·면역치료",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "광범위중화항체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "체액성면역",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "항원항체반응",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "HIV",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "백신",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "면역원성",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -623,6 +815,107 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "합성생물학·AI생물정보학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "진화"
+      }
+    ],
+    "concepts_norm": [
+      "전사체",
+      "단일세포RNA시퀀싱",
+      "생성형AI모델",
+      "세포지도",
+      "트랜스포머아키텍처",
+      "진화적보존성"
+    ],
+    "jobs_norm": [
+      "생물정보학자",
+      "AI 기반 신약개발 연구원",
+      "진화생물학자"
+    ],
+    "job_families": [
+      "데이터·AI 바이오",
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "합성생물학·AI생물정보학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "전사체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "단일세포RNA시퀀싱",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "생성형AI모델",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "세포지도",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "트랜스포머아키텍처",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "진화적보존성",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
         "weight": 0.4
       }
     ]
@@ -832,6 +1125,123 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "면역학·면역치료",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "역전사효소",
+      "DNA중합",
+      "RNA절단",
+      "선천면역",
+      "항바이러스효소",
+      "센트럴도그마"
+    ],
+    "jobs_norm": [
+      "분자생물학 연구원",
+      "항바이러스제 개발 연구원",
+      "생명윤리 전문가"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "기타 직군"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "면역학·면역치료",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "역전사효소",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "DNA중합",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "RNA절단",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "선천면역",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "항바이러스효소",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "센트럴도그마",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -1017,6 +1427,97 @@
       {
         "type": "course",
         "value": "생물의 유전",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "합성생물학·AI생물정보학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "내분비계와 항상성"
+      }
+    ],
+    "concepts_norm": [
+      "내분비계",
+      "세포지도",
+      "단일세포분석",
+      "호르몬",
+      "세포해상도",
+      "유전자발현"
+    ],
+    "jobs_norm": [
+      "내분비내과 전문의",
+      "생물정보학자",
+      "분자세포생물학 연구원"
+    ],
+    "job_families": [
+      "의사·임상 전문의",
+      "데이터·AI 바이오",
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "합성생물학·AI생물정보학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "내분비계",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "세포지도",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "단일세포분석",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "호르몬",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "세포해상도",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "유전자발현",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
         "weight": 0.4
       }
     ]

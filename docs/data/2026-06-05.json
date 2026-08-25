@@ -200,6 +200,101 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "감염병·백신",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "한타바이러스",
+      "인수공통감염병",
+      "백신",
+      "집단감염"
+    ],
+    "jobs_norm": [
+      "감염병 역학조사관",
+      "바이러스학 연구원",
+      "수의사"
+    ],
+    "job_families": [
+      "기타 직군",
+      "연구·개발(R&D)",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "감염병·백신",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "한타바이러스",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "인수공통감염병",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "백신",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "집단감염",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -409,6 +504,129 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "유전자편집·유전자치료",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "염기편집",
+      "CRISPRCas9",
+      "모자이시즘",
+      "PCSK9유전자",
+      "프리프린트",
+      "태아헤모글로빈"
+    ],
+    "jobs_norm": [
+      "유전체 연구원 / 분자생물학자",
+      "생명윤리 전문가 / 바이오에식스",
+      "불임·생식의학 전문의"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "기타 직군",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "유전자편집·유전자치료",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "염기편집",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "CRISPRCas9",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "모자이시즘",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "PCSK9유전자",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "프리프린트",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "태아헤모글로빈",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
         "weight": 0.4
       }
     ]
@@ -622,6 +840,101 @@
         "value": "기후변화와 환경생태",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "생태학·환경과학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "진화"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "유전자변형생물체",
+      "생물다양성",
+      "카르타헤나의정서",
+      "쿤밍몬트리올글로벌생물다양성프레임워크"
+    ],
+    "jobs_norm": [
+      "생물다양성 연구원",
+      "GMO 안전성 평가 전문가",
+      "생명공학 정책 연구원"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "기타 직군",
+      "규제·정책·인허가"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "생태학·환경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "유전자변형생물체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "생물다양성",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "카르타헤나의정서",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "쿤밍몬트리올글로벌생물다양성프레임워크",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "규제·정책·인허가",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -812,6 +1125,95 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "진화·고생물학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "진화"
+      }
+    ],
+    "concepts_norm": [
+      "소금샘",
+      "기수",
+      "스피노사우루스",
+      "면역세포"
+    ],
+    "jobs_norm": [
+      "고생물학자",
+      "면역학 연구원",
+      "과학 커뮤니케이터 / 과학 저널리스트"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "과학교육·커뮤니케이션"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "진화·고생물학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "소금샘",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "기수",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "스피노사우루스",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "면역세포",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "과학교육·커뮤니케이션",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -989,6 +1391,101 @@
       {
         "type": "course",
         "value": "생명과학과 인간",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "의료정책·규제",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "신경계"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "수술로봇",
+      "정밀제어",
+      "특허",
+      "최소침습수술"
+    ],
+    "jobs_norm": [
+      "의료로봇 연구개발 엔지니어",
+      "로봇수술 전문 외과의사",
+      "지식재산권 전문가 / 특허 변리사"
+    ],
+    "job_families": [
+      "바이오 공정·생산",
+      "의사·임상 전문의",
+      "바이오 산업·경영"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "의료정책·규제",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "수술로봇",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "정밀제어",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "특허",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "최소침습수술",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "바이오 공정·생산",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "바이오 산업·경영",
         "weight": 0.4
       }
     ]

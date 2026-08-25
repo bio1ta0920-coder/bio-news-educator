@@ -196,6 +196,149 @@
         "value": "신경과학 연구자",
         "weight": 0.3
       }
+    ],
+    "bio_field_norm": "신경과학",
+    "curriculum_2022": [
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "아밀로이드베타플라크",
+      "이페로사이토시스",
+      "TAM수용체",
+      "사이토카인"
+    ],
+    "jobs_norm": [
+      "신약개발 연구원",
+      "임상시험 코디네이터",
+      "신경과학 연구자"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "임상시험·임상연구"
+    ],
+    "cross_areas": [
+      "화학",
+      "윤리"
+    ],
+    "cross_courses": [
+      "화학",
+      "물질과 에너지",
+      "현대사회와 윤리",
+      "윤리문제 탐구"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "아밀로이드베타플라크",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "이페로사이토시스",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "TAM수용체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "사이토카인",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "화학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "화학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "물질과 에너지",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
+      }
     ]
   },
   {
@@ -424,6 +567,169 @@
         "value": "임상유전상담사(Genetic Counselor)",
         "weight": 0.3
       }
+    ],
+    "bio_field_norm": "진화·고생물학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "건강수명",
+      "CGAS",
+      "희귀유전변이",
+      "만성염증",
+      "킬리피시",
+      "시험관내/생체내실험"
+    ],
+    "jobs_norm": [
+      "유전체 연구원",
+      "노화생물학 연구원",
+      "임상유전상담사"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "상담·환자지원"
+    ],
+    "cross_areas": [
+      "윤리",
+      "수학",
+      "화학"
+    ],
+    "cross_courses": [
+      "현대사회와 윤리",
+      "윤리문제 탐구",
+      "확률과 통계",
+      "실용 통계",
+      "수학과제 탐구",
+      "화학",
+      "물질과 에너지"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "진화·고생물학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "건강수명",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "CGAS",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "희귀유전변이",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "만성염증",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "킬리피시",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "시험관내/생체내실험",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "상담·환자지원",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "수학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "화학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "확률과 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "실용 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "수학과제 탐구",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "화학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "물질과 에너지",
+        "weight": 0.25
+      }
     ]
   },
   {
@@ -643,6 +949,163 @@
         "value": "임상신경과 전문의",
         "weight": 0.3
       }
+    ],
+    "bio_field_norm": "신경과학",
+    "curriculum_2022": [
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      }
+    ],
+    "concepts_norm": [
+      "튜불린",
+      "미세소관",
+      "응결체/응축액",
+      "단백질응집체",
+      "타우단백질",
+      "알파시뉴클레인"
+    ],
+    "jobs_norm": [
+      "신경과학 연구자",
+      "신약 개발 연구원",
+      "임상신경과 전문의"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [
+      "화학",
+      "물리학",
+      "윤리"
+    ],
+    "cross_courses": [
+      "화학",
+      "물질과 에너지",
+      "물리학",
+      "역학과 에너지",
+      "현대사회와 윤리",
+      "윤리문제 탐구"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "튜불린",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "미세소관",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "응결체/응축액",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "단백질응집체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "타우단백질",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "알파시뉴클레인",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "화학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "물리학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "화학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "물질과 에너지",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "물리학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "역학과 에너지",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
+      }
     ]
   },
   {
@@ -861,6 +1324,195 @@
         "value": "생물정보학자 (Bioinformatician)",
         "weight": 0.3
       }
+    ],
+    "bio_field_norm": "신경과학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "DNA이중가닥절단",
+      "토포이소머레이즈IIβ",
+      "비상동말단연결",
+      "리가아제4",
+      "뉴런이동",
+      "게놈불안정성"
+    ],
+    "jobs_norm": [
+      "신경과학 연구원",
+      "의과학자",
+      "생물정보학자"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "데이터·AI 바이오"
+    ],
+    "cross_areas": [
+      "화학",
+      "물리학",
+      "윤리"
+    ],
+    "cross_courses": [
+      "화학",
+      "물질과 에너지",
+      "물리학",
+      "역학과 에너지",
+      "현대사회와 윤리",
+      "윤리문제 탐구"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.175
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.175
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.175
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.175
+      },
+      {
+        "type": "concept",
+        "value": "DNA이중가닥절단",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "토포이소머레이즈IIβ",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "비상동말단연결",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "리가아제4",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "뉴런이동",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "게놈불안정성",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "화학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "물리학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "화학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "물질과 에너지",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "물리학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "역학과 에너지",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
+      }
     ]
   },
   {
@@ -1058,6 +1710,173 @@
         "type": "job",
         "value": "의공학자(Biomedical Engineer)",
         "weight": 0.3
+      }
+    ],
+    "bio_field_norm": "세포생물학·이미징",
+    "curriculum_2022": [
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "진화"
+      }
+    ],
+    "concepts_norm": [
+      "해부학적변이",
+      "표본편향",
+      "림프계",
+      "위상해부학"
+    ],
+    "jobs_norm": [
+      "해부학자",
+      "의료 영상 전문의",
+      "의공학자"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [
+      "윤리",
+      "수학",
+      "물리학"
+    ],
+    "cross_courses": [
+      "현대사회와 윤리",
+      "윤리문제 탐구",
+      "확률과 통계",
+      "실용 통계",
+      "수학과제 탐구",
+      "물리학",
+      "전자기와 양자"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "세포생물학·이미징",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "해부학적변이",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "표본편향",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "림프계",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "위상해부학",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "수학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "물리학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "확률과 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "실용 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "수학과제 탐구",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "물리학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "전자기와 양자",
+        "weight": 0.25
       }
     ]
   }

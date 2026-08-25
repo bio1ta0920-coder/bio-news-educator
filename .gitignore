@@ -1,0 +1,6 @@
+
+# 매일 통째로 다시 쓰여 git 히스토리를 비대하게 만드는 생성물.
+# 날짜별 JSON에서 언제든 다시 만들 수 있다 (tools/normalize.mjs).
+docs/data/articles.json
+docs/data/tags.json
+docs/data/taxonomy.json

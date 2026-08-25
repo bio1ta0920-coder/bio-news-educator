@@ -211,6 +211,113 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "유전자편집·유전자치료",
+    "curriculum_2022": [
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "세포역분화",
+      "유도만능줄기세포",
+      "부분역분화",
+      "바이러스벡터",
+      "망막신경절세포",
+      "야마나카인자"
+    ],
+    "jobs_norm": [
+      "유전자 치료 연구원",
+      "임상시험 코디네이터 / 임상의학 연구자",
+      "안과 전문의"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "임상시험·임상연구",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "유전자편집·유전자치료",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "세포역분화",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "유도만능줄기세포",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "부분역분화",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "바이러스벡터",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "망막신경절세포",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "야마나카인자",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -398,6 +505,95 @@
       {
         "type": "course",
         "value": "기후변화와 환경생태",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "생태학·환경과학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "진화"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "유효개체군크기",
+      "생태계단절",
+      "유전적부동",
+      "생물다양성"
+    ],
+    "jobs_norm": [
+      "보전생물학자",
+      "환경영향평가사",
+      "집단유전학 연구자"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "기타 직군"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "생태학·환경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "유효개체군크기",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "생태계단절",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "유전적부동",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "생물다양성",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
         "weight": 0.4
       }
     ]
@@ -593,6 +789,111 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "RNA치료제",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "유비퀴틴프로테아솜시스템",
+      "표적단백질분해",
+      "PROTAC",
+      "자가포식"
+    ],
+    "jobs_norm": [
+      "신약 개발 연구원",
+      "단백질체학 연구원",
+      "임상시험 전문가"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "임상시험·임상연구"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "RNA치료제",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "유비퀴틴프로테아솜시스템",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "표적단백질분해",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "PROTAC",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "자가포식",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -770,6 +1071,101 @@
       {
         "type": "course",
         "value": "생명과학과 인간",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "신약개발·제약",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "생명공학기술",
+        "element": "생명공학기술의 활용"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "신약허가심사",
+      "임상시험",
+      "희귀질환",
+      "식품의약품안전처"
+    ],
+    "jobs_norm": [
+      "약사·규제과학 전문가",
+      "임상시험 코디네이터 및 임상 연구원",
+      "식약처 의약품 심사관"
+    ],
+    "job_families": [
+      "약사·약무",
+      "임상시험·임상연구",
+      "규제·정책·인허가"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신약개발·제약",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 생명공학기술",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "신약허가심사",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "임상시험",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "희귀질환",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "식품의약품안전처",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "약사·약무",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "규제·정책·인허가",
         "weight": 0.4
       }
     ]
@@ -979,6 +1375,95 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "재생의학·줄기세포",
+    "curriculum_2022": [
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      }
+    ],
+    "concepts_norm": [
+      "오가노이드",
+      "줄기세포",
+      "폐오가노이드",
+      "세포분화",
+      "인비트로모델"
+    ],
+    "jobs_norm": [
+      "세포생물학 연구원",
+      "종양학 연구원",
+      "신약 개발 연구원"
+    ],
+    "job_families": [
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "재생의학·줄기세포",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "오가노이드",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "줄기세포",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "폐오가노이드",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "세포분화",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "인비트로모델",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
         "weight": 0.4
       }
     ]

@@ -209,6 +209,113 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "신경과학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "신경계"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "경직성실조증",
+      "CD99L2유전자",
+      "CAPN1",
+      "X연관유전",
+      "시냅스",
+      "전장유전체분석"
+    ],
+    "jobs_norm": [
+      "의학유전학 전문의 / 유전상담사",
+      "신경과학 연구자 / 분자신경생물학자",
+      "생물정보학자"
+    ],
+    "job_families": [
+      "의사·임상 전문의",
+      "연구·개발(R&D)",
+      "데이터·AI 바이오"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "경직성실조증",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "CD99L2유전자",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "CAPN1",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "X연관유전",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "시냅스",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "전장유전체분석",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -431,6 +538,85 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "감염병·백신",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "오피오이드",
+      "항체",
+      "백신",
+      "항원",
+      "합텐",
+      "호흡억제"
+    ],
+    "jobs_norm": [
+      "면역학자 / 백신 연구원",
+      "약물화학자",
+      "공중보건 전문가 / 역학자"
+    ],
+    "job_families": [
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "감염병·백신",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "오피오이드",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "항체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "백신",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "항원",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "합텐",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "호흡억제",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -645,6 +831,91 @@
         "value": "생태와 환경",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "진화·고생물학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "진화"
+      }
+    ],
+    "concepts_norm": [
+      "신종기술",
+      "호미닌",
+      "이족보행",
+      "매복포식자",
+      "하다르층",
+      "플라이오세"
+    ],
+    "jobs_norm": [
+      "고생물학자",
+      "고인류학자",
+      "박물관 큐레이터"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "과학교육·커뮤니케이션"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "진화·고생물학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "신종기술",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "호미닌",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "이족보행",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "매복포식자",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "하다르층",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "플라이오세",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "과학교육·커뮤니케이션",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -828,6 +1099,79 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "신경과학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "신경계"
+      }
+    ],
+    "concepts_norm": [
+      "신경가소성",
+      "뇌건강지수",
+      "인지기능",
+      "참여도"
+    ],
+    "jobs_norm": [
+      "신경과학 연구원",
+      "임상신경심리사",
+      "디지털 치료제 개발자"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "기타 직군"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "신경가소성",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "뇌건강지수",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "인지기능",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "참여도",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
         "weight": 0.4
       }
     ]

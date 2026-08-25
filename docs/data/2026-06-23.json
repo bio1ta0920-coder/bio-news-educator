@@ -193,6 +193,123 @@
         "value": "임상면역학 연구자",
         "weight": 0.3
       }
+    ],
+    "bio_field_norm": "면역학·면역치료",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "HIV",
+      "장기이식거부반응",
+      "면역억제제",
+      "항레트로바이러스치료"
+    ],
+    "jobs_norm": [
+      "이식외과 전문의",
+      "감염내과 전문의",
+      "임상면역학 연구자"
+    ],
+    "job_families": [
+      "의사·임상 전문의",
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [
+      "윤리",
+      "생명과학"
+    ],
+    "cross_courses": [
+      "현대사회와 윤리",
+      "윤리문제 탐구",
+      "생명과학",
+      "세포와 물질대사",
+      "생물의 유전"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "면역학·면역치료",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "HIV",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "장기이식거부반응",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "면역억제제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "항레트로바이러스치료",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "생명과학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "세포와 물질대사",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "생물의 유전",
+        "weight": 0.25
+      }
     ]
   },
   {
@@ -402,6 +519,151 @@
         "value": "체외 진단(IVD) 제품 개발자 / 의료기기 연구원",
         "weight": 0.3
       }
+    ],
+    "bio_field_norm": "신경과학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "DNA",
+      "RNA",
+      "바이오마커",
+      "알츠하이머병",
+      "유전자발현"
+    ],
+    "jobs_norm": [
+      "신경과학 연구원 / 임상 신경과 전문의",
+      "유전체 분석가 / 바이오정보학 전문가",
+      "체외 진단 제품 개발자 / 의료기기 연구원"
+    ],
+    "job_families": [
+      "의사·임상 전문의",
+      "기타 직군",
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [
+      "윤리",
+      "수학"
+    ],
+    "cross_courses": [
+      "현대사회와 윤리",
+      "윤리문제 탐구",
+      "확률과 통계",
+      "실용 통계",
+      "수학과제 탐구"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "DNA",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "RNA",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "바이오마커",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "알츠하이머병",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "유전자발현",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "수학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "확률과 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "실용 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "수학과제 탐구",
+        "weight": 0.25
+      }
     ]
   },
   {
@@ -598,6 +860,133 @@
         "value": "생명윤리 전문가(IRB 심사위원)",
         "weight": 0.3
       }
+    ],
+    "bio_field_norm": "재생의학·줄기세포",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "생명공학기술",
+        "element": "생명공학기술의 활용"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      }
+    ],
+    "concepts_norm": [
+      "지방유래줄기세포",
+      "세포외기질",
+      "조직공학",
+      "인체유래물"
+    ],
+    "jobs_norm": [
+      "세포치료제 연구원",
+      "바이오소재 개발 연구원",
+      "생명윤리 전문가"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "기타 직군"
+    ],
+    "cross_areas": [
+      "화학",
+      "윤리"
+    ],
+    "cross_courses": [
+      "화학",
+      "물질과 에너지",
+      "현대사회와 윤리",
+      "윤리문제 탐구"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "재생의학·줄기세포",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 생명공학기술",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "지방유래줄기세포",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "세포외기질",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "조직공학",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "인체유래물",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "화학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "화학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "물질과 에너지",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
+      }
     ]
   },
   {
@@ -793,6 +1182,117 @@
         "type": "job",
         "value": "제약회사 신약개발 연구원",
         "weight": 0.3
+      }
+    ],
+    "bio_field_norm": "내분비·대사질환",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "내분비계와 항상성"
+      }
+    ],
+    "concepts_norm": [
+      "GLP1",
+      "적응증",
+      "음성피드백",
+      "임상시험"
+    ],
+    "jobs_norm": [
+      "내분비내과 전문의",
+      "임상시험 연구원",
+      "제약회사 신약개발 연구원"
+    ],
+    "job_families": [
+      "의사·임상 전문의",
+      "임상시험·임상연구",
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [
+      "화학",
+      "윤리"
+    ],
+    "cross_courses": [
+      "화학 반응의 세계",
+      "현대사회와 윤리",
+      "윤리문제 탐구"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "내분비·대사질환",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "GLP1",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "적응증",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "음성피드백",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "임상시험",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "화학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "화학 반응의 세계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
       }
     ]
   },
@@ -991,6 +1491,179 @@
         "type": "job",
         "value": "바이오의약품 공정 개발 엔지니어",
         "weight": 0.3
+      }
+    ],
+    "bio_field_norm": "면역학·면역치료",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "CAR치료제",
+      "바이러스전달체",
+      "외피단백질",
+      "유전자발현율"
+    ],
+    "jobs_norm": [
+      "세포·유전자 치료제 연구원",
+      "임상시험 코디네이터 / 임상연구원",
+      "바이오의약품 공정 개발 엔지니어"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "임상시험·임상연구",
+      "바이오 공정·생산"
+    ],
+    "cross_areas": [
+      "화학",
+      "윤리",
+      "수학"
+    ],
+    "cross_courses": [
+      "화학",
+      "물질과 에너지",
+      "윤리와 사상",
+      "인문학과 윤리",
+      "확률과 통계",
+      "실용 통계",
+      "수학과제 탐구"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "면역학·면역치료",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "CAR치료제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "바이러스전달체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "외피단백질",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "유전자발현율",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "바이오 공정·생산",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "화학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "수학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "화학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "물질과 에너지",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리와 사상",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "인문학과 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "확률과 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "실용 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "수학과제 탐구",
+        "weight": 0.25
       }
     ]
   }

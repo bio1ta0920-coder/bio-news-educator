@@ -214,6 +214,107 @@
         "value": "기후변화와 환경생태",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "생태학·환경과학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "진화"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "균근균",
+      "균사",
+      "수지상균근균",
+      "공생",
+      "탄소저장",
+      "머신러닝"
+    ],
+    "jobs_norm": [
+      "균류학자",
+      "토양 생태학자",
+      "환경 데이터 과학자"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "데이터·AI 바이오"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "생태학·환경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "균근균",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "균사",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "수지상균근균",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "공생",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "탄소저장",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "머신러닝",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -406,6 +507,79 @@
       {
         "type": "course",
         "value": "기후변화와 환경생태",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "생태학·환경과학",
+    "curriculum_2022": [
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "엘니뇨",
+      "엘니뇨남방진동",
+      "워커순환",
+      "기후되먹임"
+    ],
+    "jobs_norm": [
+      "기상예보관",
+      "기후변화 연구원",
+      "재난안전관리 전문가"
+    ],
+    "job_families": [
+      "기타 직군",
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "생태학·환경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "엘니뇨",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "엘니뇨남방진동",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "워커순환",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "기후되먹임",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
         "weight": 0.4
       }
     ]
@@ -619,6 +793,107 @@
         "value": "기후변화와 환경생태",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "생태학·환경과학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "진화"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "영양단계적연쇄",
+      "순환논리",
+      "생물량",
+      "비평형생태계",
+      "동료심사",
+      "재도입"
+    ],
+    "jobs_norm": [
+      "야생동물 생태학자",
+      "보전 생물학자",
+      "생태 모델러"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "기타 직군"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "생태학·환경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "영양단계적연쇄",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "순환논리",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "생물량",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "비평형생태계",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "동료심사",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "재도입",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -810,6 +1085,73 @@
       {
         "type": "course",
         "value": "생태와 환경",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "진화·고생물학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "진화"
+      }
+    ],
+    "concepts_norm": [
+      "계통수",
+      "분자시계",
+      "분해자",
+      "화학적방어"
+    ],
+    "jobs_norm": [
+      "분류학자 / 계통분류학자",
+      "생물 정보학 연구원",
+      "생태학자 / 토양 생태 연구원"
+    ],
+    "job_families": [
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "진화·고생물학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "계통수",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "분자시계",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "분해자",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "화학적방어",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
         "weight": 0.4
       }
     ]
@@ -1031,6 +1373,113 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "내분비·대사질환",
+    "curriculum_2022": [
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "자당",
+      "장내마이크로바이옴",
+      "인슐린저항성",
+      "지방간",
+      "항상성",
+      "대조군"
+    ],
+    "jobs_norm": [
+      "영양역학 연구자 / 임상영양사",
+      "마이크로바이옴 연구원",
+      "내분비내과 전문의 / 대사질환 전문의"
+    ],
+    "job_families": [
+      "보건·의료기사",
+      "연구·개발(R&D)",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "내분비·대사질환",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "자당",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "장내마이크로바이옴",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "인슐린저항성",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "지방간",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "항상성",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "대조군",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "보건·의료기사",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
         "weight": 0.4
       }
     ]

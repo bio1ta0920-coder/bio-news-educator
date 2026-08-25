@@ -208,6 +208,129 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "암·종양학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "생명공학기술",
+        "element": "생명공학기술의 활용"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "시신경척수염스펙트럼장애",
+      "동종조혈모세포이식",
+      "이식편대숙주병",
+      "자가면역질환",
+      "단클론항체",
+      "관해"
+    ],
+    "jobs_norm": [
+      "신경과 전문의",
+      "조혈모세포 이식 전문 혈액내과 의사 / 임상시험 연구자",
+      "생의학 공학자"
+    ],
+    "job_families": [
+      "의사·임상 전문의",
+      "임상시험·임상연구",
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "암·종양학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 생명공학기술",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "시신경척수염스펙트럼장애",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "동종조혈모세포이식",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "이식편대숙주병",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "자가면역질환",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "단클론항체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "관해",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -419,6 +542,101 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "재생의학·줄기세포",
+    "curriculum_2022": [
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "진화"
+      }
+    ],
+    "concepts_norm": [
+      "배아조직자",
+      "형태소",
+      "가스트룰레이션",
+      "계통수",
+      "문",
+      "원구"
+    ],
+    "jobs_norm": [
+      "발생생물학자",
+      "진화발생생물학자",
+      "재생의학 연구원"
+    ],
+    "job_families": [
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "재생의학·줄기세포",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "배아조직자",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "형태소",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "가스트룰레이션",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "계통수",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "문",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "원구",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -608,6 +826,127 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "유전자편집·유전자치료",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "HSP",
+      "돌연변이",
+      "완충",
+      "세포스크리닝"
+    ],
+    "jobs_norm": [
+      "분자생물학 연구원",
+      "항암제 개발 연구원",
+      "유전상담사"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "상담·환자지원"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "유전자편집·유전자치료",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.175
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.175
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.175
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.175
+      },
+      {
+        "type": "concept",
+        "value": "HSP",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "돌연변이",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "완충",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "세포스크리닝",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "상담·환자지원",
         "weight": 0.4
       }
     ]
@@ -818,6 +1157,97 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "신약개발·제약",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "T세포인게이저",
+      "고형암",
+      "옵션딜",
+      "마일스톤지급",
+      "단일클론항체",
+      "모달리티"
+    ],
+    "jobs_norm": [
+      "항체 공학 연구원",
+      "임상개발 전문가",
+      "바이오 사업개발 담당자"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "기타 직군",
+      "바이오 산업·경영"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신약개발·제약",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "T세포인게이저",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "고형암",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "옵션딜",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "마일스톤지급",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "단일클론항체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "모달리티",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "바이오 산업·경영",
         "weight": 0.4
       }
     ]
@@ -1038,6 +1468,91 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "암·종양학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "TCTP",
+      "MDSC",
+      "종양미세환경",
+      "CDR",
+      "기능중심특허",
+      "면역항암제"
+    ],
+    "jobs_norm": [
+      "항체의약품 연구원",
+      "종양면역학자",
+      "지식재산 전문가 / 특허 변리사"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "바이오 산업·경영"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "암·종양학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "TCTP",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "MDSC",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "종양미세환경",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "CDR",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "기능중심특허",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "면역항암제",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "바이오 산업·경영",
         "weight": 0.4
       }
     ]

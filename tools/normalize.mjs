@@ -152,6 +152,19 @@ for (const a of articles) {
 
 fs.writeFileSync(path.join(DATA, 'articles.json'), JSON.stringify(articles, null, 2), 'utf8');
 
+// 날짜별 파일에도 정규화 결과를 반영한다.
+// articles.json은 매일 통째로 다시 쓰여 git 히스토리를 비대하게 만들므로 커밋하지 않고,
+// 앱은 누적형인 날짜별 파일을 읽는다.
+const byDate = new Map();
+for (const a of articles) {
+  if (!byDate.has(a.date)) byDate.set(a.date, []);
+  byDate.get(a.date).push(a);
+}
+for (const [date, list] of byDate) {
+  list.sort((x, y) => x.seq - y.seq);
+  fs.writeFileSync(path.join(DATA, date + '.json'), JSON.stringify(list, null, 2), 'utf8');
+}
+
 // ── 분류 체계 사전 생성 ─────────────────────────────────────────────────
 const counts = new Map();
 for (const a of articles) {

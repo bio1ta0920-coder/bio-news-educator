@@ -219,6 +219,123 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "암·종양학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "CART세포치료",
+      "T세포소진",
+      "전사인자",
+      "CRISPR/Cas9",
+      "고형종양",
+      "NFIL3"
+    ],
+    "jobs_norm": [
+      "면역항암 연구원",
+      "유전자 치료 전문 임상의",
+      "바이오의약품 개발자"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "기타 직군"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "암·종양학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "CART세포치료",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "T세포소진",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "전사인자",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "CRISPR/Cas9",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "고형종양",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "NFIL3",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -429,6 +546,139 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "신경과학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "후성유전학",
+      "DNA메틸화",
+      "장내미생물군집",
+      "프로바이오틱스",
+      "자폐스펙트럼장애",
+      "코호트연구"
+    ],
+    "jobs_norm": [
+      "마이크로바이옴 연구원 / 미생물학자",
+      "소아 신경과 전문의 / 발달 소아과 의사",
+      "후성유전학 연구원"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.175
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.175
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.175
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.175
+      },
+      {
+        "type": "concept",
+        "value": "후성유전학",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "DNA메틸화",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "장내미생물군집",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "프로바이오틱스",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "자폐스펙트럼장애",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "코호트연구",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
         "weight": 0.4
       }
     ]
@@ -652,6 +902,123 @@
         "value": "기후변화와 환경생태",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "생태학·환경과학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명 시스템의 구성",
+        "element": "생태계의 구조와 기능"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      },
+      {
+        "subject": "기후변화와 환경생태",
+        "track": "융합선택",
+        "area": "기후변화와 환경생태",
+        "element": "기후변화와 생태계"
+      }
+    ],
+    "concepts_norm": [
+      "토양호흡",
+      "질소침적",
+      "생태적전환점",
+      "질소제한생태계vs질소포화생태계",
+      "역U자형반응",
+      "머신러닝"
+    ],
+    "jobs_norm": [
+      "산림 생태학자",
+      "환경 데이터 과학자",
+      "대기환경 연구원"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "데이터·AI 바이오"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "생태학·환경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명 시스템의 구성",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "기후변화와 환경생태",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "기후변화와 환경생태 > 기후변화와 환경생태",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "토양호흡",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "질소침적",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "생태적전환점",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "질소제한생태계vs질소포화생태계",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "역U자형반응",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "머신러닝",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -865,6 +1232,123 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "암·종양학",
+    "curriculum_2022": [
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "췌관선암",
+      "단일불포화지방산",
+      "다가불포화지방산",
+      "페롭토시스",
+      "올레산",
+      "지질과산화"
+    ],
+    "jobs_norm": [
+      "종양 생물학 연구자",
+      "임상 영양사 / 영양 역학 연구자",
+      "항암 신약 개발 연구원"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "보건·의료기사"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "암·종양학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "췌관선암",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "단일불포화지방산",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "다가불포화지방산",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "페롭토시스",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "올레산",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "지질과산화",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "보건·의료기사",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -1045,6 +1529,85 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "신경과학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "신경계"
+      }
+    ],
+    "concepts_norm": [
+      "팰리엄",
+      "사전결정상태",
+      "신경신호",
+      "모델생물"
+    ],
+    "jobs_norm": [
+      "신경과학자",
+      "뇌-컴퓨터 인터페이스 연구·개발자",
+      "정신건강 의학과 전문의·임상신경심리사"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "기타 직군",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "팰리엄",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "사전결정상태",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "신경신호",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "모델생물",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
         "weight": 0.4
       }
     ]

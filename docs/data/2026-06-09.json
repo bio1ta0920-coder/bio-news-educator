@@ -219,6 +219,85 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "암·종양학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "NK세포",
+      "AhR",
+      "콜드튜머와핫튜머",
+      "바이오마커",
+      "면역소진",
+      "Gdf15"
+    ],
+    "jobs_norm": [
+      "면역학 연구원",
+      "항암제 개발 연구원",
+      "환경독성학 연구원"
+    ],
+    "job_families": [
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "암·종양학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "NK세포",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "AhR",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "콜드튜머와핫튜머",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "바이오마커",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "면역소진",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "Gdf15",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -438,6 +517,97 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "면역학·면역치료",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "염증성장질환",
+      "GPR15",
+      "CD8+조절T세포",
+      "귀소",
+      "FasL과TWEAK",
+      "대식세포"
+    ],
+    "jobs_norm": [
+      "면역학 연구원",
+      "소화기내과 전문의 / 소아 소화기 전문의",
+      "임상 유전체 전문가"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "의사·임상 전문의",
+      "기타 직군"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "면역학·면역치료",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "염증성장질환",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "GPR15",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "CD8+조절T세포",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "귀소",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "FasL과TWEAK",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "대식세포",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
         "weight": 0.4
       }
     ]
@@ -663,6 +833,123 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "암·종양학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "CRISPRCas12a2",
+      "크로마틴파쇄",
+      "종양억제단백질",
+      "약물비표적성돌연변이",
+      "전사체",
+      "trans핵산분해활성"
+    ],
+    "jobs_norm": [
+      "분자생물학 연구원",
+      "바이오 의약품 개발 연구원",
+      "생명윤리 전문가"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "기타 직군"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "암·종양학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "CRISPRCas12a2",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "크로마틴파쇄",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "종양억제단백질",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "약물비표적성돌연변이",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "전사체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "trans핵산분해활성",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -874,6 +1161,107 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "합성생물학·AI생물정보학",
+    "curriculum_2022": [
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "항생제내성",
+      "고처리량스크리닝",
+      "신경망모델",
+      "작용기전",
+      "생리활성화합물",
+      "광범위항생제"
+    ],
+    "jobs_norm": [
+      "미생물학자",
+      "화학정보학자",
+      "AI 신약 개발 연구자"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "데이터·AI 바이오"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "합성생물학·AI생물정보학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "항생제내성",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "고처리량스크리닝",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "신경망모델",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "작용기전",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "생리활성화합물",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "광범위항생제",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
         "weight": 0.4
       }
     ]
@@ -1096,6 +1484,129 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "암·종양학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "CARNK세포치료제",
+      "교모세포종",
+      "유도만능줄기세포",
+      "혈뇌장벽",
+      "동종유래세포치료제",
+      "완전관해"
+    ],
+    "jobs_norm": [
+      "면역세포치료제 연구원",
+      "임상시험 코디네이터 및 임상 개발 전문가",
+      "신경종양학과 의사 및 뇌종양 전문의"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "임상시험·임상연구",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "암·종양학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "CARNK세포치료제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "교모세포종",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "유도만능줄기세포",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "혈뇌장벽",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "동종유래세포치료제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "완전관해",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
         "weight": 0.4
       }
     ]

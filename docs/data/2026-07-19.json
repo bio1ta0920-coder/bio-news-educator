@@ -223,6 +223,187 @@
         "value": "의약품 규제과학 전문가(레귤레이터리 어페어즈 전문가)",
         "weight": 0.3
       }
+    ],
+    "bio_field_norm": "합성생물학·AI생물정보학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "전임상시험",
+      "드라이랩vs웻랩",
+      "연합학습",
+      "휴먼오가노이드",
+      "AI가상세포",
+      "단백질구조예측"
+    ],
+    "jobs_norm": [
+      "AI 신약 개발 연구원",
+      "전임상 연구원",
+      "의약품 규제과학 전문가"
+    ],
+    "job_families": [
+      "데이터·AI 바이오",
+      "임상시험·임상연구",
+      "규제·정책·인허가"
+    ],
+    "cross_areas": [
+      "수학",
+      "화학",
+      "윤리",
+      "정보"
+    ],
+    "cross_courses": [
+      "확률과 통계",
+      "실용 통계",
+      "수학과제 탐구",
+      "화학 반응의 세계",
+      "현대사회와 윤리",
+      "윤리문제 탐구",
+      "인공지능 기초",
+      "데이터 과학"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "합성생물학·AI생물정보학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "전임상시험",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "드라이랩vs웻랩",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "연합학습",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "휴먼오가노이드",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "AI가상세포",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "단백질구조예측",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "규제·정책·인허가",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "수학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "화학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "정보",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "확률과 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "실용 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "수학과제 탐구",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "화학 반응의 세계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "인공지능 기초",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "데이터 과학",
+        "weight": 0.25
+      }
     ]
   },
   {
@@ -452,6 +633,197 @@
         "value": "임상시험 데이터 과학자(Clinical Data Scientist)",
         "weight": 0.3
       }
+    ],
+    "bio_field_norm": "합성생물학·AI생물정보학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "생명공학기술",
+        "element": "생명공학기술의 활용"
+      },
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "신약후보물질",
+      "표적발굴",
+      "시스템생물학",
+      "유전체데이터",
+      "임상시험",
+      "블랙박스문제"
+    ],
+    "jobs_norm": [
+      "AI 신약 개발 연구원",
+      "시스템 생물학자",
+      "임상시험 데이터 과학자"
+    ],
+    "job_families": [
+      "데이터·AI 바이오",
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [
+      "수학",
+      "화학",
+      "윤리",
+      "정보"
+    ],
+    "cross_courses": [
+      "확률과 통계",
+      "실용 통계",
+      "수학과제 탐구",
+      "화학 반응의 세계",
+      "윤리와 사상",
+      "인문학과 윤리",
+      "인공지능 기초",
+      "데이터 과학"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "합성생물학·AI생물정보학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 생명공학기술",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "신약후보물질",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "표적발굴",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "시스템생물학",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "유전체데이터",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "임상시험",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "블랙박스문제",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "수학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "화학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "정보",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "확률과 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "실용 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "수학과제 탐구",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "화학 반응의 세계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리와 사상",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "인문학과 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "인공지능 기초",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "데이터 과학",
+        "weight": 0.25
+      }
     ]
   },
   {
@@ -679,6 +1051,153 @@
         "value": "감염내과 의사 / 소아감염 전문의",
         "weight": 0.3
       }
+    ],
+    "bio_field_norm": "감염병·백신",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "PCR",
+      "신드로믹검사",
+      "동시감염",
+      "Ct값",
+      "폐렴균",
+      "스타고라"
+    ],
+    "jobs_norm": [
+      "임상병리사",
+      "분자진단 연구원",
+      "감염내과 의사 / 소아감염 전문의"
+    ],
+    "job_families": [
+      "의사·임상 전문의",
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [
+      "화학",
+      "수학",
+      "윤리"
+    ],
+    "cross_courses": [
+      "화학",
+      "화학 반응의 세계",
+      "미적분Ⅰ",
+      "미적분Ⅱ",
+      "대수",
+      "윤리와 사상",
+      "인문학과 윤리"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "감염병·백신",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "PCR",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "신드로믹검사",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "동시감염",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "Ct값",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "폐렴균",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "스타고라",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "화학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "수학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "화학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "화학 반응의 세계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "미적분Ⅰ",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "미적분Ⅱ",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "대수",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리와 사상",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "인문학과 윤리",
+        "weight": 0.25
+      }
     ]
   },
   {
@@ -895,6 +1414,191 @@
         "type": "job",
         "value": "임상시험 연구원(CRA/CRC)",
         "weight": 0.3
+      }
+    ],
+    "bio_field_norm": "신약개발·제약",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "항체약물접합체",
+      "플랫폼기술",
+      "뇌혈관장벽",
+      "CMC",
+      "마일스톤",
+      "EGFR티로신키나아제억제제"
+    ],
+    "jobs_norm": [
+      "사업개발 전문가",
+      "CMC 연구원",
+      "임상시험 연구원"
+    ],
+    "job_families": [
+      "바이오 산업·경영",
+      "연구·개발(R&D)",
+      "임상시험·임상연구"
+    ],
+    "cross_areas": [
+      "윤리",
+      "화학",
+      "수학"
+    ],
+    "cross_courses": [
+      "현대사회와 윤리",
+      "윤리문제 탐구",
+      "화학",
+      "물질과 에너지",
+      "확률과 통계",
+      "실용 통계",
+      "수학과제 탐구"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신약개발·제약",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "항체약물접합체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "플랫폼기술",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "뇌혈관장벽",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "CMC",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "마일스톤",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "EGFR티로신키나아제억제제",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "바이오 산업·경영",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "화학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "수학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "화학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "물질과 에너지",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "확률과 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "실용 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "수학과제 탐구",
+        "weight": 0.25
       }
     ]
   },
@@ -1122,6 +1826,177 @@
         "type": "job",
         "value": "의료 AI 개발자 / 디지털 헬스케어 연구원",
         "weight": 0.3
+      }
+    ],
+    "bio_field_norm": "신경과학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "신경계"
+      }
+    ],
+    "concepts_norm": [
+      "세로토닌",
+      "배측솔기핵",
+      "DNA메틸화",
+      "무쾌감",
+      "기능적자기공명영상",
+      "디지털바이오마커"
+    ],
+    "jobs_norm": [
+      "신경과학 연구원",
+      "정신건강의학과 의사",
+      "의료 AI 개발자 / 디지털 헬스케어 연구원"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "의사·임상 전문의",
+      "데이터·AI 바이오"
+    ],
+    "cross_areas": [
+      "화학",
+      "물리학",
+      "윤리",
+      "수학"
+    ],
+    "cross_courses": [
+      "화학",
+      "물질과 에너지",
+      "물리학",
+      "전자기와 양자",
+      "현대사회와 윤리",
+      "윤리문제 탐구",
+      "확률과 통계",
+      "실용 통계",
+      "수학과제 탐구"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "세로토닌",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "배측솔기핵",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "DNA메틸화",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "무쾌감",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "기능적자기공명영상",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "디지털바이오마커",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "화학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "물리학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "수학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "화학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "물질과 에너지",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "물리학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "전자기와 양자",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "확률과 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "실용 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "수학과제 탐구",
+        "weight": 0.25
       }
     ]
   }

@@ -209,6 +209,113 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "유전자편집·유전자치료",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "염기교정",
+      "모자이크현상",
+      "착상전유전자진단",
+      "단백질RNA복합체",
+      "표적이탈변이",
+      "맞춤형아기"
+    ],
+    "jobs_norm": [
+      "유전체 연구원",
+      "생명윤리 전문가",
+      "유전상담사"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "기타 직군",
+      "상담·환자지원"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "유전자편집·유전자치료",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "염기교정",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "모자이크현상",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "착상전유전자진단",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "단백질RNA복합체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "표적이탈변이",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "맞춤형아기",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "상담·환자지원",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -397,6 +504,101 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "재생의학·줄기세포",
+    "curriculum_2022": [
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "줄기세포",
+      "세포분화",
+      "임상시험",
+      "첨단바이오의약품"
+    ],
+    "jobs_norm": [
+      "줄기세포 연구원 / 재생의료 연구자",
+      "임상시험 코디네이터 / 임상 연구 전문가",
+      "바이오 의약품 규제과학 전문가"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "임상시험·임상연구",
+      "규제·정책·인허가"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "재생의학·줄기세포",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "줄기세포",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "세포분화",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "임상시험",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "첨단바이오의약품",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "규제·정책·인허가",
         "weight": 0.4
       }
     ]
@@ -601,6 +803,139 @@
         "value": "생물의 유전",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "RNA치료제",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "아고넛",
+      "마이크로RNA",
+      "샤페론단백질",
+      "siRNA치료제",
+      "RISC",
+      "초저온전자현미경"
+    ],
+    "jobs_norm": [
+      "RNA 치료제 연구원",
+      "구조생물학자",
+      "생명공학 규제 전문가"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "규제·정책·인허가"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "RNA치료제",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.175
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.175
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.175
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.175
+      },
+      {
+        "type": "concept",
+        "value": "아고넛",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "마이크로RNA",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "샤페론단백질",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "siRNA치료제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "RISC",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "초저온전자현미경",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "규제·정책·인허가",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -798,6 +1133,117 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "암·종양학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "신항원",
+      "mRNA백신",
+      "기억세포",
+      "맞춤형의학"
+    ],
+    "jobs_norm": [
+      "종양 면역학 연구원",
+      "생물정보학자",
+      "임상시험 코디네이터 및 임상 개발 연구원"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "데이터·AI 바이오",
+      "임상시험·임상연구"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "암·종양학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "신항원",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "mRNA백신",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "기억세포",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "맞춤형의학",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
         "weight": 0.4
       }
     ]
@@ -998,6 +1444,111 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "재생의학·줄기세포",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "이종이식",
+      "면역거부반응",
+      "유전자편집",
+      "MHC"
+    ],
+    "jobs_norm": [
+      "이식외과 전문의",
+      "면역학 연구자",
+      "유전공학 연구자 / 바이오테크 연구원"
+    ],
+    "job_families": [
+      "의사·임상 전문의",
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "재생의학·줄기세포",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "이종이식",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "면역거부반응",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "유전자편집",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "MHC",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
         "weight": 0.4
       }
     ]
@@ -1211,6 +1762,97 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "신약개발·제약",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "내분비계와 항상성"
+      }
+    ],
+    "concepts_norm": [
+      "GLP1수용체작용제",
+      "비펩타이드저분자화합물",
+      "임상2상",
+      "HbA1c",
+      "내약성",
+      "라이선스인"
+    ],
+    "jobs_norm": [
+      "임상시험 코디네이터",
+      "신약 개발 연구원",
+      "내분비내과 전문의"
+    ],
+    "job_families": [
+      "임상시험·임상연구",
+      "연구·개발(R&D)",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신약개발·제약",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "GLP1수용체작용제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "비펩타이드저분자화합물",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "임상2상",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "HbA1c",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "내약성",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "라이선스인",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
         "weight": 0.4
       }
     ]

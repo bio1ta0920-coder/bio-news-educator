@@ -212,6 +212,91 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "신약개발·제약",
+    "curriculum_2022": [
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      }
+    ],
+    "concepts_norm": [
+      "β2아드레날린수용체작용제",
+      "골격근대사",
+      "GLP1수용체작용제",
+      "1상임상시험",
+      "이해충돌"
+    ],
+    "jobs_norm": [
+      "의약화학자",
+      "임상시험 코디네이터 / 임상연구원",
+      "내분비내과 전문의 / 대사 질환 연구자"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "임상시험·임상연구",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신약개발·제약",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "β2아드레날린수용체작용제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "골격근대사",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "GLP1수용체작용제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "1상임상시험",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "이해충돌",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -424,6 +509,91 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "내분비·대사질환",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "신경계"
+      }
+    ],
+    "concepts_norm": [
+      "GLP1수용체작용제",
+      "물질사용장애",
+      "보상회로",
+      "관찰연구",
+      "갈망",
+      "SGLT2억제제"
+    ],
+    "jobs_norm": [
+      "임상 역학자",
+      "신경약리학자",
+      "중독의학 전문의"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "내분비·대사질환",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "GLP1수용체작용제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "물질사용장애",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "보상회로",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "관찰연구",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "갈망",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "SGLT2억제제",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -615,6 +785,79 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "신경과학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "신경계"
+      }
+    ],
+    "concepts_norm": [
+      "편도체",
+      "글루타메이트수용체/GluK4",
+      "억제성뉴런/규칙적발화뉴런",
+      "전기생리학"
+    ],
+    "jobs_norm": [
+      "신경과학자",
+      "정신건강의학과 전문의",
+      "신경약리학자"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "편도체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "글루타메이트수용체/GluK4",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "억제성뉴런/규칙적발화뉴런",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "전기생리학",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
         "weight": 0.4
       }
     ]
@@ -831,6 +1074,129 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "신경과학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "신경계"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "기능적뇌연결성",
+      "과연결성",
+      "저연결성",
+      "시냅스",
+      "정밀의료",
+      "신경다양성"
+    ],
+    "jobs_norm": [
+      "신경과학 연구자",
+      "임상 신경심리학자 / 발달 소아과 전문의",
+      "생물정보학자 / 의료 데이터 과학자"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "의사·임상 전문의",
+      "데이터·AI 바이오"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "기능적뇌연결성",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "과연결성",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "저연결성",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "시냅스",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "정밀의료",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "신경다양성",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -1021,6 +1387,79 @@
       {
         "type": "course",
         "value": "생물의 유전",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "영양학·대사",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      }
+    ],
+    "concepts_norm": [
+      "우려표명",
+      "프로테오믹스",
+      "DNA복제",
+      "원본데이터"
+    ],
+    "jobs_norm": [
+      "생화학·분자생물학 연구원",
+      "학술지 편집자",
+      "연구 윤리 전문가"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "기타 직군"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "영양학·대사",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "우려표명",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "프로테오믹스",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "DNA복제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "원본데이터",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
         "weight": 0.4
       }
     ]

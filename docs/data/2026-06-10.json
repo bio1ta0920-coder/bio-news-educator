@@ -216,6 +216,113 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "신약개발·제약",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      }
+    ],
+    "concepts_norm": [
+      "단백질구조예측",
+      "표적치료제",
+      "딥러닝",
+      "중심원리",
+      "단백질폴딩",
+      "신약개발파이프라인"
+    ],
+    "jobs_norm": [
+      "단백질 공학 연구원",
+      "바이오인포매틱스 전문가",
+      "임상시험 코디네이터"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "데이터·AI 바이오",
+      "임상시험·임상연구"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신약개발·제약",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "단백질구조예측",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "표적치료제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "딥러닝",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "중심원리",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "단백질폴딩",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "신약개발파이프라인",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -434,6 +541,97 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "감염병·백신",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "백신",
+      "집단면역",
+      "mRNA백신",
+      "기억세포",
+      "항원",
+      "세계백신학술대회"
+    ],
+    "jobs_norm": [
+      "백신 연구원",
+      "임상시험 전문가",
+      "국제보건 정책 전문가"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "임상시험·임상연구",
+      "규제·정책·인허가"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "감염병·백신",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "백신",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "집단면역",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "mRNA백신",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "기억세포",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "항원",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "세계백신학술대회",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "규제·정책·인허가",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -621,6 +819,79 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "합성생물학·AI생물정보학",
+    "curriculum_2022": [
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      }
+    ],
+    "concepts_norm": [
+      "홀로토모그래피",
+      "비표지이미징",
+      "오가노이드",
+      "굴절률"
+    ],
+    "jobs_norm": [
+      "생물물리학 연구원",
+      "세포생물학자 / 오가노이드 연구자",
+      "의료기기 개발 엔지니어"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "바이오 공정·생산"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "합성생물학·AI생물정보학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "홀로토모그래피",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "비표지이미징",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "오가노이드",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "굴절률",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "바이오 공정·생산",
         "weight": 0.4
       }
     ]
@@ -833,6 +1104,155 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "유전자편집·유전자치료",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자의 발현",
+        "element": "전사와 번역"
+      },
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "리보솜",
+      "전사와번역",
+      "논리게이트",
+      "합성생물학",
+      "CRISPR",
+      "번역전사전환기술"
+    ],
+    "jobs_norm": [
+      "합성생물학 연구원",
+      "바이오의약품 개발 연구원",
+      "생명윤리 전문가"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "기타 직군"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "유전자편집·유전자치료",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.1
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자의 발현",
+        "weight": 0.13999999999999999
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.1
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.13999999999999999
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.1
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.13999999999999999
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.1
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.13999999999999999
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.1
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.13999999999999999
+      },
+      {
+        "type": "concept",
+        "value": "리보솜",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "전사와번역",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "논리게이트",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "합성생물학",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "CRISPR",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "번역전사전환기술",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -1021,6 +1441,127 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "암·종양학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "생명공학기술",
+        "element": "생명공학기술의 활용"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "항암제",
+      "표적항암제",
+      "약동학",
+      "주입반응"
+    ],
+    "jobs_norm": [
+      "임상약리학자",
+      "항암제 개발 연구원",
+      "종양내과 전문의"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "암·종양학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 생명공학기술",
+        "weight": 0.175
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.175
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.175
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.125
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.175
+      },
+      {
+        "type": "concept",
+        "value": "항암제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "표적항암제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "약동학",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "주입반응",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
         "weight": 0.4
       }
     ]

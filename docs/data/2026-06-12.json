@@ -197,6 +197,117 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "암·종양학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "CART세포치료제",
+      "키메라항원수용체",
+      "T세포",
+      "사이토카인방출증후군"
+    ],
+    "jobs_norm": [
+      "면역세포치료 연구원",
+      "임상시험 코디네이터 / 임상 연구원",
+      "바이오의약품 허가·규제 전문가"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "임상시험·임상연구",
+      "규제·정책·인허가"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "암·종양학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "CART세포치료제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "키메라항원수용체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "T세포",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "사이토카인방출증후군",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "규제·정책·인허가",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -407,6 +518,85 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "감염병·백신",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "에볼라바이러스병",
+      "국제공중보건위기상황",
+      "항원특이성",
+      "백신",
+      "분디부교형에볼라바이러스"
+    ],
+    "jobs_norm": [
+      "감염병 역학조사관",
+      "바이러스학 연구원",
+      "국제보건 전문가"
+    ],
+    "job_families": [
+      "기타 직군",
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "감염병·백신",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "에볼라바이러스병",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "국제공중보건위기상황",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "항원특이성",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "백신",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "분디부교형에볼라바이러스",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -604,6 +794,111 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "합성생물학·AI생물정보학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "생체분자언어",
+      "단백질구조예측",
+      "유전체",
+      "자연어처리",
+      "알파폴드"
+    ],
+    "jobs_norm": [
+      "생물정보학자",
+      "AI 신약 개발 연구원",
+      "의생명 데이터 과학자"
+    ],
+    "job_families": [
+      "데이터·AI 바이오"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "합성생물학·AI생물정보학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "생체분자언어",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "단백질구조예측",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "유전체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "자연어처리",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "알파폴드",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
         "weight": 0.4
       }
     ]
@@ -828,6 +1123,129 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "의료정책·규제",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "세포유전자치료제",
+      "항체약물접합체",
+      "임상시험계획",
+      "오프타깃효과",
+      "연구자주도임상",
+      "GMP"
+    ],
+    "jobs_norm": [
+      "임상시험 코디네이터 / 임상연구원",
+      "규제과학 전문가",
+      "세포·유전자치료제 연구원"
+    ],
+    "job_families": [
+      "임상시험·임상연구",
+      "규제·정책·인허가",
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "의료정책·규제",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "세포유전자치료제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "항체약물접합체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "임상시험계획",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "오프타깃효과",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "연구자주도임상",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "GMP",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "규제·정책·인허가",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -1047,6 +1465,129 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "신약개발·제약",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "생명공학기술",
+        "element": "생명공학기술의 활용"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "GLP1계열치료제",
+      "항체약물접합체",
+      "오가노이드",
+      "세포유전자치료제",
+      "위탁개발생산",
+      "실사용데이터"
+    ],
+    "jobs_norm": [
+      "바이오의약품 연구원",
+      "AI 신약개발 데이터 과학자",
+      "임상시험 코디네이터 및 임상개발 전문가"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "데이터·AI 바이오",
+      "임상시험·임상연구"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신약개발·제약",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 생명공학기술",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "GLP1계열치료제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "항체약물접합체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "오가노이드",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "세포유전자치료제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "위탁개발생산",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "실사용데이터",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
         "weight": 0.4
       }
     ]

@@ -194,6 +194,147 @@
         "value": "세포치료제 제조 전문가(GMP 전문가)",
         "weight": 0.3
       }
+    ],
+    "bio_field_norm": "면역학·면역치료",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "고형암",
+      "면역세포치료",
+      "종양미세환경",
+      "맞춤형치료"
+    ],
+    "jobs_norm": [
+      "면역학 연구원",
+      "임상시험 코디네이터 / 임상연구원",
+      "세포치료제 제조 전문가"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "임상시험·임상연구",
+      "바이오 공정·생산"
+    ],
+    "cross_areas": [
+      "화학",
+      "윤리",
+      "수학"
+    ],
+    "cross_courses": [
+      "화학",
+      "화학 반응의 세계",
+      "현대사회와 윤리",
+      "윤리문제 탐구",
+      "확률과 통계",
+      "실용 통계",
+      "수학과제 탐구"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "면역학·면역치료",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "고형암",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "면역세포치료",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "종양미세환경",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "맞춤형치료",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "바이오 공정·생산",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "화학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "수학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "화학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "화학 반응의 세계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "확률과 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "실용 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "수학과제 탐구",
+        "weight": 0.25
+      }
     ]
   },
   {
@@ -415,6 +556,153 @@
         "value": "내분비내과 전문의",
         "weight": 0.3
       }
+    ],
+    "bio_field_norm": "내분비·대사질환",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "신경계"
+      }
+    ],
+    "concepts_norm": [
+      "GIP수용체",
+      "수용체작용제",
+      "수용체길항제",
+      "GLP1수용체",
+      "시상하부",
+      "뇌간"
+    ],
+    "jobs_norm": [
+      "신경약리학 연구원",
+      "제약 회사 임상개발 연구원",
+      "내분비내과 전문의"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [
+      "화학",
+      "윤리",
+      "수학"
+    ],
+    "cross_courses": [
+      "화학",
+      "물질과 에너지",
+      "현대사회와 윤리",
+      "윤리문제 탐구",
+      "확률과 통계",
+      "실용 통계",
+      "수학과제 탐구"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "내분비·대사질환",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "GIP수용체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "수용체작용제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "수용체길항제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "GLP1수용체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "시상하부",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "뇌간",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "화학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "수학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "화학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "물질과 에너지",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "확률과 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "실용 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "수학과제 탐구",
+        "weight": 0.25
+      }
     ]
   },
   {
@@ -634,6 +922,169 @@
         "value": "분자 생물학 연구원 / 제약회사 신약 개발 연구원",
         "weight": 0.3
       }
+    ],
+    "bio_field_norm": "암·종양학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "EGFR",
+      "엑손20삽입변이",
+      "무진행생존기간",
+      "비소세포폐암",
+      "표적치료제/TKI",
+      "임상3상"
+    ],
+    "jobs_norm": [
+      "임상시험 코디네이터 / 임상시험 전문가",
+      "종양 전문의 / 폐암 전문 내과 의사",
+      "분자 생물학 연구원 / 제약회사 신약 개발 연구원"
+    ],
+    "job_families": [
+      "임상시험·임상연구",
+      "의사·임상 전문의",
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [
+      "화학",
+      "윤리",
+      "수학"
+    ],
+    "cross_courses": [
+      "화학 반응의 세계",
+      "현대사회와 윤리",
+      "윤리문제 탐구",
+      "확률과 통계",
+      "실용 통계",
+      "수학과제 탐구"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "암·종양학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "EGFR",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "엑손20삽입변이",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "무진행생존기간",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "비소세포폐암",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "표적치료제/TKI",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "임상3상",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "화학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "수학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "화학 반응의 세계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "확률과 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "실용 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "수학과제 탐구",
+        "weight": 0.25
+      }
     ]
   },
   {
@@ -844,6 +1295,153 @@
         "value": "생물정보학자(bioinformatician)",
         "weight": 0.3
       }
+    ],
+    "bio_field_norm": "진화·고생물학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "진화"
+      }
+    ],
+    "concepts_norm": [
+      "진사회성",
+      "반수이배수성",
+      "혈연선택",
+      "계통비교방법",
+      "벌목침을가진그룹"
+    ],
+    "jobs_norm": [
+      "진화생물학자",
+      "곤충학자",
+      "생물정보학자"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "데이터·AI 바이오"
+    ],
+    "cross_areas": [
+      "수학",
+      "윤리",
+      "생명과학"
+    ],
+    "cross_courses": [
+      "확률과 통계",
+      "실용 통계",
+      "수학과제 탐구",
+      "현대사회와 윤리",
+      "윤리문제 탐구",
+      "생명과학",
+      "세포와 물질대사",
+      "생물의 유전"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "진화·고생물학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "진사회성",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "반수이배수성",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "혈연선택",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "계통비교방법",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "벌목침을가진그룹",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "수학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "생명과학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "확률과 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "실용 통계",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "수학과제 탐구",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "세포와 물질대사",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "생물의 유전",
+        "weight": 0.25
+      }
     ]
   },
   {
@@ -1044,6 +1642,135 @@
         "type": "job",
         "value": "의료 영상 기술 전문가 / 3D 바이오 렌더링 전문가",
         "weight": 0.3
+      }
+    ],
+    "bio_field_norm": "진화·고생물학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "진화"
+      }
+    ],
+    "concepts_norm": [
+      "뇌내부주형",
+      "CT스캔",
+      "생태적다양성과수렴진화vs.분산진화",
+      "형태신경해부학과행동적응"
+    ],
+    "jobs_norm": [
+      "고생물학자",
+      "신경해부학 연구자",
+      "의료 영상 기술 전문가 / 3D 바이오 렌더링 전문가"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "기타 직군"
+    ],
+    "cross_areas": [
+      "지구과학",
+      "물리학",
+      "윤리"
+    ],
+    "cross_courses": [
+      "지구과학",
+      "지구시스템과학",
+      "물리학",
+      "전자기와 양자",
+      "현대사회와 윤리",
+      "윤리문제 탐구"
+    ],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "진화·고생물학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "뇌내부주형",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "CT스캔",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "생태적다양성과수렴진화vs.분산진화",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "형태신경해부학과행동적응",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      },
+      {
+        "type": "cross_area",
+        "value": "지구과학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "물리학",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_area",
+        "value": "윤리",
+        "weight": 0.3
+      },
+      {
+        "type": "cross_course",
+        "value": "지구과학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "지구시스템과학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "물리학",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "전자기와 양자",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "현대사회와 윤리",
+        "weight": 0.25
+      },
+      {
+        "type": "cross_course",
+        "value": "윤리문제 탐구",
+        "weight": 0.25
       }
     ]
   }

@@ -221,6 +221,113 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "진화·고생물학",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "후성유전학",
+      "DNA메틸화",
+      "유전체각인",
+      "파라뮤테이션",
+      "비멘델식유전",
+      "대립유전자"
+    ],
+    "jobs_norm": [
+      "후성유전학 연구원",
+      "생물정보학자",
+      "생식의학 전문의 / 불임 클리닉 연구원"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "데이터·AI 바이오",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "진화·고생물학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "후성유전학",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "DNA메틸화",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "유전체각인",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "파라뮤테이션",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "비멘델식유전",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "대립유전자",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -434,6 +541,97 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "면역학·면역치료",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "흉선",
+      "T세포",
+      "면역항암치료",
+      "AI의료영상분석",
+      "상대위험도",
+      "흉선위축"
+    ],
+    "jobs_norm": [
+      "의료 AI 연구자 / 의생명정보학자",
+      "종양면역학자 / 면역항암 치료 연구자",
+      "임상역학자 / 예방의학 전문의"
+    ],
+    "job_families": [
+      "데이터·AI 바이오",
+      "연구·개발(R&D)",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "면역학·면역치료",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "흉선",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "T세포",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "면역항암치료",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "AI의료영상분석",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "상대위험도",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "흉선위축",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -644,6 +842,97 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "면역학·면역치료",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "류머티스관절염",
+      "아바타셉트",
+      "자가항체",
+      "생물학적제제",
+      "예방적치료",
+      "무작위대조임상시험"
+    ],
+    "jobs_norm": [
+      "류머티즘 전문의",
+      "임상시험 연구원",
+      "면역학 연구자"
+    ],
+    "job_families": [
+      "의사·임상 전문의",
+      "임상시험·임상연구",
+      "연구·개발(R&D)"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "면역학·면역치료",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "류머티스관절염",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "아바타셉트",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "자가항체",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "생물학적제제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "예방적치료",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "무작위대조임상시험",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
         "weight": 0.4
       }
     ]
@@ -868,6 +1157,124 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "신경과학",
+    "curriculum_2022": [
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "물질대사와 에너지",
+        "element": "효소와 에너지"
+      },
+      {
+        "subject": "세포와 물질대사",
+        "track": "진로선택",
+        "area": "세포",
+        "element": "세포의 구조와 기능"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "STING단백질",
+      "S니트로실화",
+      "신경염증",
+      "시냅스",
+      "아밀로이드베타",
+      "전임상연구"
+    ],
+    "jobs_norm": [
+      "신경과학 연구원",
+      "신약 개발 연구원",
+      "임상신경과 전문의",
+      "질량분석 전문가 / 단백질체학 연구원"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "의사·임상 전문의"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 물질대사와 에너지",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "세포와 물질대사",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "세포와 물질대사 > 세포",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.16666666666666666
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.2333333333333333
+      },
+      {
+        "type": "concept",
+        "value": "STING단백질",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "S니트로실화",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "신경염증",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "시냅스",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "아밀로이드베타",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "전임상연구",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -1078,6 +1485,91 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "암·종양학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "흑색종",
+      "감마델타T세포",
+      "암전이",
+      "암휴면",
+      "면역억제",
+      "노화마우스모델"
+    ],
+    "jobs_norm": [
+      "암 생물학자",
+      "면역학 연구원",
+      "임상시험 코디네이터 및 연구원"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "임상시험·임상연구"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "암·종양학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "흑색종",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "감마델타T세포",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "암전이",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "암휴면",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "면역억제",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "노화마우스모델",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
         "weight": 0.4
       }
     ]

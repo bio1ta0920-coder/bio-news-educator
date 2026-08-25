@@ -208,6 +208,104 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "신경과학",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "신경계"
+      }
+    ],
+    "concepts_norm": [
+      "뇌컴퓨터인터페이스",
+      "활동전위",
+      "대뇌피질",
+      "루게릭병",
+      "미세전극",
+      "AI알고리즘"
+    ],
+    "jobs_norm": [
+      "신경공학자",
+      "의료기기 연구개발자",
+      "신경과학 전문의",
+      "AI·데이터 과학자"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "기타 직군",
+      "의사·임상 전문의",
+      "데이터·AI 바이오"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "신경과학",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "뇌컴퓨터인터페이스",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "활동전위",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "대뇌피질",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "루게릭병",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "미세전극",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "AI알고리즘",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "기타 직군",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -427,6 +525,113 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "감염병·백신",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      },
+      {
+        "subject": "통합과학2",
+        "track": "공통",
+        "area": "과학과 미래 사회",
+        "element": "과학기술과 사회"
+      }
+    ],
+    "concepts_norm": [
+      "백신플랫폼",
+      "에피데믹과팬데믹",
+      "기억세포",
+      "인수공통감염병",
+      "mRNA백신",
+      "포스트에피데믹"
+    ],
+    "jobs_norm": [
+      "수의사·수의과학연구원",
+      "백신·면역학 연구원",
+      "R&D 기획·정책 전문가"
+    ],
+    "job_families": [
+      "의사·임상 전문의",
+      "연구·개발(R&D)",
+      "규제·정책·인허가"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "감염병·백신",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "통합과학2",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "통합과학2 > 과학과 미래 사회",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "백신플랫폼",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "에피데믹과팬데믹",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "기억세포",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "인수공통감염병",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "mRNA백신",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "포스트에피데믹",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "규제·정책·인허가",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -627,6 +832,85 @@
         "value": "고급 생명과학",
         "weight": 0.4
       }
+    ],
+    "bio_field_norm": "면역학·면역치료",
+    "curriculum_2022": [
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "항상성과 몸의 조절",
+        "element": "면역"
+      }
+    ],
+    "concepts_norm": [
+      "면역거부반응",
+      "MHC",
+      "면역관용",
+      "면역억제제"
+    ],
+    "jobs_norm": [
+      "이식외과 전문의",
+      "면역학 연구원",
+      "임상시험 코디네이터"
+    ],
+    "job_families": [
+      "의사·임상 전문의",
+      "연구·개발(R&D)",
+      "임상시험·임상연구"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "면역학·면역치료",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.5
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 항상성과 몸의 조절",
+        "weight": 0.7
+      },
+      {
+        "type": "concept",
+        "value": "면역거부반응",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "MHC",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "면역관용",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "면역억제제",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "임상시험·임상연구",
+        "weight": 0.4
+      }
     ]
   },
   {
@@ -825,6 +1109,101 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "면역학·면역치료",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "희귀질환",
+      "산전관리",
+      "가족력",
+      "유전상담"
+    ],
+    "jobs_norm": [
+      "유전 상담사",
+      "의학유전학 전문의",
+      "공중보건 연구원 / 보건정책 전문가"
+    ],
+    "job_families": [
+      "상담·환자지원",
+      "의사·임상 전문의",
+      "규제·정책·인허가"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "면역학·면역치료",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "희귀질환",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "산전관리",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "가족력",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "유전상담",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "상담·환자지원",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "의사·임상 전문의",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "규제·정책·인허가",
         "weight": 0.4
       }
     ]
@@ -1048,6 +1427,113 @@
       {
         "type": "course",
         "value": "고급 생명과학",
+        "weight": 0.4
+      }
+    ],
+    "bio_field_norm": "세포생물학·이미징",
+    "curriculum_2022": [
+      {
+        "subject": "생물의 유전",
+        "track": "진로선택",
+        "area": "유전자와 유전물질",
+        "element": "DNA와 유전 현상"
+      },
+      {
+        "subject": "생명과학",
+        "track": "일반선택",
+        "area": "생명의 연속성과 다양성",
+        "element": "생식과 발생"
+      }
+    ],
+    "concepts_norm": [
+      "액체생검",
+      "KRAS돌연변이",
+      "플라즈모닉기술",
+      "PCR",
+      "차세대염기서열분석",
+      "정밀의료"
+    ],
+    "jobs_norm": [
+      "바이오센서 연구원",
+      "임상유전학자 / 유전상담사",
+      "정밀의료 데이터 분석가"
+    ],
+    "job_families": [
+      "연구·개발(R&D)",
+      "상담·환자지원",
+      "데이터·AI 바이오"
+    ],
+    "cross_areas": [],
+    "cross_courses": [],
+    "tags_norm": [
+      {
+        "type": "field",
+        "value": "세포생물학·이미징",
+        "weight": 1
+      },
+      {
+        "type": "subject",
+        "value": "생물의 유전",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생물의 유전 > 유전자와 유전물질",
+        "weight": 0.35
+      },
+      {
+        "type": "subject",
+        "value": "생명과학",
+        "weight": 0.25
+      },
+      {
+        "type": "area",
+        "value": "생명과학 > 생명의 연속성과 다양성",
+        "weight": 0.35
+      },
+      {
+        "type": "concept",
+        "value": "액체생검",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "KRAS돌연변이",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "플라즈모닉기술",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "PCR",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "차세대염기서열분석",
+        "weight": 0.5
+      },
+      {
+        "type": "concept",
+        "value": "정밀의료",
+        "weight": 0.5
+      },
+      {
+        "type": "job_family",
+        "value": "연구·개발(R&D)",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "상담·환자지원",
+        "weight": 0.4
+      },
+      {
+        "type": "job_family",
+        "value": "데이터·AI 바이오",
         "weight": 0.4
       }
     ]
