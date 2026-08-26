@@ -189,7 +189,7 @@ def build_article_html(content, index):
         )
     concepts_html = "".join(concepts_parts)
 
-    # 탐구 질문 (+ 모범답안 토글)
+    # 탐구 질문 (+ 탐구 길잡이 토글)
     # 답안은 q_index로 질문과 짝지어, 학생이 원할 때만 펼쳐 보도록 <details>로 감싼다.
     answers_by_index = {}
     for a in content.get("inquiry_answers", []) or []:
@@ -206,7 +206,7 @@ def build_article_html(content, index):
             answer_html = (
                 '<details style="margin-top:8px;">'
                 '<summary style="cursor:pointer; font-size:12px; color:#2e7d32; font-weight:bold;">'
-                '&#x1F4A1; 모범답안 살펴보기</summary>'
+                '&#x1F4A1; 탐구 길잡이 살펴보기</summary>'
                 '<div style="margin-top:8px; padding:12px; background:#f1f8e9;'
                 'border-radius:6px; font-size:13px; line-height:1.8;">'
                 '<p style="margin:0 0 8px;"><strong>어떻게 접근할까</strong><br>'

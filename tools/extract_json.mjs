@@ -130,7 +130,7 @@ function parseArticle(html, meta) {
     html
   ).map(m => ({ term: text(m[1]), definition: text(m[2]) }));
 
-  // 탐구 질문 (+ 모범답안). 답안은 <details>로 붙어 있으므로 질문 텍스트에서 분리한다.
+  // 탐구 질문 (+ 탐구 길잡이). 답안은 <details>로 붙어 있으므로 질문 텍스트에서 분리한다.
   const iqBlocks = all(/background:#fff9c4; border-radius:4px;">([\s\S]*?)<\/li>/g, html).map(m => m[1]);
   a.inquiry_questions = [];
   a.inquiry_answers = [];
