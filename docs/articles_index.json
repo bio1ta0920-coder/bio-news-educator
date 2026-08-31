@@ -2182,5 +2182,32 @@
       "page_file": "2026-08-30-5.html",
       "subject": "신경과학"
     }
+  ],
+  "2026-08-31": [
+    {
+      "title": "예측 속도 25배 향상···KAIST '한국판 알파폴드' 개발",
+      "page_file": "2026-08-31-1.html",
+      "subject": "합성생물학·AI생물정보학"
+    },
+    {
+      "title": "\"미생물 식품, 산업화 단계\"…KAIST, 차세대 단백질 시장 로드맵 제시",
+      "page_file": "2026-08-31-2.html",
+      "subject": "합성생물학·AI생물정보학"
+    },
+    {
+      "title": "A hidden “on switch” in human DNA has finally been decoded",
+      "page_file": "2026-08-31-3.html",
+      "subject": "합성생물학·AI생물정보학"
+    },
+    {
+      "title": "A cancer therapy put severe rheumatoid arthritis into remission",
+      "page_file": "2026-08-31-4.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "Manipulation of protein translation and stem cell self-renewal by CRISPR activation of rRNA transcription",
+      "page_file": "2026-08-31-5.html",
+      "subject": "재생의학·줄기세포"
+    }
   ]
 }
