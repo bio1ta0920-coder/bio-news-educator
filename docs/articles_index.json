@@ -2236,5 +2236,32 @@
       "page_file": "2026-09-01-5.html",
       "subject": "신약개발·제약"
     }
+  ],
+  "2026-09-02": [
+    {
+      "title": "저분자 기반 표적 RNA 분해 기술 연구 및 특허 동향",
+      "page_file": "2026-09-02-1.html",
+      "subject": "RNA치료제"
+    },
+    {
+      "title": "GSK, 만성 B형 간염 기능적 완치 치료제 일본 허가",
+      "page_file": "2026-09-02-2.html",
+      "subject": "감염병·백신"
+    },
+    {
+      "title": "AAV 벡터 기반 유전자치료제의 최신 개발 동향",
+      "page_file": "2026-09-02-3.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "분당서울대병원, 췌장암·폐암 조기진단·재발 예측 AI 개발 착수",
+      "page_file": "2026-09-02-4.html",
+      "subject": "합성생물학·AI생물정보학"
+    },
+    {
+      "title": "Scientists find hidden “highways” guiding animal evolution",
+      "page_file": "2026-09-02-5.html",
+      "subject": "진화·고생물학"
+    }
   ]
 }
