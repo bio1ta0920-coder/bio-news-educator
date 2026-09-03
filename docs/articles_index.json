@@ -2263,5 +2263,32 @@
       "page_file": "2026-09-02-5.html",
       "subject": "진화·고생물학"
     }
+  ],
+  "2026-09-03": [
+    {
+      "title": "‘고기맛 상추’ 나올까…엽록체가 동물성 단백질 만들었다",
+      "page_file": "2026-09-03-1.html",
+      "subject": "합성생물학·AI생물정보학"
+    },
+    {
+      "title": "Audio long read: Could mending damaged DNA prolong life?",
+      "page_file": "2026-09-03-2.html",
+      "subject": "세포생물학·이미징"
+    },
+    {
+      "title": "Creating bottom-up RNA transfer vehicles from synthetic protein assemblies",
+      "page_file": "2026-09-03-3.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "Late-life semaglutide treatment slows ageing and extends lifespan in female mice",
+      "page_file": "2026-09-03-4.html",
+      "subject": "내분비·대사질환"
+    },
+    {
+      "title": "Rewiring the ribosome to translate proteins encoded in its own RNA",
+      "page_file": "2026-09-03-5.html",
+      "subject": "합성생물학·AI생물정보학"
+    }
   ]
 }
