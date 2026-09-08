@@ -2398,5 +2398,32 @@
       "page_file": "2026-09-07-5.html",
       "subject": "면역학·면역치료"
     }
+  ],
+  "2026-09-08": [
+    {
+      "title": "Scientists find a weak spot in one of the deadliest brain cancers",
+      "page_file": "2026-09-08-1.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "The secret life of a cell-cycle gatekeeper of breast cancer",
+      "page_file": "2026-09-08-2.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "알지노믹스(Rznomics)가 자체 플랫폼의 핵심인 RNA 치환효소인 리보자임(ribozyme)을 기반으로 원형RNA(circular RNA, circRNA)를 생산하는 효율을…",
+      "page_file": "2026-09-08-3.html",
+      "subject": "RNA치료제"
+    },
+    {
+      "title": "아이오니스 파마슈티컬(Ionis Pharmaceuticals)이 초희귀질환인 알렉산더병(Alexander disease, AxD)을 적응증으로 안티센스…",
+      "page_file": "2026-09-08-4.html",
+      "subject": "RNA치료제"
+    },
+    {
+      "title": "그야말로 '항체-약물접합체(ADC)의 르네상스 시대'라고 할만하다.",
+      "page_file": "2026-09-08-5.html",
+      "subject": "신약개발·제약"
+    }
   ]
 }
