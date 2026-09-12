@@ -2533,5 +2533,32 @@
       "page_file": "2026-09-12-5.html",
       "subject": "감염병·백신"
     }
+  ],
+  "2026-09-13": [
+    {
+      "title": "삼성바이오로직스, 유럽 소재 제약사와 3508억 규모 위탁생산 계약",
+      "page_file": "2026-09-13-1.html",
+      "subject": "신약개발·제약"
+    },
+    {
+      "title": "The secret to longer life may be hidden in bat DNA",
+      "page_file": "2026-09-13-2.html",
+      "subject": "진화·고생물학"
+    },
+    {
+      "title": "Scientists find a way to break pancreatic cancer’s protective shield",
+      "page_file": "2026-09-13-3.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "UCLA scientists turn cord blood into powerful cancer-fighting T cells",
+      "page_file": "2026-09-13-4.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "66-million-year-old feather in dinosaur poop may reveal why birds survived the asteroid",
+      "page_file": "2026-09-13-5.html",
+      "subject": "진화·고생물학"
+    }
   ]
 }
