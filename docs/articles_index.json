@@ -2560,5 +2560,32 @@
       "page_file": "2026-09-13-5.html",
       "subject": "진화·고생물학"
     }
+  ],
+  "2026-09-14": [
+    {
+      "title": "Scientists find a new layer of Alzheimer’s hidden in the genome",
+      "page_file": "2026-09-14-1.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "Scientists discover a hidden switch that shuts down inflammation",
+      "page_file": "2026-09-14-2.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "암젠(Amgen)은 CD3xDLL3 이중항체 ‘임델트라(Imdelltra, tarlatamab)’를 투여편의성을 위한 피하주사(SC) 제형으로도 개발하고 있으며, 확장기…",
+      "page_file": "2026-09-14-3.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "로슈(Roche)와 중국 메디링크 테라퓨틱스(MediLink Therapeutics)의 B7-H3 항체-약물접합체(ADC) ‘탐보타투그 펠리테칸(tambotatug…",
+      "page_file": "2026-09-14-4.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "NASA-backed scientists turn plastic waste into edible cookies",
+      "page_file": "2026-09-14-5.html",
+      "subject": "합성생물학·AI생물정보학"
+    }
   ]
 }
