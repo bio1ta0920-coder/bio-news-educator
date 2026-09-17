@@ -2641,5 +2641,32 @@
       "page_file": "2026-09-16-5.html",
       "subject": "암·종양학"
     }
+  ],
+  "2026-09-17": [
+    {
+      "title": "Scientists find an immune “false alarm” that may drive rapid aging",
+      "page_file": "2026-09-17-1.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "Transplanted human brain-tissue takes root in mice without a cortex",
+      "page_file": "2026-09-17-2.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "Targeted genomic integration and rearrangement using prime assembly",
+      "page_file": "2026-09-17-3.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "Identification of broadly tumour-reactive γδ TCRs from multiple myeloma",
+      "page_file": "2026-09-17-4.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "Map of brain ‘microproteins’ could offer new clues to Alzheimer’s disease",
+      "page_file": "2026-09-17-5.html",
+      "subject": "신경과학"
+    }
   ]
 }
