@@ -2,6 +2,8 @@
 Claude API를 사용한 기사 필터링 및 교육 콘텐츠 생성 모듈
 """
 import json
+from datetime import datetime
+from zoneinfo import ZoneInfo
 import anthropic
 from json_repair import repair_json
 from config import ANTHROPIC_API_KEY, MODEL_FILTER, MODEL_CONTENT, RELEVANCE_THRESHOLD
@@ -61,10 +63,20 @@ def generate_educational_content(article: dict, full_text: str) -> dict:
     Returns: 콘텐츠 딕셔너리
     """
     lang_note = "영어 기사이므로 모든 내용을 한국어로 완전히 번역하여 작성하세요." if article["lang"] == "en" else ""
+    today_kst = datetime.now(ZoneInfo("Asia/Seoul")).date().isoformat()
 
     prompt = f"""당신은 한국 고등학교 생명과학 교사이자 학생부 종합전형 전문가입니다.
 학생들이 과학을 과학만으로 보지 않고, 산업·의료·사회·자신의 삶과 연결하여 볼 수 있도록 돕는 것이 목표입니다.
 {lang_note}
+
+[날짜 판단 기준]
+교육자료 생성일(한국 시간): {today_kst}
+기사 발행일(수집 메타데이터): {article.get('published_date') or '확인되지 않음 — 본문에 명시된 발행일만 사용'}
+- 현재 날짜는 위 생성일입니다. 모델의 학습 시점이나 지식 기준일을 현재로 가정하지 마세요.
+- 발행일이 생성일보다 이전이거나 같으면 미래 기사라고 표현하지 마세요.
+- 수집일과 발행일을 구분하고, 본문 속 임상 목표일·사업 계획일을 기사 발행일로 혼동하지 마세요.
+- 날짜가 불명확하면 날짜를 추측하지 마세요. 최근 날짜라는 이유만으로 가상 기사나 미발표 자료라고 판단하지 마세요.
+- 기사 속 연구 전망·계획의 불확실성은 날짜 문제와 별개로 근거에 따라 설명하세요.
 
 ━━━ 절대 원칙 (반드시 준수) ━━━
 1. 팩트체크 우선: 기사 본문에 명시된 내용만 사실로 서술하세요.
