@@ -2776,5 +2776,32 @@
       "page_file": "2026-09-21-5.html",
       "subject": "진화·고생물학"
     }
+  ],
+  "2026-09-22": [
+    {
+      "title": "'Epigenetic' editing is here: gene-tagging technique banishes hepatitis B virus",
+      "page_file": "2026-09-22-1.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "How to make a brain: new experiments challenge existing picture",
+      "page_file": "2026-09-22-2.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "큐라클(Curacle)은 항체 신약개발 바이오텍 맵틱스(MabTics)와 혈관염 치료제로 공동개발하고 있는 Tie2xC5 이중항체 ‘MT-501’이 중소벤처기업부 국가연구개발…",
+      "page_file": "2026-09-22-3.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "이뮨온시아, 'CD47xPD-L1' 면역항암제 \"日특허 등록\"",
+      "page_file": "2026-09-22-4.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "인듀프로(InduPro)가 리드 프로그램인 EGFRxCDCP1 항체-약물접합체(ADC) ‘IDP-001’의 전임상 결과를 공개했다.",
+      "page_file": "2026-09-22-5.html",
+      "subject": "암·종양학"
+    }
   ]
 }
