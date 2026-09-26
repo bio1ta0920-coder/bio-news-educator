@@ -2884,5 +2884,32 @@
       "page_file": "2026-09-25-5.html",
       "subject": "신경과학"
     }
+  ],
+  "2026-09-26": [
+    {
+      "title": "2026-1호 국내 첨단재생의료 임상 동향",
+      "page_file": "2026-09-26-1.html",
+      "subject": "재생의학·줄기세포"
+    },
+    {
+      "title": "서울대병원, 한국형 ARPA-H 4개 과제 선정",
+      "page_file": "2026-09-26-2.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "CRISPR could help doctors attack blood cancer without destroying healthy cells",
+      "page_file": "2026-09-26-3.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "Scientists gave worms magnetic bacteria. They lived 43% longer",
+      "page_file": "2026-09-26-4.html",
+      "subject": "세포생물학·이미징"
+    },
+    {
+      "title": "Scientists discover an “impossible” cellular survival pathway that could help fight cancer",
+      "page_file": "2026-09-26-5.html",
+      "subject": "암·종양학"
+    }
   ]
 }
