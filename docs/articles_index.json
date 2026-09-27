@@ -2911,5 +2911,32 @@
       "page_file": "2026-09-26-5.html",
       "subject": "암·종양학"
     }
+  ],
+  "2026-09-27": [
+    {
+      "title": "10분만에 읽는 ‘영장류’ 인류 5500만년 진화사",
+      "page_file": "2026-09-27-1.html",
+      "subject": "진화·고생물학"
+    },
+    {
+      "title": "Anthropic’s AI biolab finds ‘CRISPR-like’ DNA in viruses. What’s next?",
+      "page_file": "2026-09-27-2.html",
+      "subject": "합성생물학·AI생물정보학"
+    },
+    {
+      "title": "동물대체시험법(투구게) 국제규제기관 공동평가 완료",
+      "page_file": "2026-09-27-3.html",
+      "subject": "의료정책·규제"
+    },
+    {
+      "title": "Don’t toss cannabis leaves: They may contain rare compounds with medical potential",
+      "page_file": "2026-09-27-4.html",
+      "subject": "신약개발·제약"
+    },
+    {
+      "title": "Zepbound and Mounjaro may turn on the body’s calorie-burning brown fat",
+      "page_file": "2026-09-27-5.html",
+      "subject": "내분비·대사질환"
+    }
   ]
 }
