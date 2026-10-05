@@ -3127,5 +3127,32 @@
       "page_file": "2026-10-04-5.html",
       "subject": "유전자편집·유전자치료"
     }
+  ],
+  "2026-10-05": [
+    {
+      "title": "생태계 떠받치는 ‘분해자’ 곰팡이·버섯…인간은 5%만 이름을 부른다",
+      "page_file": "2026-10-05-1.html",
+      "subject": "생태학·환경과학"
+    },
+    {
+      "title": "유전자편집으로 면역세포 항암효능 높인다…PD-1 억제 주목",
+      "page_file": "2026-10-05-2.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "Tuberculosis treatment has advanced — now we need to stop drug resistance dragging us backwards",
+      "page_file": "2026-10-05-3.html",
+      "subject": "감염병·백신"
+    },
+    {
+      "title": "This common vitamin could help fight one of the deadliest brain cancers",
+      "page_file": "2026-10-05-4.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "Vitamin D drug may help crack pancreatic cancer’s protective shield",
+      "page_file": "2026-10-05-5.html",
+      "subject": "암·종양학"
+    }
   ]
 }
