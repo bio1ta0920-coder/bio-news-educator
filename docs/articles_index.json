@@ -3262,5 +3262,32 @@
       "page_file": "2026-10-09-5.html",
       "subject": "합성생물학·AI생물정보학"
     }
+  ],
+  "2026-10-10": [
+    {
+      "title": "Bacteria turn a virus’ own weapon against it",
+      "page_file": "2026-10-10-1.html",
+      "subject": "감염병·백신"
+    },
+    {
+      "title": "Scientists just found a way to fight lung cancer and muscle wasting at the same time",
+      "page_file": "2026-10-10-2.html",
+      "subject": "RNA치료제"
+    },
+    {
+      "title": "Breaking down nerve-cell scaffold relieves chronic pain in mice",
+      "page_file": "2026-10-10-3.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "Scientists tested 5 natural compounds on cancer cells. One stood out",
+      "page_file": "2026-10-10-4.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "Chimp and gorilla brains resist weight loss with age — unlike human brains",
+      "page_file": "2026-10-10-5.html",
+      "subject": "신경과학"
+    }
   ]
 }
