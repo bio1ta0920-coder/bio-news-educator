@@ -3397,5 +3397,32 @@
       "page_file": "2026-10-14-5.html",
       "subject": "암·종양학"
     }
+  ],
+  "2026-10-15": [
+    {
+      "title": "유전자 바꿔 만든 세계 최초 '형광 갑오징어'…새끼도 형광",
+      "page_file": "2026-10-15-1.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "GC녹십자 '헌터증후군 치료제', 과민반응 정밀 분석법 개발…학술지 게재",
+      "page_file": "2026-10-15-2.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "김진수 “유전자 가위 쓰면 GMO 취급…원천특허 지킬 투자도 필요”",
+      "page_file": "2026-10-15-3.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "DNA recording system reveals how a single cell becomes a body",
+      "page_file": "2026-10-15-4.html",
+      "subject": "세포생물학·이미징"
+    },
+    {
+      "title": "Engineered TYK2 dependence enables myeloid-selective IL-10 receptor agonism",
+      "page_file": "2026-10-15-5.html",
+      "subject": "면역학·면역치료"
+    }
   ]
 }
