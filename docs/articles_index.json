@@ -3478,5 +3478,32 @@
       "page_file": "2026-10-17-5.html",
       "subject": "면역학·면역치료"
     }
+  ],
+  "2026-10-18": [
+    {
+      "title": "Stanford’s new microscope reveals living cells like never before",
+      "page_file": "2026-10-18-1.html",
+      "subject": "세포생물학·이미징"
+    },
+    {
+      "title": "New drug reverses severe fatty liver disease by repairing the gut",
+      "page_file": "2026-10-18-2.html",
+      "subject": "내분비·대사질환"
+    },
+    {
+      "title": "A 240-million-year-old fossil just changed the dinosaur timeline",
+      "page_file": "2026-10-18-3.html",
+      "subject": "진화·고생물학"
+    },
+    {
+      "title": "Scientists discover how deep sleep builds muscle, burns fat, and boosts the brain",
+      "page_file": "2026-10-18-4.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "Brain cells meant to protect us may be fueling cognitive decline",
+      "page_file": "2026-10-18-5.html",
+      "subject": "신경과학"
+    }
   ]
 }
