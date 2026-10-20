@@ -4,3 +4,10 @@
 docs/data/articles.json
 docs/data/tags.json
 docs/data/taxonomy.json
+
+# 로컬 비밀값·캐시 (ANTHROPIC_API_KEY 등은 GitHub Actions secrets로만 관리)
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
