@@ -3532,5 +3532,32 @@
       "page_file": "2026-10-19-5.html",
       "subject": "신경과학"
     }
+  ],
+  "2026-10-20": [
+    {
+      "title": "Why some people escape Alzheimer’s despite carrying a high-risk gene",
+      "page_file": "2026-10-20-1.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "Scientists win 2026 Nobel Prize for controlling brain cells with light",
+      "page_file": "2026-10-20-2.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "와이바이오, '다중항체-사이토카인 융합체' 2건 SITC 발표",
+      "page_file": "2026-10-20-3.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "베라스템 온콜로지(Verastem Oncology)의 KRAS G12D(ON/OFF) 저해제 ‘VS-7375’가 고형암 임상1/2상에서 전체반응률(ORR)을 최대 50%까지…",
+      "page_file": "2026-10-20-4.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "에이비엘, '4-1BB 이중항체' 2개 에셋 1상 \"ESMO 공개\"",
+      "page_file": "2026-10-20-5.html",
+      "subject": "면역학·면역치료"
+    }
   ]
 }
