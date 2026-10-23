@@ -3613,5 +3613,32 @@
       "page_file": "2026-10-22-5.html",
       "subject": "암·종양학"
     }
+  ],
+  "2026-10-23": [
+    {
+      "title": "A first for CRISPR: powerful prime editing alters DNA directly in the human body",
+      "page_file": "2026-10-23-1.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "셀트리온, 美카이진서 'APRIL 항체' 5.8억弗 사들여",
+      "page_file": "2026-10-23-2.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "이스라엘 바이오텍 나노24(Nano24)의 흡입형 엑소좀 ‘EXO-CD24’가 급성호흡곤란증후군(acute respiratory distress syndrome, ARDS)…",
+      "page_file": "2026-10-23-3.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "‘얼굴 사진 한 장’으로 암 환자 사망 위험 맞혀…생존율 예측 AI 나와",
+      "page_file": "2026-10-23-4.html",
+      "subject": "합성생물학·AI생물정보학"
+    },
+    {
+      "title": "Oxford scientists discover how viruses build themselves without a blueprint",
+      "page_file": "2026-10-23-5.html",
+      "subject": "세포생물학·이미징"
+    }
   ]
 }
