@@ -3640,5 +3640,32 @@
       "page_file": "2026-10-23-5.html",
       "subject": "세포생물학·이미징"
     }
+  ],
+  "2026-10-24": [
+    {
+      "title": "의약품 전주기 단계별 AI 기술의 업계 현황 자료집",
+      "page_file": "2026-10-24-1.html",
+      "subject": "합성생물학·AI생물정보학"
+    },
+    {
+      "title": "Market Insight 438 : mRNA 치료제 (mRNA Therapeutics)",
+      "page_file": "2026-10-24-2.html",
+      "subject": "RNA치료제"
+    },
+    {
+      "title": "유전자편집으로 헌팅턴병 원인 DNA 반복서열 줄였다",
+      "page_file": "2026-10-24-3.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "말기 대장암 환자 대상 맞춤형 면역세포 치료 가능성 모색",
+      "page_file": "2026-10-24-4.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "\"수술 못 하던 췌장암까지\"…삼성서울, 방사선 치료 물질 심는다",
+      "page_file": "2026-10-24-5.html",
+      "subject": ""
+    }
   ]
 }
