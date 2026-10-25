@@ -3667,5 +3667,32 @@
       "page_file": "2026-10-24-5.html",
       "subject": ""
     }
+  ],
+  "2026-10-25": [
+    {
+      "title": "This 150-million-year-old bird had dinosaur teeth and a strange secret",
+      "page_file": "2026-10-25-1.html",
+      "subject": "진화·고생물학"
+    },
+    {
+      "title": "Your blood could reveal inflammatory bowel disease 10 years before diagnosis",
+      "page_file": "2026-10-25-2.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "Natural compound could fight rheumatoid arthritis at its source",
+      "page_file": "2026-10-25-3.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "Scientists discover a way to kill dangerous gut bacteria without killing the good",
+      "page_file": "2026-10-25-4.html",
+      "subject": "감염병·백신"
+    },
+    {
+      "title": "Scientists finally see how nature moves energy so efficiently",
+      "page_file": "2026-10-25-5.html",
+      "subject": "세포생물학·이미징"
+    }
   ]
 }
