@@ -3694,5 +3694,32 @@
       "page_file": "2026-10-25-5.html",
       "subject": "세포생물학·이미징"
     }
+  ],
+  "2026-10-26": [
+    {
+      "title": "Scientists discover how pancreatic cancer rewrites its DNA to escape treatment",
+      "page_file": "2026-10-26-1.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "ctDNA clearance and outcomes for resectable lung cancer from NeoCOAST-2",
+      "page_file": "2026-10-26-2.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "이제 클라우딘18.2(CLDN18.2) 약물개발 영역에서, 첫 스타트로 다케다(Takeda)가 베팅한 항체-약물접합체(ADC) ‘알코타툭 타바테칸(arcotatug…",
+      "page_file": "2026-10-26-3.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "이제 컴패스 테라퓨틱스(Compass Therapeutics)가 계속해서 허가를 추진하고 있는 DLL4xVEGF 이중항체 ‘토베시미그(tovecimig)’가 담도암(BTC)…",
+      "page_file": "2026-10-26-4.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "서밋 테라퓨틱스(Summit Therapeutics)가 PD-1xVEGF 이중항체 ‘이보네스시맙(ivonescimab)’의 약물반응을 예측하기 위한 종양미세환경(tumor…",
+      "page_file": "2026-10-26-5.html",
+      "subject": "합성생물학·AI생물정보학"
+    }
   ]
 }
