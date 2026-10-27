@@ -14,7 +14,7 @@ from pathlib import Path
 import secrets
 import time
 from urllib.error import HTTPError
-from urllib.parse import parse_qs, urlencode, urlparse
+from urllib.parse import parse_qs, parse_qsl, urlencode, urlparse, urlunparse
 from urllib.request import Request, urlopen
 
 PRIVATE = Path(__file__).resolve().parents[1] / 'private_reports'
@@ -94,6 +94,12 @@ def send(config, day, text):
     date.fromisoformat(day)
     if not text.strip() or len(text) > 1000:
         raise ValueError('알림은 1~1000자로 작성하세요')
+    link = urlparse(config['link_url'])
+    if link.scheme != 'https' or not link.hostname or link.username or link.password:
+        raise ValueError('보고서 링크는 인증정보 없는 HTTPS 주소여야 합니다')
+    query = dict(parse_qsl(link.query))
+    query['date'] = day
+    report_url = urlunparse(link._replace(query=urlencode(query), fragment=''))
     ledger = PRIVATE / 'delivery' / (day + '.json')
     if ledger.exists():
         prior = json.loads(ledger.read_text())
@@ -106,8 +112,8 @@ def send(config, day, text):
             'grant_type': 'refresh_token', 'client_id': config['client_id'],
             'client_secret': config.get('client_secret', ''), 'refresh_token': config['refresh_token']}))
     template = {'object_type': 'text', 'text': text,
-        'link': {'web_url': config['link_url'], 'mobile_web_url': config['link_url']},
-        'button_title': '교육자료 확인'}
+        'link': {'web_url': report_url, 'mobile_web_url': report_url},
+        'button_title': '전체 보고서 보기'}
     private_write(ledger, {'date': day, 'status': 'sending'})
     try:
         response = post('https://kapi.kakao.com/v2/api/talk/memo/default/send',
