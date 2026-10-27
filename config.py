@@ -14,7 +14,9 @@ MODEL_CONTENT = "claude-sonnet-4-6"           # 교육 콘텐츠 생성 (고품�
 
 # ── 스크래핑 설정 ────────────────────────────────────────────────────────────
 MAX_ARTICLES_TO_FETCH = 80    # RSS에서 수집할 최대 기사 수
-MAX_ARTICLES_TO_PROCESS = 5   # 콘텐츠를 생성할 최대 기사 수 (비용 관리)
+MAX_ARTICLES_TO_PROCESS = 5   # 하루 최대 게시 수. 품질 미달이면 억지로 채우지 않음
+UNDERSERVED_PRIORITY_SLOTS = 2  # 부족 분야의 적격 기사 우선 자리, 나머지는 교육적 적합성순
+MAX_GENERATION_ATTEMPTS = 10  # 실패 후보를 대체하되 생성 비용을 제한
 RELEVANCE_THRESHOLD = 6       # 관련성 점수 임계값 (0~10)
 
 # ── RSS 피드 목록 ────────────────────────────────────────────────────────────

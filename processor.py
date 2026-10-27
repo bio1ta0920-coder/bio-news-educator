@@ -3,6 +3,7 @@ Claude API를 사용한 기사 필터링 및 교육 콘텐츠 생성 모듈
 """
 import json
 from content_validation import has_article_body, validate_lesson
+from curation import BIO_FIELDS, parse_assessment
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import anthropic
@@ -171,16 +172,24 @@ STATIC_CONTENT_SYSTEM_PROMPT = f"""당신은 한국 고등학교 생명과학 �
 {JSON_SCHEMA_BLOCK}"""
 
 
-def is_curriculum_relevant(article: dict) -> tuple[bool, int, str]:
+def is_curriculum_relevant(article: dict) -> tuple[bool, int, str, str]:
     """
     기사가 생명과학 교육과정에 관련 있는지 빠르게 판단.
-    Returns: (관련있음, 점수 0~10, 이유)
+    Returns: (교육 큐레이션 적격, 점수 0~10, 이유, 표준 분야)
     """
     prompt = f"""당신은 한국 고등학교 생명과학 교사입니다.
-아래 기사가 다음 중 하나 이상에 해당하는지 판단하세요:
+아래 기사의 교육과정 관련성과 학생용 큐레이션 가능성을 함께 판단하세요.
 ① 2022 개정 교육과정 생명과학 관련 단원 (세포·유전·면역·진화·생태계 등)
 ② 생명공학 산업/의료기술 동향 (바이오 기업, 신약, 유전자치료, 줄기세포 등)
-③ 학생부 종합전형에서 생명과학 관심을 드러낼 수 있는 주제
+③ 학생이 개념을 이해하고 근거를 비교하거나 탐구 질문을 만들 수 있는 소재
+
+relevant는 구체적인 교육과정 개념과 연결되는 경우에만 true입니다.
+curation_suitable는 기사에서 설명할 과학적 개념·연구 근거·탐구 소재가 확인되고,
+고등학생 수준으로 풀어 읽을 수 있을 때만 true입니다. 단순 주가·실적·인사·홍보,
+교육적 연결이 막연하거나 근거가 없는 흥미 위주 기사는 false입니다.
+reason에 연결할 교과 개념과 학생이 탐구할 소재를 한 문장으로 명시하세요.
+bio_field는 다음 중 주된 분야 하나를 정확히 선택하세요: {' / '.join(BIO_FIELDS)}
+분야의 희소성을 이유로 점수를 높이지 마세요. 본문 확인은 다음 단계에서 별도로 수행합니다.
 
 [기사 정보]
 제목: {article['title']}
@@ -191,7 +200,9 @@ def is_curriculum_relevant(article: dict) -> tuple[bool, int, str]:
 {{
   "relevant": true/false,
   "score": 0~10,
-  "reason": "한 문장",
+  "reason": "교과 개념과 학생 탐구 소재 또는 제외 사유",
+  "curation_suitable": true/false,
+  "bio_field": "표준 분야 하나",
   "topics": ["관련 주제1", "관련 주제2"],
   "category": "교과내용 또는 산업동향 또는 의료기술 또는 복합"
 }}
@@ -202,7 +213,7 @@ score 기준: 0=전혀무관, 5=약간관련, 8=매우관련, 10=완벽히 관�
     try:
         response = client.messages.create(
             model=MODEL_FILTER,
-            max_tokens=300,
+            max_tokens=600,
             messages=[{"role": "user", "content": prompt}],
         )
         if response.stop_reason == "max_tokens":
@@ -211,11 +222,10 @@ score 기준: 0=전혀무관, 5=약간관련, 8=매우관련, 10=완벽히 관�
         start = text.find("{")
         end = text.rfind("}") + 1
         data = json.loads(text[start:end])
-        score = int(data.get("score", 0))
-        return score >= RELEVANCE_THRESHOLD, score, data.get("reason", "")
+        return parse_assessment(data, RELEVANCE_THRESHOLD)
     except Exception as e:
         print(f"    [필터 오류] {e}")
-        return False, 0, ""
+        return False, 0, "", ""
 
 
 def generate_educational_content(article: dict, full_text: str) -> dict:
