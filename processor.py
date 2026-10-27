@@ -2,7 +2,7 @@
 Claude API를 사용한 기사 필터링 및 교육 콘텐츠 생성 모듈
 """
 import json
-from content_validation import has_article_body, validate_lesson
+from content_validation import has_article_body, validate_lesson, response_text
 from curation import BIO_FIELDS, parse_assessment
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -218,7 +218,7 @@ score 기준: 0=전혀무관, 5=약간관련, 8=매우관련, 10=완벽히 관�
         )
         if response.stop_reason == "max_tokens":
             raise ValueError("AI 응답 길이 제한으로 생성 중단")
-        text = response.content[0].text.strip()
+        text = response_text(response)
         start = text.find("{")
         end = text.rfind("}") + 1
         data = json.loads(text[start:end])
@@ -266,6 +266,9 @@ def generate_educational_content(article: dict, full_text: str) -> dict:
             model=MODEL_CONTENT,
             max_tokens=16000,
             timeout=300,
+            # Explicit effort bounds thinking cost on Sonnet 5.5. extra_body keeps
+            # this compatible with the project's existing Anthropic SDK minimum.
+            extra_body={"output_config": {"effort": "medium"}} if MODEL_CONTENT == "claude-sonnet-5-5" else {},
             system=[{
                 "type": "text",
                 "text": STATIC_CONTENT_SYSTEM_PROMPT,
@@ -275,7 +278,7 @@ def generate_educational_content(article: dict, full_text: str) -> dict:
         )
         if response.stop_reason == "max_tokens":
             raise ValueError("AI 응답 길이 제한으로 생성 중단")
-        text = response.content[0].text.strip()
+        text = response_text(response)
         start = text.find("{")
         end = text.rfind("}") + 1
         raw = text[start:end]

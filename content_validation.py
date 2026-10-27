@@ -26,3 +26,14 @@ def validate_lesson(data):
             for k in ("approach", "needs", "extend")
         ):
             raise ValueError("탐구 길잡이 누락 또는 순서 불일치")
+
+
+def response_text(response):
+    """Thinking may precede text in newer Claude responses; never parse it as JSON."""
+    if response.stop_reason != "end_turn":
+        raise ValueError(f"AI 응답이 정상 완료되지 않았습니다: {response.stop_reason}")
+    text = "\n".join(block.text for block in response.content
+                     if getattr(block, "type", None) == "text").strip()
+    if not text:
+        raise ValueError("AI 응답에 텍스트가 없습니다")
+    return text

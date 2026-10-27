@@ -10,7 +10,7 @@ GOOGLE_DRIVE_FOLDER_ID = os.getenv("GOOGLE_DRIVE_FOLDER_ID")
 
 # ── 모델 설정 ────────────────────────────────────────────────────────────────
 MODEL_FILTER = "claude-haiku-4-5-20251001"   # 관련성 필터링 (빠르고 저렴)
-MODEL_CONTENT = "claude-sonnet-4-6"           # 교육 콘텐츠 생성 (고품질)
+MODEL_CONTENT = os.getenv("BIO_CONTENT_MODEL", "claude-sonnet-4-6")           # 교육 콘텐츠 생성 (고품질)
 
 # ── 스크래핑 설정 ────────────────────────────────────────────────────────────
 MAX_ARTICLES_TO_FETCH = 80    # RSS에서 수집할 최대 기사 수

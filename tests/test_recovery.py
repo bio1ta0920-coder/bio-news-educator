@@ -9,7 +9,7 @@ import tempfile
 import unittest
 from types import SimpleNamespace
 
-from content_validation import has_article_body, validate_lesson
+from content_validation import has_article_body, validate_lesson, response_text
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -73,14 +73,28 @@ class RecoveryTests(unittest.TestCase):
         from zoneinfo import ZoneInfo
         article = {'title': '제목', 'source': '매체', 'url': 'https://example.org', 'lang': 'ko', 'summary': ''}
         for reason, data in [('max_tokens', self.lesson), ('end_turn', {'article_summary': '불완전'})]:
-            response = SimpleNamespace(stop_reason=reason, content=[SimpleNamespace(text=json.dumps(data))])
+            response = SimpleNamespace(stop_reason=reason, content=[SimpleNamespace(type="text", text=json.dumps(data))])
             ns = function_namespace('processor.py', {'generate_educational_content'}, {
-                'has_article_body': has_article_body, 'validate_lesson': validate_lesson,
+                'has_article_body': has_article_body, 'validate_lesson': validate_lesson, 'response_text': response_text,
                 'datetime': datetime, 'ZoneInfo': ZoneInfo, 'json': json,
                 'MODEL_CONTENT': 'mock', 'STATIC_CONTENT_SYSTEM_PROMPT': '',
                 'client': SimpleNamespace(messages=SimpleNamespace(create=lambda **kw: response)),
             })
             self.assertEqual(ns['generate_educational_content'](article, '본문 근거 ' * 100), {})
+
+    def test_thinking_blocks_are_skipped_and_incomplete_responses_rejected(self):
+        response = SimpleNamespace(stop_reason='end_turn', content=[
+            SimpleNamespace(type='thinking', thinking='not JSON'),
+            SimpleNamespace(type='text', text='{"ok": true}')])
+        self.assertEqual(response_text(response), '{"ok": true}')
+        for reason in ('max_tokens', 'refusal', 'model_context_window_exceeded', 'tool_use'):
+            response.stop_reason = reason
+            with self.assertRaises(ValueError):
+                response_text(response)
+        response.stop_reason = 'end_turn'
+        response.content = [SimpleNamespace(type='thinking')]
+        with self.assertRaises(ValueError):
+            response_text(response)
 
     def test_html_json_roundtrip_and_index_boundaries(self):
         tree = ast.parse((ROOT / 'google_docs_publisher.py').read_text())
