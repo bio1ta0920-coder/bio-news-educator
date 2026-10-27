@@ -66,6 +66,9 @@ jobs:
         with:
           node-version: "22"
 
+      - name: 콘텐츠 복원 및 수집 실패 회귀 검증
+        run: python -m unittest discover -s tests -v
+
       - name: 앱용 구조화 JSON 추출 및 2022 개정 정규화
         run: |
           node tools/extract_json.mjs

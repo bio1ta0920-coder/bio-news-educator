@@ -86,6 +86,7 @@ def main():
     # ── 3단계: 본문 스크래핑 + 교육 콘텐츠 생성 ───────────────────
     print(f"\n=== 교육 콘텐츠 생성 ({len(to_process)}건) ===")
     generated_contents = []
+    retry_urls = {a["url"] for a in relevant_articles}
 
     for i, article in enumerate(to_process):
         print(f"\n  [{i+1}/{len(to_process)}] {article['title'][:55]}...")
@@ -100,6 +101,7 @@ def main():
 
         if content:
             generated_contents.append(content)
+            retry_urls.discard(article["url"])
             print(f"    ✓ 생성 완료")
         else:
             print(f"    ✗ 생성 실패 — 건너뜀")
@@ -121,7 +123,7 @@ def main():
 
     # ── 5단계: 처리된 기사 URL 저장 (중복 방지, 백필 모드 제외) ──
     if not is_backfill:
-        processed_urls = {a["url"] for a in articles}
+        processed_urls = {a["url"] for a in articles} - retry_urls
         save_seen_articles(seen | processed_urls)
         print(f"\n중복 방지 목록 업데이트 완료 (총 {len(seen) + len(processed_urls)}건)")
     else:
