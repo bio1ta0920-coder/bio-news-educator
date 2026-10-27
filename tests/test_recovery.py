@@ -130,6 +130,44 @@ class RecoveryTests(unittest.TestCase):
                 if key not in {'bio_field', 'tags'}:
                     self.assertEqual(saved[key], value, key)
 
+    def test_all_remaining_repairs_roundtrip(self):
+        ids = ['2026-06-07-1', '2026-10-21-3', '2026-10-24-5']
+        tree = ast.parse((ROOT / 'google_docs_publisher.py').read_text())
+        names = {n.name for n in tree.body if isinstance(n, ast.FunctionDef)} - {'get_drive_service', 'save_html_to_docs'}
+        ns = function_namespace('google_docs_publisher.py', names, {'re': re})
+        with tempfile.TemporaryDirectory() as folder:
+            tmp = Path(folder)
+            shutil.copytree(ROOT / 'tools', tmp / 'tools')
+            (tmp / 'docs').mkdir()
+            for id_ in ids:
+                date = id_[:-2]
+                shutil.copy(ROOT / 'docs' / (date + '.html'), tmp / 'docs')
+                # Include neighbours so the test detects merged titles or dropped entries.
+                for html in (ROOT / 'docs').glob(date + '-*.html'):
+                    shutil.copy(html, tmp / 'docs')
+            subprocess.run(['node', str(tmp / 'tools/extract_json.mjs')], check=True, capture_output=True)
+            subprocess.run(['node', str(tmp / 'tools/normalize.mjs')], check=True, capture_output=True)
+            for id_ in ids:
+                with self.subTest(lesson=id_):
+                    source = json.loads((ROOT / 'repairs' / (id_ + '.json')).read_text())
+                    validate_lesson(source)
+                    self.assertEqual(ns['build_article_page_html'](source, int(id_[-1])),
+                                     (ROOT / 'docs' / (id_ + '.html')).read_text())
+                    date = id_[:-2]
+                    actual = json.loads((tmp / 'docs/data' / (date + '.json')).read_text())
+                    saved = json.loads((ROOT / 'docs/data' / (date + '.json')).read_text())
+                    self.assertEqual(actual, saved)
+                    a = next(x for x in actual if x['id'] == id_)
+                    self.assertEqual(a['inquiry_questions'], source['inquiry_questions'])
+                    self.assertEqual(a['inquiry_answers'], source['inquiry_answers'])
+                    self.assertEqual(a['teacher_note'], source['teacher_note'])
+                    self.assertTrue(a['student_record_tip']['deepening_ideas'])
+                    self.assertTrue(a['checklist']['key_points'])
+                    self.assertTrue(a['fact_check']['verified'])
+                    self.assertIn('https://', a['fact_check']['requires_verification'])
+                    self.assertEqual(a['bio_field_norm'], source['bio_field'])
+
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,5 +1,7 @@
 # 2026-10-21-2 복원 근거
 
+후속 복원: 아래에 당시 남겨 둔 3건의 처리 결과는 [remaining-lessons.md](remaining-lessons.md)에 기록했다. 현재 전체 추출 점검에서는 기존 점검 항목의 누락이 없다.
+
 확인일: 2026-10-27. `2026-10-21-2.json`은 기존 생성기 입력 스키마를 따르는 수동 복원 원본이다. HTML은 `google_docs_publisher.build_article_page_html(content, 2)`로 생성했다. 날짜별 JSON은 기존 추출기와 정규화기로 생성했다.
 
 - 뉴스1: https://www.news1.kr/bio/pharmaceutical-bio/6326672 — 제목·2026-10-21 08:47 발행 정보 확인. 이번 조회에서는 본문 미확보. 본문을 복원하거나 전재했다고 주장하지 않는다.
