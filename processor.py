@@ -2,6 +2,7 @@
 Claude API를 사용한 기사 필터링 및 교육 콘텐츠 생성 모듈
 """
 import json
+from content_validation import has_article_body, validate_lesson
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import anthropic
@@ -204,6 +205,8 @@ score 기준: 0=전혀무관, 5=약간관련, 8=매우관련, 10=완벽히 관�
             max_tokens=300,
             messages=[{"role": "user", "content": prompt}],
         )
+        if response.stop_reason == "max_tokens":
+            raise ValueError("AI 응답 길이 제한으로 생성 중단")
         text = response.content[0].text.strip()
         start = text.find("{")
         end = text.rfind("}") + 1
@@ -223,6 +226,9 @@ def generate_educational_content(article: dict, full_text: str) -> dict:
     user 메시지로 보낸다.
     Returns: 콘텐츠 딕셔너리
     """
+    if not has_article_body(full_text):
+        print("    [본문 검증 실패] 제목·요약만으로 교육자료를 생성하지 않습니다.")
+        return {}
     lang_note = "영어 기사이므로 모든 내용을 한국어로 완전히 번역하여 작성하세요." if article["lang"] == "en" else ""
     today_kst = datetime.now(ZoneInfo("Asia/Seoul")).date().isoformat()
 
@@ -257,6 +263,8 @@ def generate_educational_content(article: dict, full_text: str) -> dict:
             }],
             messages=[{"role": "user", "content": user_content}],
         )
+        if response.stop_reason == "max_tokens":
+            raise ValueError("AI 응답 길이 제한으로 생성 중단")
         text = response.content[0].text.strip()
         start = text.find("{")
         end = text.rfind("}") + 1
@@ -266,6 +274,7 @@ def generate_educational_content(article: dict, full_text: str) -> dict:
         except json.JSONDecodeError:
             repaired = repair_json(raw)
             data = json.loads(repaired)
+        validate_lesson(data)
         data["article_title"] = article["title"]
         data["article_url"] = article["url"]
         data["source"] = article["source"]
@@ -273,14 +282,7 @@ def generate_educational_content(article: dict, full_text: str) -> dict:
         return data
     except json.JSONDecodeError as e:
         print("    [JSON 파싱 오류] " + str(e))
-        return {
-            "article_title": article["title"],
-            "article_url": article["url"],
-            "source": article["source"],
-            "lang": article["lang"],
-            "article_summary": text[:2000] if 'text' in locals() else "",
-            "parse_error": True,
-        }
+        return {}
     except Exception as e:
         print(f"    [콘텐츠 생성 오류] {e}")
         return {}

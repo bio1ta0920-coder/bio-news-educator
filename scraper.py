@@ -6,6 +6,8 @@ import os
 import re
 import time
 import calendar
+from urllib.parse import urlparse
+from content_validation import has_article_body
 from datetime import datetime, timezone, timedelta
 import feedparser
 import requests
@@ -87,6 +89,15 @@ def scrape_article_content(url: str, lang: str) -> str:
         for tag in soup(["script", "style", "nav", "footer", "header",
                          "aside", "form", "iframe", "noscript", "button"]):
             tag.decompose()
+
+        # News1의 페이지 껍데기/관련 기사 목록은 본문으로 인정하지 않는다.
+        if urlparse(url).hostname in {"www.news1.kr", "news1.kr"}:
+            body = soup.select_one("#articleBody, #article_body, .article_content, .article-body, [itemprop=articleBody]")
+            content = body.get_text(separator="\n", strip=True) if body else ""
+            if not has_article_body(content):
+                print(f"  [경고] 뉴스1 본문 누락: {url}")
+                return ""
+            return content[:6000]
 
         # 주요 콘텐츠 선택자 순서대로 시도
         selectors = [

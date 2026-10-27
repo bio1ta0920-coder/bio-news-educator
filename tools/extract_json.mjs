@@ -220,7 +220,7 @@ function buildTags(a) {
 function readDateIndex(file) {
   const html = fs.readFileSync(file, 'utf8');
   return all(
-    /<a href="([0-9]{4}-[0-9]{2}-[0-9]{2}-\d+\.html)"[^>]*>([\s\S]*?)<\/a>\s*<span[^>]*>([\s\S]*?)<\/span>/g,
+    /<a href="([0-9]{4}-[0-9]{2}-[0-9]{2}-\d+\.html)"[^>]*>((?:(?!<\/a>)[\s\S])*?)<\/a>(?:\s*<span[^>]*>([^<]*)<\/span>)?/g,
     html
   ).map(m => ({ file: m[1], title: text(m[2]), bio_field: text(m[3]) }));
 }
