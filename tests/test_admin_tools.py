@@ -22,6 +22,9 @@ class AdminDeliveryTests(unittest.TestCase):
                 with self.assertRaises(RuntimeError):
                     kakao.send(config, '2026-10-27', '관리자 브리핑')
                 self.assertEqual(post.call_count, 1)
+                template = json.loads(post.call_args.args[1]['template_object'])
+                self.assertEqual(template['link']['web_url'], 'https://example.org?date=2026-10-27')
+                self.assertEqual(template['button_title'], '전체 보고서 보기')
                 ledger = Path(directory, 'delivery/2026-10-27.json')
                 self.assertNotIn('secret-token', ledger.read_text())
                 self.assertEqual(ledger.stat().st_mode & 0o777, 0o600)
@@ -50,4 +53,11 @@ class AdminDeliveryTests(unittest.TestCase):
             for message in ('', 'a'*1001):
                 with self.assertRaises(ValueError):
                     kakao.send({}, '2026-10-27', message)
+            post.assert_not_called()
+
+    def test_unsafe_report_url_never_sends(self):
+        with patch.object(kakao, 'post') as post:
+            for url in ('http://example.org', 'https://secret@example.org', 'javascript:alert(1)'):
+                with self.assertRaises(ValueError):
+                    kakao.send({'link_url': url}, '2026-10-27', '요약')
             post.assert_not_called()
