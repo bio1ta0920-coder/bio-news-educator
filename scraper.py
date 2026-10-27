@@ -8,6 +8,7 @@ import time
 import calendar
 from urllib.parse import urlparse
 from content_validation import has_article_body
+from curation import interleave_sources
 from datetime import datetime, timezone, timedelta
 import feedparser
 import requests
@@ -260,6 +261,6 @@ def collect_articles(target_date: str | None = None, bypass_seen: bool = False) 
                     seen_urls_this_run.add(url)
             time.sleep(0.5)
 
-    all_entries = all_entries[:MAX_ARTICLES_TO_FETCH]
+    all_entries = interleave_sources(all_entries, MAX_ARTICLES_TO_FETCH)
     print(f"\n  새 기사 {len(all_entries)}개 수집 완료")
     return all_entries, seen

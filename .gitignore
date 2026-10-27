@@ -11,3 +11,6 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# 관리자 전용 분석·카카오 인증·발송 이력 (공개 저장소/Pages 제외)
+private_reports/

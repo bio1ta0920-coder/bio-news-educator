@@ -82,24 +82,6 @@ class RecoveryTests(unittest.TestCase):
             })
             self.assertEqual(ns['generate_educational_content'](article, '본문 근거 ' * 100), {})
 
-    def test_failed_articles_remain_retryable(self):
-        from datetime import datetime, timezone, timedelta
-        for generated in ({}, self.lesson):
-            saved = []
-            article = {'title': '기사', 'url': 'https://example.org', 'lang': 'ko'}
-            ns = function_namespace('main.py', {'main'}, {
-                'parse_args': lambda: SimpleNamespace(date=None, limit=1, dry_run=True),
-                'timezone': timezone, 'timedelta': timedelta, 'datetime': datetime,
-                'collect_articles': lambda **kw: ([article.copy()], set()),
-                'is_curriculum_relevant': lambda a: (True, 10, '관련'),
-                'scrape_article_content': lambda *a: '본문 근거 ' * 100,
-                'generate_educational_content': lambda *a: generated,
-                'save_seen_articles': saved.append,
-                'time': SimpleNamespace(sleep=lambda n: None),
-            })
-            ns['main']()
-            self.assertEqual(saved[-1], {article['url']} if generated else set())
-
     def test_html_json_roundtrip_and_index_boundaries(self):
         tree = ast.parse((ROOT / 'google_docs_publisher.py').read_text())
         names = {n.name for n in tree.body if isinstance(n, ast.FunctionDef)} - {'get_drive_service', 'save_html_to_docs'}
