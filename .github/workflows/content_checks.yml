@@ -1,0 +1,32 @@
+name: 교육자료 복원 회귀 검증
+on:
+  pull_request:
+    paths:
+      - 'docs/**'
+      - 'repairs/**'
+      - 'tests/**'
+      - 'tools/**'
+      - '*.py'
+      - '.github/workflows/content_checks.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'repairs/**'
+      - 'tests/**'
+      - 'tools/**'
+      - '*.py'
+      - '.github/workflows/content_checks.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m unittest discover -s tests -v
