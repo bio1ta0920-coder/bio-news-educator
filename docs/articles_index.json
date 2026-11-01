@@ -3856,5 +3856,32 @@
       "page_file": "2026-10-31-5.html",
       "subject": "신경과학"
     }
+  ],
+  "2026-11-01": [
+    {
+      "title": "This “golden tree” coral was too strange for any known family",
+      "page_file": "2026-11-01-1.html",
+      "subject": "진화·고생물학"
+    },
+    {
+      "title": "Leucine does more than build muscle. It powers up your cells",
+      "page_file": "2026-11-01-2.html",
+      "subject": "영양학·대사"
+    },
+    {
+      "title": "Rare and common genetic variants shape single-cell immune gene expression",
+      "page_file": "2026-11-01-3.html",
+      "subject": "합성생물학·AI생물정보학"
+    },
+    {
+      "title": "Diet at disease onset determines tissue inflammatory memory",
+      "page_file": "2026-11-01-4.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "T and B cells recognize splicing-derived neutrophil neoantigens in lupus",
+      "page_file": "2026-11-01-5.html",
+      "subject": "면역학·면역치료"
+    }
   ]
 }
