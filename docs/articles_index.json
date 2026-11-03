@@ -3910,5 +3910,32 @@
       "page_file": "2026-11-02-5.html",
       "subject": "암·종양학"
     }
+  ],
+  "2026-11-03": [
+    {
+      "title": "빅파마, 질병 단백질 억제하는 siRNA 확보전",
+      "page_file": "2026-11-03-1.html",
+      "subject": "RNA치료제"
+    },
+    {
+      "title": "전 세계 사고팔리는 생물 ‘추정치 2배’ 10만종…감시 사각지대 크다",
+      "page_file": "2026-11-03-2.html",
+      "subject": "생태학·환경과학"
+    },
+    {
+      "title": "비만이 당뇨병 부르는 이유…지방 속 '염증 스위치' 찾았다",
+      "page_file": "2026-11-03-3.html",
+      "subject": "내분비·대사질환"
+    },
+    {
+      "title": "Measles made a stealthy return as another virus took the spotlight",
+      "page_file": "2026-11-03-4.html",
+      "subject": "감염병·백신"
+    },
+    {
+      "title": "Market Insight 444 : 유전자 가위 기반 치료제 (Genome Editing Therapeutics)",
+      "page_file": "2026-11-03-5.html",
+      "subject": "유전자편집·유전자치료"
+    }
   ]
 }
