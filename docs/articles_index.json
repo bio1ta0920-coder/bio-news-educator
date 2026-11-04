@@ -3937,5 +3937,32 @@
       "page_file": "2026-11-03-5.html",
       "subject": "유전자편집·유전자치료"
     }
+  ],
+  "2026-11-04": [
+    {
+      "title": "Scientists reveal what seven days of fasting does to the human body",
+      "page_file": "2026-11-04-1.html",
+      "subject": "영양학·대사"
+    },
+    {
+      "title": "A 50-year-old mystery of vanishing frogs reveals a hidden killer",
+      "page_file": "2026-11-04-2.html",
+      "subject": "생태학·환경과학"
+    },
+    {
+      "title": "This tiny jurassic predator helped pave the way for the human brain",
+      "page_file": "2026-11-04-3.html",
+      "subject": "진화·고생물학"
+    },
+    {
+      "title": "Scientists finally discover how a common gut bacterium can trigger colon cancer",
+      "page_file": "2026-11-04-4.html",
+      "subject": "암·종양학"
+    },
+    {
+      "title": "맞춤형 항암백신의 바탕은 생물학·AI…\"장기 투자 필요\"",
+      "page_file": "2026-11-04-5.html",
+      "subject": "암·종양학"
+    }
   ]
 }
