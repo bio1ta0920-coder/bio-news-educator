@@ -4045,5 +4045,32 @@
       "page_file": "2026-11-07-5.html",
       "subject": "신경과학"
     }
+  ],
+  "2026-11-08": [
+    {
+      "title": "When humans disappear, biodiversity takes a surprising turn",
+      "page_file": "2026-11-08-1.html",
+      "subject": "생태학·환경과학"
+    },
+    {
+      "title": "동아에스티(Dong-A ST) 관계사 메타비아(MetaVia)는 개발중인 비만 및 대사이상 관련 치료제 후보물질 ‘DA-1726’의 임상1상 Part 3B 중간분석에서 간 지방이…",
+      "page_file": "2026-11-08-2.html",
+      "subject": "내분비·대사질환"
+    },
+    {
+      "title": "In Vivo CRISPR Base Editing of <i>ANGPTL3</i> for Durable Lipid Lowering",
+      "page_file": "2026-11-08-3.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "Scientists discover new Alzheimer’s drug that repairs DNA damage and reduces brain inflammation",
+      "page_file": "2026-11-08-4.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "Scientists solve 30-year-old mystery and discover a hidden defense against inflammation",
+      "page_file": "2026-11-08-5.html",
+      "subject": "면역학·면역치료"
+    }
   ]
 }
