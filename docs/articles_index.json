@@ -4126,5 +4126,32 @@
       "page_file": "2026-11-10-5.html",
       "subject": "유전자편집·유전자치료"
     }
+  ],
+  "2026-11-11": [
+    {
+      "title": "초가공식품, 최소가공식품과 영양구성 같아도 고혈당 상태 더 지속",
+      "page_file": "2026-11-11-1.html",
+      "subject": "영양학·대사"
+    },
+    {
+      "title": "Mongolia’s iconic grasslands are in crisis — invisible fungi could help save them",
+      "page_file": "2026-11-11-2.html",
+      "subject": "생태학·환경과학"
+    },
+    {
+      "title": "Some people are resistant to dementia — here’s what their genes can teach us",
+      "page_file": "2026-11-11-3.html",
+      "subject": "신경과학"
+    },
+    {
+      "title": "Scientists wipe out deadly brain tumors in every mouse tested with new cancer therapy",
+      "page_file": "2026-11-11-4.html",
+      "subject": "면역학·면역치료"
+    },
+    {
+      "title": "Scientists trick cancer cells into making the drugs that kill them",
+      "page_file": "2026-11-11-5.html",
+      "subject": "암·종양학"
+    }
   ]
 }
