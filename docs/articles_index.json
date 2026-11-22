@@ -4423,5 +4423,32 @@
       "page_file": "2026-11-21-5.html",
       "subject": "생태학·환경과학"
     }
+  ],
+  "2026-11-22": [
+    {
+      "title": "Scientists discover that the heart doesn't age the way we thought",
+      "page_file": "2026-11-22-1.html",
+      "subject": "세포생물학·이미징"
+    },
+    {
+      "title": "A 50-year-old theory about evolution may have been wrong all along",
+      "page_file": "2026-11-22-2.html",
+      "subject": "진화·고생물학"
+    },
+    {
+      "title": "손상된 신장 혈관 겨냥한 나노입자…당뇨병콩팥병 동물실험서 효과 확인",
+      "page_file": "2026-11-22-3.html",
+      "subject": "유전자편집·유전자치료"
+    },
+    {
+      "title": "Bacteria and viruses team up to hasten the demise of algal blooms",
+      "page_file": "2026-11-22-4.html",
+      "subject": "생태학·환경과학"
+    },
+    {
+      "title": "Vitamin B12 may hold the key to treating a rare genetic disorder",
+      "page_file": "2026-11-22-5.html",
+      "subject": "유전자편집·유전자치료"
+    }
   ]
 }
